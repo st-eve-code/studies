@@ -1,0 +1,6893 @@
+[
+  {
+    "id": "scraped-3211203",
+    "sku": "3211203",
+    "name": "Polaris ORV Drive Belt",
+    "brand": "Polaris",
+    "category": "drivetrain",
+    "type": "oem",
+    "price": 149.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_3c3c3359dc334062a320e7dfd0ed72b6~mv2.png"
+    ],
+    "description": "Genuine OEM part 3211203 for Polaris powersports vehicles. Covers fitment for Sportsman XP 1000 High Lifter Edition, Sportsman 850 High Lifter Edition. Factory-spec CVT/drive belt engineered to match the original driveline geometry and compound. Delivers consistent engagement, reduced belt dust, and predictable performance across the full power range.",
+    "shortDescription": "Factory CVT/drive belt replacement",
+    "specs": {
+      "partNumbers": [
+        "3211203"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "Sportsman XP 1000 High Lifter Edition"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "Sportsman XP 1000 High Lifter Edition"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "Sportsman XP 1000 High Lifter Edition"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "Sportsman XP 1000 High Lifter Edition"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "Sportsman 850 High Lifter Edition"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "Sportsman 850 High Lifter Edition"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "Sportsman 850 High Lifter Edition"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "Sportsman 850 High Lifter Edition"
+      },
+      {
+        "year": 2017,
+        "make": "Polaris",
+        "model": "Sportsman 850 High Lifter Edition"
+      },
+      {
+        "year": 2018,
+        "make": "Polaris",
+        "model": "Sportsman 850 High Lifter Edition"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "Sportsman 850 High Lifter Edition"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "Sportsman 850 High Lifter Edition"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "Sportsman XP 1000 High Lifter Edition"
+      },
+      {
+        "year": 2017,
+        "make": "Polaris",
+        "model": "Sportsman XP 1000 High Lifter Edition"
+      },
+      {
+        "year": 2018,
+        "make": "Polaris",
+        "model": "Sportsman XP 1000 High Lifter Edition"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "Sportsman XP 1000 High Lifter Edition"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "drivetrain",
+      "polaris",
+      "drive",
+      "belt"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-08CLA-999-0E0A8",
+    "sku": "08CLA-999-0E0A8",
+    "name": "Honda HP Coolant",
+    "brand": "Honda",
+    "category": "oem-replacement",
+    "type": "oem",
+    "price": 9.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_c9295d5fab3048b28a7d83ee493b1637~mv2.png"
+    ],
+    "description": "Genuine OEM part 08CLA-999-0E0A8 for Honda powersports vehicles. Verify fitment against your vehicle before ordering. Factory-formulated fluid, filter, or maintenance item. Meets the OEM specification for the machines it is listed for, providing correct protection, change intervals, and fill behavior without aftermarket guesswork.",
+    "shortDescription": "Genuine OEM maintenance part",
+    "specs": {
+      "partNumbers": [
+        "08CLA-999-0E0A8"
+      ]
+    },
+    "fitment": [],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "oem-replacement",
+      "honda",
+      "coolant"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-3211149",
+    "sku": "3211149",
+    "name": "Drive Belt",
+    "brand": "Polaris",
+    "category": "drivetrain",
+    "type": "oem",
+    "price": 169.99,
+    "images": [
+      "https://static.wixstatic.com/media/12b852_6c01aa586c7f4a3ea167a6756254c7e7~mv2.jpg"
+    ],
+    "description": "Genuine OEM part 3211149 for Polaris powersports vehicles. Covers fitment for ACE 570 SP, ACE 570, Polaris ACE 900 SP, Polaris ACE 570 SP, Polaris ACE 570, Polaris ACERGR and more. Factory-spec CVT/drive belt engineered to match the original driveline geometry and compound. Delivers consistent engagement, reduced belt dust, and predictable performance across the full power range.",
+    "shortDescription": "Factory CVT/drive belt replacement",
+    "specs": {
+      "partNumbers": [
+        "3211149"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2017,
+        "make": "Polaris",
+        "model": "ACE 570 SP"
+      },
+      {
+        "year": 2017,
+        "make": "Polaris",
+        "model": "ACE 570"
+      },
+      {
+        "year": 2016,
+        "make": "Polaris",
+        "model": "Polaris ACE 900 SP"
+      },
+      {
+        "year": 2015,
+        "make": "Polaris",
+        "model": "Polaris ACE 570 SP"
+      },
+      {
+        "year": 2016,
+        "make": "Polaris",
+        "model": "Polaris ACE 570 SP"
+      },
+      {
+        "year": 2015,
+        "make": "Polaris",
+        "model": "Polaris ACE 570"
+      },
+      {
+        "year": 2016,
+        "make": "Polaris",
+        "model": "Polaris ACE 570"
+      },
+      {
+        "year": 2014,
+        "make": "Polaris",
+        "model": "Polaris ACERGR"
+      },
+      {
+        "year": 2015,
+        "make": "Polaris",
+        "model": "Polaris ACERGR"
+      },
+      {
+        "year": 2016,
+        "make": "Polaris",
+        "model": "Polaris ACERGR"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "RANGER 570 EPS"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "RANGER XP 900 EPS Premium"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "RANGER XP 900 EPS"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "RANGER CREW XP 900 EPS"
+      },
+      {
+        "year": 2018,
+        "make": "Polaris",
+        "model": "RANGER 570"
+      },
+      {
+        "year": 2017,
+        "make": "Polaris",
+        "model": "RANGER XP 900"
+      },
+      {
+        "year": 2018,
+        "make": "Polaris",
+        "model": "RANGER XP 900"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "RANGER XP 900"
+      },
+      {
+        "year": 2017,
+        "make": "Polaris",
+        "model": "RANGER CREW XP 900"
+      },
+      {
+        "year": 2018,
+        "make": "Polaris",
+        "model": "RANGER CREW XP 900"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "RANGER CREW XP 900"
+      },
+      {
+        "year": 2013,
+        "make": "Polaris",
+        "model": "RANGER XP 900 EPS"
+      },
+      {
+        "year": 2014,
+        "make": "Polaris",
+        "model": "RANGER XP 900 EPS"
+      },
+      {
+        "year": 2016,
+        "make": "Polaris",
+        "model": "RANGER XP 900 EPS"
+      },
+      {
+        "year": 2016,
+        "make": "Polaris",
+        "model": "RANGER CREW XP 900-6 EPS"
+      },
+      {
+        "year": 2016,
+        "make": "Polaris",
+        "model": "RANGER CREW XP 900-6"
+      },
+      {
+        "year": 2016,
+        "make": "Polaris",
+        "model": "RANGER CREW 570-4 EPS"
+      },
+      {
+        "year": 2015,
+        "make": "Polaris",
+        "model": "RANGER 570 EPS"
+      },
+      {
+        "year": 2016,
+        "make": "Polaris",
+        "model": "RANGER 570 EPS"
+      },
+      {
+        "year": 2015,
+        "make": "Polaris",
+        "model": "RANGER 570"
+      },
+      {
+        "year": 2016,
+        "make": "Polaris",
+        "model": "RANGER 570"
+      },
+      {
+        "year": 2015,
+        "make": "Polaris",
+        "model": "RANGER CREW 900-6 EPS"
+      },
+      {
+        "year": 2015,
+        "make": "Polaris",
+        "model": "RANGER CREW 900-6"
+      },
+      {
+        "year": 2015,
+        "make": "Polaris",
+        "model": "RANGER CREW 900 EPS"
+      },
+      {
+        "year": 2015,
+        "make": "Polaris",
+        "model": "RANGER CREW 900"
+      },
+      {
+        "year": 2014,
+        "make": "Polaris",
+        "model": "RANGER XP 900 DELUXE"
+      },
+      {
+        "year": 2013,
+        "make": "Polaris",
+        "model": "RANGER XP 900"
+      },
+      {
+        "year": 2014,
+        "make": "Polaris",
+        "model": "RANGER XP 900"
+      },
+      {
+        "year": 2015,
+        "make": "Polaris",
+        "model": "RANGER XP 900"
+      },
+      {
+        "year": 2016,
+        "make": "Polaris",
+        "model": "RANGER XP 900"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "drivetrain",
+      "polaris",
+      "drive",
+      "belt"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-3211229",
+    "sku": "3211229",
+    "name": "Polaris ORV Drive Belt",
+    "brand": "Polaris",
+    "category": "drivetrain",
+    "type": "oem",
+    "price": 99.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_3c3c3359dc334062a320e7dfd0ed72b6~mv2.png"
+    ],
+    "description": "Genuine OEM part 3211229 for Polaris powersports vehicles. Covers fitment for Sportsman 570 Hunt Edition, Sportsman 570 Utility HD, Sportsman 570 Ride Command Edition, Sportsman 570 Premium, Sportsman 570 EPS, Sportsman 570 Ultimate Trail Limited Edition and more. Factory-spec CVT/drive belt engineered to match the original driveline geometry and compound. Delivers consistent engagement, reduced belt dust, and predictable performance across the full power range.",
+    "shortDescription": "Factory CVT/drive belt replacement",
+    "specs": {
+      "partNumbers": [
+        "3211229"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "Sportsman 570 Hunt Edition"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "Sportsman 570 Hunt Edition"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "Sportsman 570 Utility HD"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "Sportsman 570 Utility HD"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "Sportsman 570 Utility HD"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "Sportsman 570 Ride Command Edition"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "Sportsman 570 Ride Command Edition"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "Sportsman 570 Ride Command Edition"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "Sportsman 570 Premium"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "Sportsman 570 Premium"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "Sportsman 570 Premium"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "Sportsman 570 Ultimate Trail Limited Edition"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS Utility"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "Sportsman 570 Trail"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "Sportsman 570 Trail"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "Sportsman 570 Trail"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "Sportsman 570 Trail"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "Sportsman 570 Ultimate Utility"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "Sportsman 570 Premium"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "Sportsman 570"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "Sportsman 570 Ultimate Trail"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "Sportsman 570 SP Hunter Edition"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "drivetrain",
+      "polaris",
+      "drive",
+      "belt"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-2885096",
+    "sku": "2885096",
+    "name": "Polaris PRO Series 4,500 Lb Winch with Rapid Rope Recovery",
+    "brand": "Polaris",
+    "category": "winch-recovery",
+    "type": "oem",
+    "price": 924.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_ea39817eed354d28b5a059febf9f9eaa~mv2.webp"
+    ],
+    "description": "Genuine OEM part 2885096 for Polaris powersports vehicles. Covers fitment for RANGER SP 570 EPS Hunter Edition [T1a], RANGER SP 570 EPS [T1b] Nordic Pro Full Cab, RANGER SP 570 EPS [T1a] Nordic Pro Full Cab, RANGER SP 570 EPS [T1a], RANGER SP 570 EPS Nordic Pro [L7e], RANGER SP 570 EPS Hunter Edition [T1b] and more. Factory winch and recovery hardware rated for ATV/UTV loads, with weather-sealed motor and synthetic or steel cable options. Includes mounting hardware sized to the intended chassis.",
+    "shortDescription": "OEM winch & recovery hardware",
+    "specs": {
+      "partNumbers": [
+        "2885096"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER SP 570 EPS Hunter Edition [T1a]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER SP 570 EPS [T1b] Nordic Pro Full Cab"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER SP 570 EPS [T1a] Nordic Pro Full Cab"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER SP 570 EPS [T1a]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER SP 570 EPS Nordic Pro [L7e]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER SP 570 EPS Nordic Pro [L7e]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER SP 570 EPS Hunter Edition [T1b]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER SP 570 EPS Hunter Edition [T1b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER SP 570 EPS [MD]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER SP 570 EPS [MD]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER SP 570 EPS [L7e]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER SP 570 EPS [L7e]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER SP 570 HD"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER SP 570 EPS Nordic Pro [T1b]"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RANGER SP 570 EPS [T1b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER SP 570 EPS [T1b]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER SP 570 EPS [T1b]"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RANGER SP 570 HUNTER EDITION [ZUG/LOF]"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RANGER SP 570 EPS [ZUG/LOF]"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RANGER SP 570 Premium"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RANGER SP 570 Premium"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RANGER SP 570 Premium"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER SP 570 Premium"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER SP 570 Premium"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RANGER SP 570 NorthStar Edition"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RANGER SP 570 NorthStar Edition"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RANGER SP 570 NorthStar Edition"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER SP 570 NorthStar Edition"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER SP 570 NorthStar Edition"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RANGER SP 570"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RANGER SP 570"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RANGER SP 570"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER SP 570"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER SP 570"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RANGER CREW SP 570 Premium"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RANGER CREW SP 570 Premium"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RANGER CREW SP 570 Premium"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER CREW SP 570 Premium"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER CREW SP 570 Premium"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RANGER CREW SP 570 NorthStar Edition"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": true,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "winch-recovery",
+      "polaris",
+      "series",
+      "4,500",
+      "winch",
+      "with",
+      "rapid",
+      "rope"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-08208-0005",
+    "sku": "08208-0005",
+    "name": "Honda Ss-7 Suspension Fluid 16oz",
+    "brand": "Honda",
+    "category": "oem-replacement",
+    "type": "oem",
+    "price": 7.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_901fe34795cb459f8d723f6a6c7380b0~mv2.png"
+    ],
+    "description": "Genuine OEM part 08208-0005 for Honda powersports vehicles. Verify fitment against your vehicle before ordering. Factory-formulated fluid, filter, or maintenance item. Meets the OEM specification for the machines it is listed for, providing correct protection, change intervals, and fill behavior without aftermarket guesswork.",
+    "shortDescription": "Genuine OEM maintenance part",
+    "specs": {
+      "partNumbers": [
+        "08208-0005"
+      ]
+    },
+    "fitment": [],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "oem-replacement",
+      "honda",
+      "ss-7",
+      "suspension",
+      "fluid",
+      "16oz"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-08C35-AH21S01",
+    "sku": "08C35-AH21S01",
+    "name": "Honda Hp2 2-stroke Synthetic Racing Oil (32:1)",
+    "brand": "Honda",
+    "category": "oem-replacement",
+    "type": "oem",
+    "price": 13.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_62a75aaed57942bdab0eb307a1a0c5bf~mv2.png"
+    ],
+    "description": "Genuine OEM part 08C35-AH21S01 for Honda powersports vehicles. Verify fitment against your vehicle before ordering. Factory-formulated fluid, filter, or maintenance item. Meets the OEM specification for the machines it is listed for, providing correct protection, change intervals, and fill behavior without aftermarket guesswork.",
+    "shortDescription": "Genuine OEM maintenance part",
+    "specs": {
+      "partNumbers": [
+        "08C35-AH21S01"
+      ]
+    },
+    "fitment": [],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "oem-replacement",
+      "honda",
+      "2-stroke",
+      "synthetic",
+      "racing",
+      "(32:1)"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-2881439",
+    "sku": "2881439",
+    "name": "Rear View Angle Mirror for Polaris Ranger",
+    "brand": "Polaris",
+    "category": "body-plastics",
+    "type": "oem",
+    "price": 139.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_5b09ad344bb549798e8c4801a650adc6~mv2.webp",
+      "https://static.wixstatic.com/media/528cc8_a483e04a6e504372a5bc8835064d82c8~mv2.webp",
+      "https://static.wixstatic.com/media/528cc8_1054a9727fb04af0801f1406e542bfdb~mv2.webp"
+    ],
+    "description": "Genuine OEM part 2881439 for Polaris powersports vehicles. Covers fitment for RANGER XP 1000 NorthStar Trail Boss Edition, RANGER XP 1000 EPS SE [T1b] Nordic Pro Full Cab, RANGER XP 1000 EPS SE [T1a] Nordic Pro Full Cab, RANGER XP 1000 EPS SE [MD] Nordic Pro Full Cab, RANGER XP 1000 EPS Hunter Edition [T1a], RANGER XP 1000 EPS [T1a] and more. Factory-finished body or trim piece with the correct mounting points and hardware spacing. Painted or color-matched to the OEM finish where applicable.",
+    "shortDescription": "Factory body & trim piece",
+    "specs": {
+      "partNumbers": [
+        "2881439"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 NorthStar Trail Boss Edition"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS SE [T1b] Nordic Pro Full Cab"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS SE [T1a] Nordic Pro Full Cab"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS SE [MD] Nordic Pro Full Cab"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS Hunter Edition [T1a]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS [T1a]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER CREW XP 1000 NorthStar Trail Boss Edition"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER 1000 EPS Nordic Pro SE [T1b] Full Cab"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER 1000 EPS Nordic Pro SE [T1a] Full Cab"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER 1000 EPS [T1a]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER 1000 EPS [L7e]"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RANGER CREW XP 1000 Waterfowl Edition"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RANGER CREW XP 1000 Waterfowl Edition"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER CREW XP 1000 Waterfowl Edition"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER XP EPS 1000 Hunter Edition [T1b]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER XP EPS 1000 Hunter Edition [T1b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS ABS [T1b]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS ABS [T1b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS [T1b]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS [T1b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS [MD]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS [MD]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER DIESEL DELUXE [T1b]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER DIESEL DELUXE [T1b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER DIESEL [T1b]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER DIESEL [T1b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER CREW XP 1000 NorthStar Texas Edition"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER CREW XP 1000 NorthStar Texas Edition"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER 1000 EPS [T1b]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER 1000 EPS [T1b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER 1000 EPS [MD]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER 1000 EPS [MD]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 NORTHSTAR EDITION PREMIUM 25 5"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS Nordic Pro SE [T1b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS Nordic Pro SE [MD]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER DIESEL [MD]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER CREW XP 1000 NORTHSTAR EDITION PREMIUM 25 5"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER CREW 1000 EPS [T1b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER 1000 EPS Nordic Pro SE [T1b]"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "RANGER CREW 1000"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "body-plastics",
+      "polaris",
+      "rear",
+      "view",
+      "angle",
+      "mirror",
+      "ranger"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-U7121041",
+    "sku": "U7121041",
+    "name": "Gasgas Mc450f/ex450f/ew500f/es500 Oil Change Kit",
+    "brand": "GasGas",
+    "category": "oem-replacement",
+    "type": "oem",
+    "price": 35.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_0990a218fa144d849366e418f43936fd~mv2.jpg"
+    ],
+    "description": "Genuine OEM part U7121041 for GasGas powersports vehicles. Verify fitment against your vehicle before ordering. Factory-formulated fluid, filter, or maintenance item. Meets the OEM specification for the machines it is listed for, providing correct protection, change intervals, and fill behavior without aftermarket guesswork.",
+    "shortDescription": "Genuine OEM maintenance part",
+    "specs": {
+      "partNumbers": [
+        "U7121041"
+      ]
+    },
+    "fitment": [],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "oem-replacement",
+      "gasgas",
+      "mc450f/ex450f/ew500f/es500",
+      "change"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-2639999",
+    "sku": "2639999",
+    "name": "Polaris Asm-winch,45 HD Prod,int,rze",
+    "brand": "Polaris",
+    "category": "winch-recovery",
+    "type": "oem",
+    "price": 974.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_339553e6643c4b01bbb5473cbdf7ae84~mv2.webp"
+    ],
+    "description": "Genuine OEM part 2639999 for Polaris powersports vehicles. Covers fitment for RZR XP 1000 ULTIMATE, RZR XP4 1000 ULTIMATE. Factory winch and recovery hardware rated for ATV/UTV loads, with weather-sealed motor and synthetic or steel cable options. Includes mounting hardware sized to the intended chassis.",
+    "shortDescription": "OEM winch & recovery hardware",
+    "specs": {
+      "partNumbers": [
+        "2639999"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RZR XP 1000 ULTIMATE"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RZR XP4 1000 ULTIMATE"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": true,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "winch-recovery",
+      "polaris",
+      "asm-winch,45",
+      "prod,int,rze"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-3211143",
+    "sku": "3211143",
+    "name": "Polaris ORV Drive Belt",
+    "brand": "Polaris",
+    "category": "drivetrain",
+    "type": "oem",
+    "price": 104.99,
+    "images": [
+      "https://static.wixstatic.com/media/12b852_a0244830c24b47dbaca80bb6e98f0783~mv2.jpg"
+    ],
+    "description": "Genuine OEM part 3211143 for Polaris powersports vehicles. Covers fitment for RZR 570 EPS, RZR 570Ranger, RANGER 570 EPS, RANGER 570. Factory-spec CVT/drive belt engineered to match the original driveline geometry and compound. Delivers consistent engagement, reduced belt dust, and predictable performance across the full power range.",
+    "shortDescription": "Factory CVT/drive belt replacement",
+    "specs": {
+      "partNumbers": [
+        "3211143"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2014,
+        "make": "Polaris",
+        "model": "RZR 570 EPS"
+      },
+      {
+        "year": 2015,
+        "make": "Polaris",
+        "model": "RZR 570 EPS"
+      },
+      {
+        "year": 2016,
+        "make": "Polaris",
+        "model": "RZR 570 EPS"
+      },
+      {
+        "year": 2012,
+        "make": "Polaris",
+        "model": "RZR 570Ranger"
+      },
+      {
+        "year": 2013,
+        "make": "Polaris",
+        "model": "RZR 570Ranger"
+      },
+      {
+        "year": 2014,
+        "make": "Polaris",
+        "model": "RZR 570Ranger"
+      },
+      {
+        "year": 2015,
+        "make": "Polaris",
+        "model": "RZR 570Ranger"
+      },
+      {
+        "year": 2016,
+        "make": "Polaris",
+        "model": "RZR 570Ranger"
+      },
+      {
+        "year": 2015,
+        "make": "Polaris",
+        "model": "RANGER 570 EPS"
+      },
+      {
+        "year": 2015,
+        "make": "Polaris",
+        "model": "RANGER 570"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "drivetrain",
+      "polaris",
+      "drive",
+      "belt"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-2883828",
+    "sku": "2883828",
+    "name": "Polaris PRO Series 4,500 Lb Winch",
+    "brand": "Polaris",
+    "category": "winch-recovery",
+    "type": "oem",
+    "price": 929.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_0bb976ffa5924a63857ad11f86532d53~mv2.webp"
+    ],
+    "description": "Genuine OEM part 2883828 for Polaris powersports vehicles. Covers fitment for RZR Turbo S Velocity, RZR Turbo S Lifted Lime LE, RZR Turbo S 4 Velocity, RZR Turbo S 4 Lifted Lime LE, RZR Turbo S 4, RZR Turbo S and more. Factory winch and recovery hardware rated for ATV/UTV loads, with weather-sealed motor and synthetic or steel cable options. Includes mounting hardware sized to the intended chassis.",
+    "shortDescription": "OEM winch & recovery hardware",
+    "specs": {
+      "partNumbers": [
+        "2883828"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RZR Turbo S Velocity"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RZR Turbo S Lifted Lime LE"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RZR Turbo S 4 Velocity"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RZR Turbo S 4 Lifted Lime LE"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RZR Turbo S 4"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RZR Turbo S"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "RZR XP Turbo S Velocity"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "RZR XP Turbo S"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "RZR XP 4 Turbo S Velocity"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "RZR XP 4 Turbo S"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "RZR XP Turbo S"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "RZR XP 4 Turbo S"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "RZR XP Turbo S Velocity"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "RZR XP 4 Turbo S Velocity"
+      },
+      {
+        "year": 2018,
+        "make": "Polaris",
+        "model": "RZR XP Turbo S"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": true,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "winch-recovery",
+      "polaris",
+      "series",
+      "4,500",
+      "winch"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-3211116",
+    "sku": "3211116",
+    "name": "Polaris ORV Drive Belt",
+    "brand": "Polaris",
+    "category": "drivetrain",
+    "type": "oem",
+    "price": 99.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_3c3c3359dc334062a320e7dfd0ed72b6~mv2.png"
+    ],
+    "description": "Genuine OEM part 3211116 for Polaris powersports vehicles. Covers fitment for Sportsman 800 EFI Night Camo LE, Sportsman 800 EFI LE, Sportsman 800 EFI, Sportsman 700 EFI. Factory-spec CVT/drive belt engineered to match the original driveline geometry and compound. Delivers consistent engagement, reduced belt dust, and predictable performance across the full power range.",
+    "shortDescription": "Factory CVT/drive belt replacement",
+    "specs": {
+      "partNumbers": [
+        "3211116"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2007,
+        "make": "Polaris",
+        "model": "Sportsman 800 EFI Night Camo LE"
+      },
+      {
+        "year": 2007,
+        "make": "Polaris",
+        "model": "Sportsman 800 EFI LE"
+      },
+      {
+        "year": 2007,
+        "make": "Polaris",
+        "model": "Sportsman 800 EFI"
+      },
+      {
+        "year": 2007,
+        "make": "Polaris",
+        "model": "Sportsman 700 EFI"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "drivetrain",
+      "polaris",
+      "drive",
+      "belt"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-2889275",
+    "sku": "2889275",
+    "name": "Polaris 4,500 Lb Winch",
+    "brand": "Polaris",
+    "category": "winch-recovery",
+    "type": "oem",
+    "price": 734.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_b0cd37ffb0ff42868f82c0bb92969b4a~mv2.webp"
+    ],
+    "description": "Genuine OEM part 2889275 for Polaris powersports vehicles. Covers fitment for RANGER XD 1500 NorthStar Edition Ultimate, RANGER XD 1500 NorthStar Edition Premium, RANGER CREW XD 1500 NorthStar Edition Ultimate, RANGER CREW XD 1500 NorthStar Edition Premium, RANGER XD 1500 Premium, RANGER CREW XD 1500 Premium. Factory winch and recovery hardware rated for ATV/UTV loads, with weather-sealed motor and synthetic or steel cable options. Includes mounting hardware sized to the intended chassis.",
+    "shortDescription": "OEM winch & recovery hardware",
+    "specs": {
+      "partNumbers": [
+        "2889275"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RANGER XD 1500 NorthStar Edition Ultimate"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER XD 1500 NorthStar Edition Ultimate"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RANGER XD 1500 NorthStar Edition Premium"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER XD 1500 NorthStar Edition Premium"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RANGER CREW XD 1500 NorthStar Edition Ultimate"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER CREW XD 1500 NorthStar Edition Ultimate"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RANGER CREW XD 1500 NorthStar Edition Premium"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER CREW XD 1500 NorthStar Edition Premium"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RANGER XD 1500 Premium"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RANGER CREW XD 1500 Premium"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": true,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "winch-recovery",
+      "polaris",
+      "4,500",
+      "winch"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-2890402",
+    "sku": "2890402",
+    "name": "Polaris PRO Series 4,500 Lb Winch",
+    "brand": "Polaris",
+    "category": "winch-recovery",
+    "type": "oem",
+    "price": 974.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_cdb703b82956446b9964ba18ff20e009~mv2.webp"
+    ],
+    "description": "Genuine OEM part 2890402 for Polaris powersports vehicles. Covers fitment for RZR Pro R Sport, RZR Pro R 4 Sport, RZR Pro S Ultimate, RZR Pro S Sport, RZR Pro S 4 Ultimate, RZR Pro S 4 Sport and more. Factory winch and recovery hardware rated for ATV/UTV loads, with weather-sealed motor and synthetic or steel cable options. Includes mounting hardware sized to the intended chassis.",
+    "shortDescription": "OEM winch & recovery hardware",
+    "specs": {
+      "partNumbers": [
+        "2890402"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR Pro R Sport"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RZR Pro R Sport"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR Pro R 4 Sport"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RZR Pro R 4 Sport"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RZR Pro S Ultimate"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RZR Pro S Ultimate"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RZR Pro S Sport"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RZR Pro S Sport"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RZR Pro S 4 Ultimate"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RZR Pro S 4 Ultimate"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RZR Pro S 4 Sport"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RZR Pro S 4 Sport"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RZR Pro S Premium"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RZR Pro S 4 Premium"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RZR Pro R Race Replica Edition"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RZR Pro R Factory Armored Series"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RZR Pro R 4 Race Replica Edition"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RZR Pro R 4 Factory Armored Series"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR Pro R Troy Lee Designs Edition"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR Pro R 4 Troy Lee Designs Edition"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR Pro R Ultimate"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR Pro R Ultimate"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR Pro R Ultimate"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RZR Pro R Ultimate"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR Pro R 4 Ultimate"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR Pro R 4 Ultimate"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR Pro R 4 Ultimate"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RZR Pro R 4 Ultimate"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR Turbo R Ultimate"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR Turbo R Ultimate"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR Turbo R Ultimate"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR Turbo R Sport"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR Turbo R Sport"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR Turbo R Sport"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR Turbo R Premium"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR Turbo R Premium"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR Turbo R Premium"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR Turbo R 4 Ultimate"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR Turbo R 4 Ultimate"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR Turbo R 4 Ultimate"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": true,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "winch-recovery",
+      "polaris",
+      "series",
+      "4,500",
+      "winch"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-08732-CBL49",
+    "sku": "08732-CBL49",
+    "name": "Honda Contact/brake Cleaner",
+    "brand": "Honda",
+    "category": "brakes",
+    "type": "oem",
+    "price": 5.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_019db8f97b804931b2268505f972f48e~mv2.png"
+    ],
+    "description": "Genuine OEM part 08732-CBL49 for Honda powersports vehicles. Verify fitment against your vehicle before ordering. Factory brake component with the original friction compound and hardware specs. Designed to match the vehicle's braking system for consistent, dependable stopping.",
+    "shortDescription": "Factory brake component",
+    "specs": {
+      "partNumbers": [
+        "08732-CBL49"
+      ]
+    },
+    "fitment": [],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "brakes",
+      "honda",
+      "contact/brake",
+      "cleaner"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-3211180",
+    "sku": "3211180",
+    "name": "Polaris ORV Drive Belt",
+    "brand": "Polaris",
+    "category": "drivetrain",
+    "type": "oem",
+    "price": 199.99,
+    "images": [
+      "https://static.wixstatic.com/media/12b852_1fcc9ca47f0d4ad88ea0c2b834e3e23c~mv2.jpg"
+    ],
+    "description": "Genuine OEM part 3211180 for Polaris powersports vehicles. Covers fitment for GENERAL XP 4 1000 Ultimate, GENERAL XP 4 1000 Sport, GENERAL XP 4 1000 Premium, GENERAL XP 1000 Ultimate, GENERAL XP 1000 Sport, GENERAL XP 1000 Premium and more. Factory-spec CVT/drive belt engineered to match the original driveline geometry and compound. Delivers consistent engagement, reduced belt dust, and predictable performance across the full power range.",
+    "shortDescription": "Factory CVT/drive belt replacement",
+    "specs": {
+      "partNumbers": [
+        "3211180"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "GENERAL XP 4 1000 Ultimate"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "GENERAL XP 4 1000 Ultimate"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "GENERAL XP 4 1000 Sport"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "GENERAL XP 4 1000 Sport"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "GENERAL XP 4 1000 Premium"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "GENERAL XP 4 1000 Premium"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "GENERAL XP 1000 Ultimate"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "GENERAL XP 1000 Ultimate"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "GENERAL XP 1000 Sport"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "GENERAL XP 1000 Sport"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "GENERAL XP 1000 Premium"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "GENERAL XP 1000 Premium"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "GENERAL XP 4 1000 Troy Lee Designs Edition"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "GENERAL XP 4 1000 Trailhead Edition"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "GENERAL XP 4 1000 Deluxe RIDE COMMAND Edition"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "GENERAL XP 4 1000 Deluxe"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "GENERAL XP 1000 Troy Lee Designs Edition"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "GENERAL XP 1000 Trailhead Edition"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "GENERAL XP 1000 Deluxe RIDE COMMAND Edition"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "GENERAL XP 1000 Deluxe"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "Polaris GENERAL XP 4 1000 Pursuit Edition"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "Polaris GENERAL XP 4 1000"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "Polaris GENERAL XP 1000 Pursuit Edition"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "Polaris GENERAL XP 1000"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "general-xp-4-1000-factory-custom-edition"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "general-xp-1000-factory-custom-edition"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "General XP 1000"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "General XP 1000"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "Polaris GENERAL XP 4 1000 Deluxe"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "Polaris GENERAL XP 1000 Deluxe"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "General XP 4 1000RZR"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RZR Trail S 1000 Ultimate"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR Trail S 1000 Ultimate"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR Trail S 1000 Ultimate"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR XP 4 1000 Ultimate"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR XP 1000 Ultimate"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR Trail S Ultimate"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR Trail S Premium"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR XP 4 1000 Sport"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR XP 4 1000 Sport"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "drivetrain",
+      "polaris",
+      "drive",
+      "belt"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-2884606",
+    "sku": "2884606",
+    "name": "Accent Panel Light Kit Slingshot",
+    "brand": "Slingshot",
+    "category": "lighting",
+    "type": "oem",
+    "price": 209.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_51adc8edd9dd4df0827811a274a6eebd~mv2.webp"
+    ],
+    "description": "Genuine OEM part 2884606 for Slingshot powersports vehicles. Covers fitment for Slingshot SLR, Slingshot S with Technology Package 1, Slingshot S, Slingshot S with Technology Package I, Slingshot SL, Slingshot GT. Factory lighting component with matched mounting and connectors. Plug-and-play with the stock harness, giving the correct beam pattern and legal road/off-road output.",
+    "shortDescription": "Factory lighting component",
+    "specs": {
+      "partNumbers": [
+        "2884606"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2022,
+        "make": "Slingshot",
+        "model": "Slingshot SLR"
+      },
+      {
+        "year": 2023,
+        "make": "Slingshot",
+        "model": "Slingshot SLR"
+      },
+      {
+        "year": 2024,
+        "make": "Slingshot",
+        "model": "Slingshot SLR"
+      },
+      {
+        "year": 2022,
+        "make": "Slingshot",
+        "model": "Slingshot S with Technology Package 1"
+      },
+      {
+        "year": 2023,
+        "make": "Slingshot",
+        "model": "Slingshot S with Technology Package 1"
+      },
+      {
+        "year": 2024,
+        "make": "Slingshot",
+        "model": "Slingshot S with Technology Package 1"
+      },
+      {
+        "year": 2021,
+        "make": "Slingshot",
+        "model": "Slingshot S"
+      },
+      {
+        "year": 2022,
+        "make": "Slingshot",
+        "model": "Slingshot S"
+      },
+      {
+        "year": 2023,
+        "make": "Slingshot",
+        "model": "Slingshot S"
+      },
+      {
+        "year": 2024,
+        "make": "Slingshot",
+        "model": "Slingshot S"
+      },
+      {
+        "year": 2021,
+        "make": "Slingshot",
+        "model": "Slingshot S with Technology Package I"
+      },
+      {
+        "year": 2020,
+        "make": "Slingshot",
+        "model": "Slingshot SL"
+      },
+      {
+        "year": 2021,
+        "make": "Slingshot",
+        "model": "Slingshot SL"
+      },
+      {
+        "year": 2022,
+        "make": "Slingshot",
+        "model": "Slingshot SL"
+      },
+      {
+        "year": 2023,
+        "make": "Slingshot",
+        "model": "Slingshot SL"
+      },
+      {
+        "year": 2024,
+        "make": "Slingshot",
+        "model": "Slingshot SL"
+      },
+      {
+        "year": 2020,
+        "make": "Slingshot",
+        "model": "Slingshot GT"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "lighting",
+      "slingshot",
+      "accent",
+      "panel",
+      "light"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-0SX50-HL3-A00",
+    "sku": "0SX50-HL3-A00",
+    "name": "Honda Oil Change Kit 2014-2026 Pioneer 700",
+    "brand": "Honda",
+    "category": "oem-replacement",
+    "type": "oem",
+    "price": 71.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_0c1bee81d40a4033bab3402825c85a7c~mv2.jpg"
+    ],
+    "description": "Genuine OEM part 0SX50-HL3-A00 for Honda powersports vehicles. Verify fitment against your vehicle before ordering. Factory-formulated fluid, filter, or maintenance item. Meets the OEM specification for the machines it is listed for, providing correct protection, change intervals, and fill behavior without aftermarket guesswork.",
+    "shortDescription": "Genuine OEM maintenance part",
+    "specs": {
+      "partNumbers": [
+        "0SX50-HL3-A00"
+      ]
+    },
+    "fitment": [],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "oem-replacement",
+      "honda",
+      "change",
+      "2014-2026",
+      "pioneer"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-08203-0004",
+    "sku": "08203-0004",
+    "name": "Honda Dot 4 Brake Fluid 12oz",
+    "brand": "Honda",
+    "category": "brakes",
+    "type": "oem",
+    "price": 6.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_b33815aed96b4ee18ff36bfec684e0e2~mv2.jpg"
+    ],
+    "description": "Genuine OEM part 08203-0004 for Honda powersports vehicles. Verify fitment against your vehicle before ordering. Factory brake component with the original friction compound and hardware specs. Designed to match the vehicle's braking system for consistent, dependable stopping.",
+    "shortDescription": "Factory brake component",
+    "specs": {
+      "partNumbers": [
+        "08203-0004"
+      ]
+    },
+    "fitment": [],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "brakes",
+      "honda",
+      "brake",
+      "fluid",
+      "12oz"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-3211135",
+    "sku": "3211135",
+    "name": "Polaris ORV Drive Belt",
+    "brand": "Polaris",
+    "category": "drivetrain",
+    "type": "oem",
+    "price": 149.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_3c3c3359dc334062a320e7dfd0ed72b6~mv2.png"
+    ],
+    "description": "Genuine OEM part 3211135 for Polaris powersports vehicles. Covers fitment for RANGER CREW DIESEL, RANGER DIESEL. Factory-spec CVT/drive belt engineered to match the original driveline geometry and compound. Delivers consistent engagement, reduced belt dust, and predictable performance across the full power range.",
+    "shortDescription": "Factory CVT/drive belt replacement",
+    "specs": {
+      "partNumbers": [
+        "3211135"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2012,
+        "make": "Polaris",
+        "model": "RANGER CREW DIESEL"
+      },
+      {
+        "year": 2013,
+        "make": "Polaris",
+        "model": "RANGER CREW DIESEL"
+      },
+      {
+        "year": 2014,
+        "make": "Polaris",
+        "model": "RANGER CREW DIESEL"
+      },
+      {
+        "year": 2011,
+        "make": "Polaris",
+        "model": "RANGER DIESEL"
+      },
+      {
+        "year": 2012,
+        "make": "Polaris",
+        "model": "RANGER DIESEL"
+      },
+      {
+        "year": 2013,
+        "make": "Polaris",
+        "model": "RANGER DIESEL"
+      },
+      {
+        "year": 2014,
+        "make": "Polaris",
+        "model": "RANGER DIESEL"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "drivetrain",
+      "polaris",
+      "drive",
+      "belt"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-3211162",
+    "sku": "3211162",
+    "name": "Drive Belt",
+    "brand": "Polaris",
+    "category": "drivetrain",
+    "type": "oem",
+    "price": 149.99,
+    "images": [
+      "https://static.wixstatic.com/media/12b852_dfd65cc59fa0412c9134beba55820453~mv2.jpg"
+    ],
+    "description": "Genuine OEM part 3211162 for Polaris powersports vehicles. Covers fitment for RANGER 6x6 800, RANGER 6x6, RANGER CREW 800 EFI, RANGER 800 EPS, RANGER 800 EFI, RANGER 800 EPS Midsize and more. Factory-spec CVT/drive belt engineered to match the original driveline geometry and compound. Delivers consistent engagement, reduced belt dust, and predictable performance across the full power range.",
+    "shortDescription": "Factory CVT/drive belt replacement",
+    "specs": {
+      "partNumbers": [
+        "3211162"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2014,
+        "make": "Polaris",
+        "model": "RANGER 6x6 800"
+      },
+      {
+        "year": 2016,
+        "make": "Polaris",
+        "model": "RANGER 6x6 800"
+      },
+      {
+        "year": 2017,
+        "make": "Polaris",
+        "model": "RANGER 6x6 800"
+      },
+      {
+        "year": 2015,
+        "make": "Polaris",
+        "model": "RANGER 6x6"
+      },
+      {
+        "year": 2010,
+        "make": "Polaris",
+        "model": "RANGER CREW 800 EFI"
+      },
+      {
+        "year": 2011,
+        "make": "Polaris",
+        "model": "RANGER CREW 800 EFI"
+      },
+      {
+        "year": 2014,
+        "make": "Polaris",
+        "model": "RANGER CREW 800 EFI"
+      },
+      {
+        "year": 2014,
+        "make": "Polaris",
+        "model": "RANGER 800 EPS"
+      },
+      {
+        "year": 2014,
+        "make": "Polaris",
+        "model": "RANGER 800 EFI"
+      },
+      {
+        "year": 2013,
+        "make": "Polaris",
+        "model": "RANGER 800 EPS Midsize"
+      },
+      {
+        "year": 2014,
+        "make": "Polaris",
+        "model": "RANGER 800 EPS Midsize"
+      },
+      {
+        "year": 2013,
+        "make": "Polaris",
+        "model": "RANGER 800 EFI Midsize"
+      },
+      {
+        "year": 2014,
+        "make": "Polaris",
+        "model": "RANGER 800 EFI Midsize"
+      },
+      {
+        "year": 2013,
+        "make": "Polaris",
+        "model": "RANGER 800 HD"
+      },
+      {
+        "year": 2012,
+        "make": "Polaris",
+        "model": "RANGER CREW 800"
+      },
+      {
+        "year": 2013,
+        "make": "Polaris",
+        "model": "RANGER CREW 800"
+      },
+      {
+        "year": 2012,
+        "make": "Polaris",
+        "model": "RANGER XP 800 HD EPS"
+      },
+      {
+        "year": 2011,
+        "make": "Polaris",
+        "model": "RANGER 6X6 800"
+      },
+      {
+        "year": 2012,
+        "make": "Polaris",
+        "model": "RANGER 6X6 800"
+      },
+      {
+        "year": 2013,
+        "make": "Polaris",
+        "model": "RANGER 6X6 800"
+      },
+      {
+        "year": 2011,
+        "make": "Polaris",
+        "model": "RANGER XP 800"
+      },
+      {
+        "year": 2012,
+        "make": "Polaris",
+        "model": "RANGER XP 800"
+      },
+      {
+        "year": 2010,
+        "make": "Polaris",
+        "model": "RANGER CREW 800 EPS"
+      },
+      {
+        "year": 2011,
+        "make": "Polaris",
+        "model": "RANGER CREW 800 EPS"
+      },
+      {
+        "year": 2012,
+        "make": "Polaris",
+        "model": "RANGER CREW 800 EPS"
+      },
+      {
+        "year": 2013,
+        "make": "Polaris",
+        "model": "RANGER CREW 800 EPS"
+      },
+      {
+        "year": 2014,
+        "make": "Polaris",
+        "model": "RANGER CREW 800 EPS"
+      },
+      {
+        "year": 2010,
+        "make": "Polaris",
+        "model": "RANGER XP 800 EPS"
+      },
+      {
+        "year": 2011,
+        "make": "Polaris",
+        "model": "RANGER XP 800 EPS"
+      },
+      {
+        "year": 2012,
+        "make": "Polaris",
+        "model": "RANGER XP 800 EPS"
+      },
+      {
+        "year": 2010,
+        "make": "Polaris",
+        "model": "RANGER 800 HD EPS"
+      },
+      {
+        "year": 2011,
+        "make": "Polaris",
+        "model": "RANGER 800 HD EPS"
+      },
+      {
+        "year": 2010,
+        "make": "Polaris",
+        "model": "RANGER XP 800 EFI"
+      },
+      {
+        "year": 2010,
+        "make": "Polaris",
+        "model": "RANGER 6X6 800 EFIRZR"
+      },
+      {
+        "year": 2011,
+        "make": "Polaris",
+        "model": "RZR 4 800 EPS"
+      },
+      {
+        "year": 2014,
+        "make": "Polaris",
+        "model": "RZR 4 800 EPS"
+      },
+      {
+        "year": 2014,
+        "make": "Polaris",
+        "model": "RZR S 800 EPS"
+      },
+      {
+        "year": 2014,
+        "make": "Polaris",
+        "model": "RZR 4 800 EFI"
+      },
+      {
+        "year": 2011,
+        "make": "Polaris",
+        "model": "RZR 800 EPS"
+      },
+      {
+        "year": 2012,
+        "make": "Polaris",
+        "model": "RZR 800 EPS"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "drivetrain",
+      "polaris",
+      "drive",
+      "belt"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-3211186",
+    "sku": "3211186",
+    "name": "Polaris ORV Drive Belt",
+    "brand": "Polaris",
+    "category": "drivetrain",
+    "type": "oem",
+    "price": 199.99,
+    "images": [
+      "https://static.wixstatic.com/media/12b852_018fa4dbeac74dd4b7a37fdea5ccf81b~mv2.jpg"
+    ],
+    "description": "Genuine OEM part 3211186 for Polaris powersports vehicles. Covers fitment for RZR XP 4 1000 Ultimate, RZR XP 4 1000 Sport, RZR XP 4 1000 Premium, RZR XP 1000 Ultimate, RZR XP 1000 Sport, RZR XP 1000 Premium and more. Factory-spec CVT/drive belt engineered to match the original driveline geometry and compound. Delivers consistent engagement, reduced belt dust, and predictable performance across the full power range.",
+    "shortDescription": "Factory CVT/drive belt replacement",
+    "specs": {
+      "partNumbers": [
+        "3211186"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR XP 4 1000 Ultimate"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR XP 4 1000 Sport"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR XP 4 1000 Premium"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR XP 1000 Ultimate"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR XP 1000 Sport"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR XP 1000 Premium"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "RZR RS1"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RZR RS1"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR RS1"
+      },
+      {
+        "year": 2018,
+        "make": "Polaris",
+        "model": "RZR RS1"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "RZR RS1"
+      },
+      {
+        "year": 2016,
+        "make": "Polaris",
+        "model": "RZR XP Turbo EPS"
+      },
+      {
+        "year": 2016,
+        "make": "Polaris",
+        "model": "RZR XP 4 Turbo EPS Expedition"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "Polaris XPEDITION XP Ultimate"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "Polaris XPEDITION XP NorthStar"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "Polaris XPEDITION XP 5 Ultimate"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "Polaris XPEDITION XP 5 NorthStar"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "Polaris XPEDITION ADV Ultimate"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "Polaris XPEDITION ADV NorthStar"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "Polaris XPEDITION ADV 5 Ultimate"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "Polaris XPEDITION ADV 5 NorthStar Ranger"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "INTL RANGER Diesel EU"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "INTL RANGER Diesel EU"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RANGER CREW XP 1000 NorthStar Big Game Edition"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "INTL RANGER XP 1000 Premium"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 NorthStar Edition Ultimate"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 NorthStar Edition Ultimate"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 NorthStar Edition Ultimate"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 NorthStar Edition Ultimate"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 NorthStar Edition Trail Boss"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 NorthStar Edition Trail Boss"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 NorthStar Edition Trail Boss"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 NorthStar Edition Trail Boss"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 NorthStar Edition Premium"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 NorthStar Edition Premium"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 NorthStar Edition Premium"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 NorthStar Edition Premium"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RANGER CREW XP 1000 NorthStar Edition Ultimate"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RANGER CREW XP 1000 NorthStar Edition Ultimate"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RANGER CREW XP 1000 NorthStar Edition Ultimate"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "drivetrain",
+      "polaris",
+      "drive",
+      "belt"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-0SX50-HL4-A00",
+    "sku": "0SX50-HL4-A00",
+    "name": "Honda Oil Change Kit 2016-2026 Pioneer 1000",
+    "brand": "Honda",
+    "category": "oem-replacement",
+    "type": "oem",
+    "price": 114.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_0c1bee81d40a4033bab3402825c85a7c~mv2.jpg"
+    ],
+    "description": "Genuine OEM part 0SX50-HL4-A00 for Honda powersports vehicles. Verify fitment against your vehicle before ordering. Factory-formulated fluid, filter, or maintenance item. Meets the OEM specification for the machines it is listed for, providing correct protection, change intervals, and fill behavior without aftermarket guesswork.",
+    "shortDescription": "Genuine OEM maintenance part",
+    "specs": {
+      "partNumbers": [
+        "0SX50-HL4-A00"
+      ]
+    },
+    "fitment": [],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "oem-replacement",
+      "honda",
+      "change",
+      "2016-2026",
+      "pioneer",
+      "1000"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-S15-19OILKIT",
+    "sku": "S15-19OILKIT",
+    "name": "Polaris Slingshot 2015 - 2019 Oil Change Kit",
+    "brand": "Polaris",
+    "category": "oem-replacement",
+    "type": "oem",
+    "price": 102.99,
+    "images": [
+      "https://static.wixstatic.com/media/12b852_a96340452f5c41e0a178a2f8fdfebec1~mv2.jpg"
+    ],
+    "description": "Genuine OEM part S15-19OILKIT for Polaris powersports vehicles. Verify fitment against your vehicle before ordering. Factory-formulated fluid, filter, or maintenance item. Meets the OEM specification for the machines it is listed for, providing correct protection, change intervals, and fill behavior without aftermarket guesswork.",
+    "shortDescription": "Genuine OEM maintenance part",
+    "specs": {
+      "partNumbers": [
+        "S15-19OILKIT"
+      ]
+    },
+    "fitment": [],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "oem-replacement",
+      "polaris",
+      "slingshot",
+      "2015",
+      "2019",
+      "change"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-2885095",
+    "sku": "2885095",
+    "name": "Polaris 3,500 Lb Winch",
+    "brand": "Polaris",
+    "category": "winch-recovery",
+    "type": "oem",
+    "price": 504.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_836aa8fd73f64f8eab2b10caefb70cee~mv2.webp"
+    ],
+    "description": "Genuine OEM part 2885095 for Polaris powersports vehicles. Covers fitment for RANGER SP 570 EPS Hunter Edition [T1a], RANGER SP 570 EPS [T1b] Nordic Pro Full Cab, RANGER SP 570 EPS [T1a] Nordic Pro Full Cab, RANGER SP 570 EPS [T1a], RANGER SP 570 EPS Nordic Pro [L7e], RANGER SP 570 EPS Hunter Edition [T1b] and more. Factory winch and recovery hardware rated for ATV/UTV loads, with weather-sealed motor and synthetic or steel cable options. Includes mounting hardware sized to the intended chassis.",
+    "shortDescription": "OEM winch & recovery hardware",
+    "specs": {
+      "partNumbers": [
+        "2885095"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER SP 570 EPS Hunter Edition [T1a]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER SP 570 EPS [T1b] Nordic Pro Full Cab"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER SP 570 EPS [T1a] Nordic Pro Full Cab"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER SP 570 EPS [T1a]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER SP 570 EPS Nordic Pro [L7e]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER SP 570 EPS Nordic Pro [L7e]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER SP 570 EPS Hunter Edition [T1b]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER SP 570 EPS Hunter Edition [T1b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER SP 570 EPS [MD]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER SP 570 EPS [MD]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER SP 570 EPS [L7e]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER SP 570 EPS [L7e]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER SP 570 HD"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER SP 570 EPS Nordic Pro [T1b]"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RANGER SP 570 EPS [T1b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER SP 570 EPS [T1b]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER SP 570 EPS [T1b]"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RANGER SP 570 HUNTER EDITION [ZUG/LOF]"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RANGER SP 570 EPS [ZUG/LOF]"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RANGER SP 570 Premium"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RANGER SP 570 Premium"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RANGER SP 570 Premium"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER SP 570 Premium"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER SP 570 Premium"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RANGER SP 570 NorthStar Edition"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RANGER SP 570 NorthStar Edition"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RANGER SP 570 NorthStar Edition"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER SP 570 NorthStar Edition"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER SP 570 NorthStar Edition"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RANGER SP 570"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RANGER SP 570"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RANGER SP 570"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER SP 570"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER SP 570"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RANGER CREW SP 570 Premium"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RANGER CREW SP 570 Premium"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RANGER CREW SP 570 Premium"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER CREW SP 570 Premium"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER CREW SP 570 Premium"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RANGER CREW SP 570 NorthStar Edition"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": true,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "winch-recovery",
+      "polaris",
+      "3,500",
+      "winch"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-U7021041",
+    "sku": "U7021041",
+    "name": "Husqvarna Fc/fs/fx 450, Fe/fes 450/501, Fe/fes250/350",
+    "brand": "Husqvarna",
+    "category": "oem-replacement",
+    "type": "oem",
+    "price": 35.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_a667d99b95ee45e8bab0fbfe1fed5fce~mv2.jpg"
+    ],
+    "description": "Genuine OEM part U7021041 for Husqvarna powersports vehicles. Verify fitment against your vehicle before ordering. Factory-formulated fluid, filter, or maintenance item. Meets the OEM specification for the machines it is listed for, providing correct protection, change intervals, and fill behavior without aftermarket guesswork.",
+    "shortDescription": "Genuine OEM maintenance part",
+    "specs": {
+      "partNumbers": [
+        "U7021041"
+      ]
+    },
+    "fitment": [],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "oem-replacement",
+      "husqvarna",
+      "fc/fs/fx",
+      "450,",
+      "fe/fes",
+      "450/501,",
+      "fe/fes250/350"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-2890056",
+    "sku": "2890056",
+    "name": "Polaris Sportsman 600/700/800, Polaris Ranger 570/700/800, Rzr 570/800 Oil Kit",
+    "brand": "Polaris",
+    "category": "oem-replacement",
+    "type": "oem",
+    "price": 54.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_a689527e4fc942caa81a811c9e8b99aa~mv2.jpg"
+    ],
+    "description": "Genuine OEM part 2890056 for Polaris powersports vehicles. Verify fitment against your vehicle before ordering. Factory-formulated fluid, filter, or maintenance item. Meets the OEM specification for the machines it is listed for, providing correct protection, change intervals, and fill behavior without aftermarket guesswork.",
+    "shortDescription": "Genuine OEM maintenance part",
+    "specs": {
+      "partNumbers": [
+        "2890056"
+      ]
+    },
+    "fitment": [],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "oem-replacement",
+      "polaris",
+      "sportsman",
+      "600/700/800,",
+      "ranger",
+      "570/700/800,",
+      "570/800"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-2889694",
+    "sku": "2889694",
+    "name": "Polaris PRO Series 4,500 Ib. Winch",
+    "brand": "Polaris",
+    "category": "winch-recovery",
+    "type": "oem",
+    "price": 974.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_f917758bc88544b7899b77ffebd3e1d4~mv2.webp"
+    ],
+    "description": "Genuine OEM part 2889694 for Polaris powersports vehicles. Covers fitment for RANGER XP 1000 NorthStar Trail Boss Edition, RANGER XP 1000 EPS SE [T1b] Nordic Pro Full Cab, RANGER XP 1000 EPS SE [T1a] Nordic Pro Full Cab, RANGER XP 1000 EPS SE [MD] Nordic Pro Full Cab, RANGER XP 1000 EPS Hunter Edition [T1a], RANGER XP 1000 EPS [T1a] and more. Factory winch and recovery hardware rated for ATV/UTV loads, with weather-sealed motor and synthetic or steel cable options. Includes mounting hardware sized to the intended chassis.",
+    "shortDescription": "OEM winch & recovery hardware",
+    "specs": {
+      "partNumbers": [
+        "2889694"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 NorthStar Trail Boss Edition"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS SE [T1b] Nordic Pro Full Cab"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS SE [T1a] Nordic Pro Full Cab"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS SE [MD] Nordic Pro Full Cab"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS Hunter Edition [T1a]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS [T1a]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER CREW XP 1000 NorthStar Trail Boss Edition"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER 1000 EPS Nordic Pro SE [T1b] Full Cab"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER 1000 EPS Nordic Pro SE [T1a] Full Cab"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER 1000 EPS [T1a]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER 1000 EPS [L7e]"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RANGER CREW XP 1000 Waterfowl Edition"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RANGER CREW XP 1000 Waterfowl Edition"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER CREW XP 1000 Waterfowl Edition"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER XP EPS 1000 Hunter Edition [T1b]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER XP EPS 1000 Hunter Edition [T1b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS ABS [T1b]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS ABS [T1b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS [T1b]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS [T1b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS [MD]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS [MD]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER DIESEL DELUXE [T1b]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER DIESEL DELUXE [T1b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER DIESEL [T1b]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER DIESEL [T1b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER CREW XP 1000 NorthStar Texas Edition"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER CREW XP 1000 NorthStar Texas Edition"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER 1000 EPS [T1b]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER 1000 EPS [T1b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER 1000 EPS [MD]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER 1000 EPS [MD]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 NORTHSTAR EDITION PREMIUM 25 5"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS Nordic Pro SE [T1b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS Nordic Pro SE [MD]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER DIESEL [MD]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER CREW XP 1000 NORTHSTAR EDITION PREMIUM 25 5"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER CREW 1000 EPS [T1b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER 1000 EPS Nordic Pro SE [T1b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "INTL RANGER CREW XP 1000 EPS [T1b]"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": true,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "winch-recovery",
+      "polaris",
+      "series",
+      "4,500",
+      "winch"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-3211202",
+    "sku": "3211202",
+    "name": "Polaris ORV Drive Belt",
+    "brand": "Polaris",
+    "category": "drivetrain",
+    "type": "oem",
+    "price": 199.99,
+    "images": [
+      "https://static.wixstatic.com/media/12b852_c7c7e7de549f4248a8f71aa542e7ad92~mv2.jpg"
+    ],
+    "description": "Genuine OEM part 3211202 for Polaris powersports vehicles. Covers fitment for RZR PRO XP Ultimate, RZR PRO XP Premium, RZR PRO XP 4 Ultimate, RZR PRO XP 4 Premium, RZR Turbo R Ultimate, RZR Turbo R Sport and more. Factory-spec CVT/drive belt engineered to match the original driveline geometry and compound. Delivers consistent engagement, reduced belt dust, and predictable performance across the full power range.",
+    "shortDescription": "Factory CVT/drive belt replacement",
+    "specs": {
+      "partNumbers": [
+        "3211202"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "RZR PRO XP Ultimate"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR PRO XP Ultimate"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR PRO XP Ultimate"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR PRO XP Ultimate"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "RZR PRO XP Premium"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR PRO XP Premium"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR PRO XP Premium"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR PRO XP Premium"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "RZR PRO XP 4 Ultimate"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR PRO XP 4 Ultimate"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR PRO XP 4 Ultimate"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR PRO XP 4 Ultimate"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "RZR PRO XP 4 Premium"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR PRO XP 4 Premium"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR PRO XP 4 Premium"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR PRO XP 4 Premium"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR Turbo R Ultimate"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR Turbo R Ultimate"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR Turbo R Ultimate"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR Turbo R Sport"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR Turbo R Sport"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR Turbo R Sport"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR Turbo R Premium"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR Turbo R Premium"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR Turbo R Premium"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR Turbo R 4 Sport"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR Turbo R 4 Sport"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR Turbo R 4 Sport"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR Turbo R 4 Premium"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR Turbo R 4 Premium"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR Turbo R 4 Premium"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR PRO XP Sport"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR PRO XP Sport"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR PRO XP Sport"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR PRO XP 4 Sport"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR PRO XP 4 Sport"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR PRO XP 4 Sport"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR Turbo R 4 Ultimate"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR Turbo R 4 Ultimate"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR Pro XP Ultimate Rockford Fosgate Limited Edition"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "drivetrain",
+      "polaris",
+      "drive",
+      "belt"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-0SX50-HL5-A00",
+    "sku": "0SX50-HL5-A00",
+    "name": "Honda Oil Change Kit 2021-2026 Pioneer 520",
+    "brand": "Honda",
+    "category": "oem-replacement",
+    "type": "oem",
+    "price": 62.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_0c1bee81d40a4033bab3402825c85a7c~mv2.jpg"
+    ],
+    "description": "Genuine OEM part 0SX50-HL5-A00 for Honda powersports vehicles. Verify fitment against your vehicle before ordering. Factory-formulated fluid, filter, or maintenance item. Meets the OEM specification for the machines it is listed for, providing correct protection, change intervals, and fill behavior without aftermarket guesswork.",
+    "shortDescription": "Genuine OEM maintenance part",
+    "specs": {
+      "partNumbers": [
+        "0SX50-HL5-A00"
+      ]
+    },
+    "fitment": [],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "oem-replacement",
+      "honda",
+      "change",
+      "2021-2026",
+      "pioneer"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-3211069",
+    "sku": "3211069",
+    "name": "Polaris ORV Drive Belt",
+    "brand": "Polaris",
+    "category": "drivetrain",
+    "type": "oem",
+    "price": 84.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_3c3c3359dc334062a320e7dfd0ed72b6~mv2.png"
+    ],
+    "description": "Genuine OEM part 3211069 for Polaris powersports vehicles. Covers fitment for ATP 500 4X4, Sportsman 700, Magnum 330 4X4, Magnum 500, Worker 500, Sportsman 500 HO and more. Factory-spec CVT/drive belt engineered to match the original driveline geometry and compound. Delivers consistent engagement, reduced belt dust, and predictable performance across the full power range.",
+    "shortDescription": "Factory CVT/drive belt replacement",
+    "specs": {
+      "partNumbers": [
+        "3211069"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2004,
+        "make": "Polaris",
+        "model": "ATP 500 4X4"
+      },
+      {
+        "year": 2005,
+        "make": "Polaris",
+        "model": "ATP 500 4X4"
+      },
+      {
+        "year": 2004,
+        "make": "Polaris",
+        "model": "Sportsman 700"
+      },
+      {
+        "year": 2004,
+        "make": "Polaris",
+        "model": "Magnum 330 4X4"
+      },
+      {
+        "year": 1999,
+        "make": "Polaris",
+        "model": "Magnum 500"
+      },
+      {
+        "year": 2000,
+        "make": "Polaris",
+        "model": "Magnum 500"
+      },
+      {
+        "year": 2002,
+        "make": "Polaris",
+        "model": "Magnum 500"
+      },
+      {
+        "year": 2002,
+        "make": "Polaris",
+        "model": "Worker 500"
+      },
+      {
+        "year": 2002,
+        "make": "Polaris",
+        "model": "Sportsman 500 HO"
+      },
+      {
+        "year": 2002,
+        "make": "Polaris",
+        "model": "Magnum 500 RMK"
+      },
+      {
+        "year": 2000,
+        "make": "Polaris",
+        "model": "Magnum 325 4X4"
+      },
+      {
+        "year": 2001,
+        "make": "Polaris",
+        "model": "Magnum 325 4X4"
+      },
+      {
+        "year": 2000,
+        "make": "Polaris",
+        "model": "Magnum 325 2X4"
+      },
+      {
+        "year": 1999,
+        "make": "Polaris",
+        "model": "DIESEL"
+      },
+      {
+        "year": 2000,
+        "make": "Polaris",
+        "model": "DIESEL"
+      },
+      {
+        "year": 2001,
+        "make": "Polaris",
+        "model": "DIESEL"
+      },
+      {
+        "year": 1998,
+        "make": "Polaris",
+        "model": "Sportsman 500"
+      },
+      {
+        "year": 1999,
+        "make": "Polaris",
+        "model": "Sportsman 500"
+      },
+      {
+        "year": 2000,
+        "make": "Polaris",
+        "model": "Sportsman 500"
+      },
+      {
+        "year": 2001,
+        "make": "Polaris",
+        "model": "Sportsman 500"
+      },
+      {
+        "year": 1998,
+        "make": "Polaris",
+        "model": "Magnum 4X4"
+      },
+      {
+        "year": 1998,
+        "make": "Polaris",
+        "model": "Big Boss 500 6x6"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "drivetrain",
+      "polaris",
+      "drive",
+      "belt"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-08208-0010",
+    "sku": "08208-0010",
+    "name": "Honda Ss-8 Suspension Fluid",
+    "brand": "Honda",
+    "category": "oem-replacement",
+    "type": "oem",
+    "price": 7.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_0a2501bebb3249fa88951ea766570883~mv2.png"
+    ],
+    "description": "Genuine OEM part 08208-0010 for Honda powersports vehicles. Verify fitment against your vehicle before ordering. Factory-formulated fluid, filter, or maintenance item. Meets the OEM specification for the machines it is listed for, providing correct protection, change intervals, and fill behavior without aftermarket guesswork.",
+    "shortDescription": "Genuine OEM maintenance part",
+    "specs": {
+      "partNumbers": [
+        "08208-0010"
+      ]
+    },
+    "fitment": [],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "oem-replacement",
+      "honda",
+      "ss-8",
+      "suspension",
+      "fluid"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-3211206",
+    "sku": "3211206",
+    "name": "Polaris ORV Drive Belt",
+    "brand": "Polaris",
+    "category": "drivetrain",
+    "type": "oem",
+    "price": 99.99,
+    "images": [
+      "https://static.wixstatic.com/media/12b852_a0244830c24b47dbaca80bb6e98f0783~mv2.jpg"
+    ],
+    "description": "Genuine OEM part 3211206 for Polaris powersports vehicles. Covers fitment for RZR Trail 570, RZR Trail 570 Premium, RZR 570 EPS, RZR 570, RZR S 570 EPSACE, ACE 570 and more. Factory-spec CVT/drive belt engineered to match the original driveline geometry and compound. Delivers consistent engagement, reduced belt dust, and predictable performance across the full power range.",
+    "shortDescription": "Factory CVT/drive belt replacement",
+    "specs": {
+      "partNumbers": [
+        "3211206"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "RZR Trail 570"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RZR Trail 570"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR Trail 570"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "RZR Trail 570 Premium"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RZR Trail 570 Premium"
+      },
+      {
+        "year": 2018,
+        "make": "Polaris",
+        "model": "RZR 570 EPS"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "RZR 570 EPS"
+      },
+      {
+        "year": 2017,
+        "make": "Polaris",
+        "model": "RZR 570"
+      },
+      {
+        "year": 2018,
+        "make": "Polaris",
+        "model": "RZR 570"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "RZR 570"
+      },
+      {
+        "year": 2017,
+        "make": "Polaris",
+        "model": "RZR S 570 EPSACE"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "ACE 570"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "ACE 500"
+      },
+      {
+        "year": 2018,
+        "make": "Polaris",
+        "model": "ACE 570"
+      },
+      {
+        "year": 2018,
+        "make": "Polaris",
+        "model": "ACE 500"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "drivetrain",
+      "polaris",
+      "drive",
+      "belt"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-31912-MEL-003 (11-5)",
+    "sku": "31912-MEL-003 (11-5)",
+    "name": "Spark Plug-31912-mel-003",
+    "brand": "Xtreme Power Sports",
+    "category": "engine",
+    "type": "oem",
+    "price": 20.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_04b9c95644674220bca6aa7e1e71c94c~mv2.jpg"
+    ],
+    "description": "Genuine OEM part 31912-MEL-003 (11-5) for Xtreme Power Sports powersports vehicles. Covers fitment for CBR1000RR-, CBR600RR-, CBR1000RR/R-, CBR1000RR/R. Precision engine component manufactured to factory tolerances. Direct replacement for the original part, no modifications required, keeps emissions and performance in spec.",
+    "shortDescription": "Factory engine component",
+    "specs": {
+      "partNumbers": [
+        "31912-MEL-003 (11-5)"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2004,
+        "make": "Xtreme Power Sports",
+        "model": "CBR1000RR-"
+      },
+      {
+        "year": 2005,
+        "make": "Xtreme Power Sports",
+        "model": "CBR1000RR-"
+      },
+      {
+        "year": 2006,
+        "make": "Xtreme Power Sports",
+        "model": "CBR1000RR-"
+      },
+      {
+        "year": 2007,
+        "make": "Xtreme Power Sports",
+        "model": "CBR1000RR-"
+      },
+      {
+        "year": 2005,
+        "make": "Xtreme Power Sports",
+        "model": "CBR600RR-"
+      },
+      {
+        "year": 2006,
+        "make": "Xtreme Power Sports",
+        "model": "CBR600RR-"
+      },
+      {
+        "year": 2007,
+        "make": "Xtreme Power Sports",
+        "model": "CBR600RR-"
+      },
+      {
+        "year": 2008,
+        "make": "Xtreme Power Sports",
+        "model": "CBR600RR-"
+      },
+      {
+        "year": 2005,
+        "make": "Xtreme Power Sports",
+        "model": "CBR1000RR/R-"
+      },
+      {
+        "year": 2007,
+        "make": "Xtreme Power Sports",
+        "model": "CBR1000RR/R"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "engine",
+      "xtreme power sports",
+      "spark",
+      "plug-31912-mel-003"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-2889695",
+    "sku": "2889695",
+    "name": "Polaris 4,500 Lb Winch",
+    "brand": "Polaris",
+    "category": "winch-recovery",
+    "type": "oem",
+    "price": 754.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_23d420d4446d441d84369d60649325b9~mv2.webp"
+    ],
+    "description": "Genuine OEM part 2889695 for Polaris powersports vehicles. Covers fitment for RANGER XP 1000 NorthStar Trail Boss Edition, RANGER XP 1000 EPS SE [T1b] Nordic Pro Full Cab, RANGER XP 1000 EPS SE [T1a] Nordic Pro Full Cab, RANGER XP 1000 EPS SE [MD] Nordic Pro Full Cab, RANGER XP 1000 EPS Hunter Edition [T1a], RANGER XP 1000 EPS [T1a] and more. Factory winch and recovery hardware rated for ATV/UTV loads, with weather-sealed motor and synthetic or steel cable options. Includes mounting hardware sized to the intended chassis.",
+    "shortDescription": "OEM winch & recovery hardware",
+    "specs": {
+      "partNumbers": [
+        "2889695"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 NorthStar Trail Boss Edition"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS SE [T1b] Nordic Pro Full Cab"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS SE [T1a] Nordic Pro Full Cab"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS SE [MD] Nordic Pro Full Cab"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS Hunter Edition [T1a]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS [T1a]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER CREW XP 1000 NorthStar Trail Boss Edition"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER 1000 EPS Nordic Pro SE [T1b] Full Cab"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER 1000 EPS Nordic Pro SE [T1a] Full Cab"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER 1000 EPS [T1a]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER 1000 EPS [L7e]"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RANGER CREW XP 1000 Waterfowl Edition"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RANGER CREW XP 1000 Waterfowl Edition"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER CREW XP 1000 Waterfowl Edition"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER XP EPS 1000 Hunter Edition [T1b]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER XP EPS 1000 Hunter Edition [T1b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS ABS [T1b]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS ABS [T1b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS [T1b]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS [T1b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS [MD]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS [MD]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER DIESEL DELUXE [T1b]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER DIESEL DELUXE [T1b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER DIESEL [T1b]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER DIESEL [T1b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER CREW XP 1000 NorthStar Texas Edition"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER CREW XP 1000 NorthStar Texas Edition"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER 1000 EPS [T1b]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER 1000 EPS [T1b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER 1000 EPS [MD]"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RANGER 1000 EPS [MD]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 NORTHSTAR EDITION PREMIUM 25 5"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS Nordic Pro SE [T1b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS Nordic Pro SE [MD]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER DIESEL [MD]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER CREW XP 1000 NORTHSTAR EDITION PREMIUM 25 5"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER CREW 1000 EPS [T1b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RANGER 1000 EPS Nordic Pro SE [T1b]"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "RANGER CREW 1000"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": true,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "winch-recovery",
+      "polaris",
+      "4,500",
+      "winch"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-3211172",
+    "sku": "3211172",
+    "name": "Polaris ORV Drive Belt",
+    "brand": "Polaris",
+    "category": "drivetrain",
+    "type": "oem",
+    "price": 199.99,
+    "images": [
+      "https://static.wixstatic.com/media/12b852_e58cf36b31954c328eb177c3d3b7d425~mv2.jpg"
+    ],
+    "description": "Genuine OEM part 3211172 for Polaris powersports vehicles. Covers fitment for RZR Trail S 900 Sport, RZR Trail S Ultimate, RZR Trail S Sport, RZR Trail S Premium, RZR Trail Ultimate, RZR Trail Sport and more. Factory-spec CVT/drive belt engineered to match the original driveline geometry and compound. Delivers consistent engagement, reduced belt dust, and predictable performance across the full power range.",
+    "shortDescription": "Factory CVT/drive belt replacement",
+    "specs": {
+      "partNumbers": [
+        "3211172"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RZR Trail S 900 Sport"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR Trail S 900 Sport"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR Trail S 900 Sport"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR Trail S Ultimate"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR Trail S Sport"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR Trail S Premium"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RZR Trail Ultimate"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR Trail Ultimate"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR Trail Ultimate"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR Trail Ultimate"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RZR Trail Sport"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR Trail Sport"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR Trail Sport"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR Trail Sport"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RZR Trail Premium"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR Trail Premium"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR Trail Premium"
+      },
+      {
+        "year": 2015,
+        "make": "Polaris",
+        "model": "RZR 900"
+      },
+      {
+        "year": 2016,
+        "make": "Polaris",
+        "model": "RZR 900"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "RZR 900"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "RZR Trail S 900 Premium"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "RZR Trail S 900"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "RZR Trail 900 Premium"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "RZR 900 FOX Edition"
+      },
+      {
+        "year": 2018,
+        "make": "Polaris",
+        "model": "RZR S4 900 EPS"
+      },
+      {
+        "year": 2017,
+        "make": "Polaris",
+        "model": "RZR S 900 EPS"
+      },
+      {
+        "year": 2018,
+        "make": "Polaris",
+        "model": "RZR S 900 EPS"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "RZR S 900 EPS"
+      },
+      {
+        "year": 2017,
+        "make": "Polaris",
+        "model": "RZR S 900"
+      },
+      {
+        "year": 2018,
+        "make": "Polaris",
+        "model": "RZR S 900"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "RZR S 900"
+      },
+      {
+        "year": 2017,
+        "make": "Polaris",
+        "model": "RZR 900 EPS"
+      },
+      {
+        "year": 2018,
+        "make": "Polaris",
+        "model": "RZR 900 EPS"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "RZR 900 EPS"
+      },
+      {
+        "year": 2017,
+        "make": "Polaris",
+        "model": "RZR 900"
+      },
+      {
+        "year": 2018,
+        "make": "Polaris",
+        "model": "RZR 900"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "RZR 900"
+      },
+      {
+        "year": 2017,
+        "make": "Polaris",
+        "model": "RZR 900 EPS XC Edition"
+      },
+      {
+        "year": 2017,
+        "make": "Polaris",
+        "model": "RZR 4 900 EPS"
+      },
+      {
+        "year": 2016,
+        "make": "Polaris",
+        "model": "RZR 900 EPS FOX Edition"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "drivetrain",
+      "polaris",
+      "drive",
+      "belt"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-0SX50-HL5-A00",
+    "sku": "0SX50-HL5-A00",
+    "name": "Honda Oil Change Kit 2015-2023 Pioneer 500",
+    "brand": "Honda",
+    "category": "oem-replacement",
+    "type": "oem",
+    "price": 62.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_0c1bee81d40a4033bab3402825c85a7c~mv2.jpg"
+    ],
+    "description": "Genuine OEM part 0SX50-HL5-A00 for Honda powersports vehicles. Verify fitment against your vehicle before ordering. Factory-formulated fluid, filter, or maintenance item. Meets the OEM specification for the machines it is listed for, providing correct protection, change intervals, and fill behavior without aftermarket guesswork.",
+    "shortDescription": "Genuine OEM maintenance part",
+    "specs": {
+      "partNumbers": [
+        "0SX50-HL5-A00"
+      ]
+    },
+    "fitment": [],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "oem-replacement",
+      "honda",
+      "change",
+      "2015-2023",
+      "pioneer"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-2884832",
+    "sku": "2884832",
+    "name": "Polaris 2,500 Lb Winch with Steel Cable",
+    "brand": "Polaris",
+    "category": "winch-recovery",
+    "type": "oem",
+    "price": 449.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_954ee1a50c36471ea82d75bd8d93a629~mv2.webp"
+    ],
+    "description": "Genuine OEM part 2884832 for Polaris powersports vehicles. Covers fitment for Sportsman Touring Ultimate, Sportsman 6x6 570, Sportsman 570 Premium - 40th Anniversary Edition, Sportsman X2 570, Sportsman Touring 570 Premium, Sportsman Touring 570 and more. Factory winch and recovery hardware rated for ATV/UTV loads, with weather-sealed motor and synthetic or steel cable options. Includes mounting hardware sized to the intended chassis.",
+    "shortDescription": "OEM winch & recovery hardware",
+    "specs": {
+      "partNumbers": [
+        "2884832"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "Sportsman Touring Ultimate"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "Sportsman 6x6 570"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "Sportsman 570 Premium - 40th Anniversary Edition"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman X2 570"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "Sportsman X2 570"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman Touring 570 Premium"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "Sportsman Touring 570 Premium"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman Touring 570"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "Sportsman Touring 570"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman 570 Ultimate"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "Sportsman 570 Ultimate"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman X2 570 EPS Nordic Pro [Tractor T3b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman X2 570 EPS Nordic Pro [Tractor T3a]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman X2 570 EPS LE [Tractor T3b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman X2 570 EPS LE [Tractor T3a]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman X2 570 EPS [Tractor T3b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman X2 570 EPS [Tractor T3a]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman X2 570 EPS [EU]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman Touring 570 Ultimate"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman Touring 570 EPS SP [Tractor T3b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman Touring 570 EPS SP [Tractor T3a]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman Touring 570 EPS [ZUG/LOF]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman Touring 570 EPS [Tractor T3b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman Touring 570 EPS [Tractor T3a]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman Touring 570 EPS [Quad L7e]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman Touring 570 EPS"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman 6x6 570 EPS LE [Tractor T1b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman 6x6 570 EPS LE [Tractor T1a]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman 6x6 570 EPS [Tractor T1b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman 6x6 570 EPS [Tractor T1a]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman 6x6 570"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS SP Ohlins [T3b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS SP [MD]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS SE Premium LE [T3b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS SE [T3b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS SE [L7e]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS Hunter SE [Tractor T3b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS Agri Pro [T3b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS [T3b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS [Pre EGI]"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": true,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "winch-recovery",
+      "polaris",
+      "2,500",
+      "winch",
+      "with",
+      "steel",
+      "cable"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-380349",
+    "sku": "380349",
+    "name": "Spark Plug- Dcpr8eix",
+    "brand": "Xtreme Power Sports",
+    "category": "engine",
+    "type": "oem",
+    "price": 12.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_db4f4f3fe7b7463f99d45dcb10a54585~mv2.jpg"
+    ],
+    "description": "Genuine OEM part 380349 for Xtreme Power Sports powersports vehicles. Verify fitment against your vehicle before ordering. Precision engine component manufactured to factory tolerances. Direct replacement for the original part, no modifications required, keeps emissions and performance in spec.",
+    "shortDescription": "Factory engine component",
+    "specs": {
+      "partNumbers": [
+        "380349"
+      ]
+    },
+    "fitment": [],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "engine",
+      "xtreme power sports",
+      "spark",
+      "plug-",
+      "dcpr8eix"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-3211153",
+    "sku": "3211153",
+    "name": "Polaris ORV Drive Belt",
+    "brand": "Polaris",
+    "category": "drivetrain",
+    "type": "oem",
+    "price": 139.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_ecb203d8918d46029032079d3082132e~mv2.png"
+    ],
+    "description": "Genuine OEM part 3211153 for Polaris powersports vehicles. Covers fitment for Sportsman X2 550 EPS, Sportsman Touring 550 EPS, Sportsman 550 EPS, Sportsman X2 550, Sportsman 550 HD, Sportsman 550. Factory-spec CVT/drive belt engineered to match the original driveline geometry and compound. Delivers consistent engagement, reduced belt dust, and predictable performance across the full power range.",
+    "shortDescription": "Factory CVT/drive belt replacement",
+    "specs": {
+      "partNumbers": [
+        "3211153"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2014,
+        "make": "Polaris",
+        "model": "Sportsman X2 550 EPS"
+      },
+      {
+        "year": 2013,
+        "make": "Polaris",
+        "model": "Sportsman Touring 550 EPS"
+      },
+      {
+        "year": 2014,
+        "make": "Polaris",
+        "model": "Sportsman Touring 550 EPS"
+      },
+      {
+        "year": 2013,
+        "make": "Polaris",
+        "model": "Sportsman 550 EPS"
+      },
+      {
+        "year": 2014,
+        "make": "Polaris",
+        "model": "Sportsman 550 EPS"
+      },
+      {
+        "year": 2013,
+        "make": "Polaris",
+        "model": "Sportsman X2 550"
+      },
+      {
+        "year": 2013,
+        "make": "Polaris",
+        "model": "Sportsman 550 HD"
+      },
+      {
+        "year": 2013,
+        "make": "Polaris",
+        "model": "Sportsman 550"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "drivetrain",
+      "polaris",
+      "drive",
+      "belt"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-2890055",
+    "sku": "2890055",
+    "name": "Polaris Sportsman 300-570/xp550/850/1000, Ranger 500 Oil Change Kit",
+    "brand": "Polaris",
+    "category": "oem-replacement",
+    "type": "oem",
+    "price": 54.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_65162710c49f4edb83881105801d434a~mv2.webp"
+    ],
+    "description": "Genuine OEM part 2890055 for Polaris powersports vehicles. Verify fitment against your vehicle before ordering. Factory-formulated fluid, filter, or maintenance item. Meets the OEM specification for the machines it is listed for, providing correct protection, change intervals, and fill behavior without aftermarket guesswork.",
+    "shortDescription": "Genuine OEM maintenance part",
+    "specs": {
+      "partNumbers": [
+        "2890055"
+      ]
+    },
+    "fitment": [],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "oem-replacement",
+      "polaris",
+      "sportsman",
+      "300-570/xp550/850/1000,",
+      "ranger",
+      "change"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-2635771",
+    "sku": "2635771",
+    "name": "Polaris Slingshot Mirror, Convex, Right 2635771 (2637568)",
+    "brand": "Polaris",
+    "category": "body-plastics",
+    "type": "oem",
+    "price": 139.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_4da5870e31b74e978e4676f03fe3bd4f~mv2.webp"
+    ],
+    "description": "Genuine OEM part 2635771 for Polaris powersports vehicles. Verify fitment against your vehicle before ordering. Factory-finished body or trim piece with the correct mounting points and hardware spacing. Painted or color-matched to the OEM finish where applicable.",
+    "shortDescription": "Factory body & trim piece",
+    "specs": {
+      "partNumbers": [
+        "2635771"
+      ]
+    },
+    "fitment": [],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "body-plastics",
+      "polaris",
+      "slingshot",
+      "mirror,",
+      "convex,",
+      "right",
+      "2635771",
+      "(2637568)"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-3211196",
+    "sku": "3211196",
+    "name": "Drive Belt",
+    "brand": "Polaris",
+    "category": "drivetrain",
+    "type": "oem",
+    "price": 199.99,
+    "images": [
+      "https://static.wixstatic.com/media/12b852_d95594ccd6f94049902a7517871d79a9~mv2.jpg"
+    ],
+    "description": "Genuine OEM part 3211196 for Polaris powersports vehicles. Covers fitment for GENERAL 1000 Premium, GENERAL 1000 Sport, GENERAL 4 1000 Premium, GENERAL 4 1000 Deluxe RIDE COMMAND Edition, GENERAL 1000 Deluxe RIDE COMMAND Edition, GENERAL 1000 Deluxe and more. Factory-spec CVT/drive belt engineered to match the original driveline geometry and compound. Delivers consistent engagement, reduced belt dust, and predictable performance across the full power range.",
+    "shortDescription": "Factory CVT/drive belt replacement",
+    "specs": {
+      "partNumbers": [
+        "3211196"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "GENERAL 1000 Premium"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "GENERAL 1000 Premium"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "GENERAL 1000 Sport"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "GENERAL 1000 Sport"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "GENERAL 1000 Sport"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "GENERAL 4 1000 Premium"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "GENERAL 4 1000 Deluxe RIDE COMMAND Edition"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "GENERAL 1000 Deluxe RIDE COMMAND Edition"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "GENERAL 1000 Deluxe"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "Polaris GENERAL 4 1000 Premium"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "Polaris GENERAL 4 1000 Deluxe"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "Polaris GENERAL 1000 Premium"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "Polaris GENERAL 1000 Deluxe"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "General 4 1000 Deluxe Ride Command Edition"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "General 1000 Deluxe Ride Command"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "Polaris GENERAL 1000 Sport"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "Polaris GENERAL 1000 Sport"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "Polaris GENERAL 4 1000 EPS Deluxe"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "Polaris GENERAL 4 1000 EPS"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "Polaris GENERAL 1000 EPS Premium"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "Polaris GENERAL 1000 EPS Deluxe"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "Polaris GENERAL 1000"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "Polaris GENERAL 4 1000 EPS Ride Command Edition"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "Polaris GENERAL 4 1000 EPS"
+      },
+      {
+        "year": 2018,
+        "make": "Polaris",
+        "model": "Polaris GENERAL 4 1000 EPS Ride Command Edition"
+      },
+      {
+        "year": 2018,
+        "make": "Polaris",
+        "model": "Polaris GENERAL 1000 EPS Premium"
+      },
+      {
+        "year": 2018,
+        "make": "Polaris",
+        "model": "Polaris GENERAL 1000 EPS Deluxe"
+      },
+      {
+        "year": 2017,
+        "make": "Polaris",
+        "model": "Polaris GENERAL 4 1000 EPS"
+      },
+      {
+        "year": 2018,
+        "make": "Polaris",
+        "model": "Polaris GENERAL 4 1000 EPS"
+      },
+      {
+        "year": 2017,
+        "make": "Polaris",
+        "model": "Polaris GENERAL 1000 EPS"
+      },
+      {
+        "year": 2018,
+        "make": "Polaris",
+        "model": "Polaris GENERAL 1000 EPS"
+      },
+      {
+        "year": 2016,
+        "make": "Polaris",
+        "model": "GENERAL 1000 EPSRanger"
+      },
+      {
+        "year": 2017,
+        "make": "Polaris",
+        "model": "RANGER CREW XP 1000"
+      },
+      {
+        "year": 2018,
+        "make": "Polaris",
+        "model": "RANGER CREW XP 1000"
+      },
+      {
+        "year": 2017,
+        "make": "Polaris",
+        "model": "RANGER XP 1000 EPS"
+      },
+      {
+        "year": 2017,
+        "make": "Polaris",
+        "model": "RANGER CREW XP 1000 EPSRZR"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "RZR S4 1000"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RZR S4 1000"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "RZR S 4 1000"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "drivetrain",
+      "polaris",
+      "drive",
+      "belt"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-3022809",
+    "sku": "3022809",
+    "name": "Spark Plug",
+    "brand": "Xtreme Power Sports",
+    "category": "engine",
+    "type": "oem",
+    "price": 9.99,
+    "images": [
+      "https://static.wixstatic.com/media/12b852_ca862e811a4b44f1b1130a3603cfc99d~mv2.jpg"
+    ],
+    "description": "Genuine OEM part 3022809 for Xtreme Power Sports powersports vehicles. Covers fitment for RZR XP Turbo EPS, RZR XP 4 Turbo EPS. Precision engine component manufactured to factory tolerances. Direct replacement for the original part, no modifications required, keeps emissions and performance in spec.",
+    "shortDescription": "Factory engine component",
+    "specs": {
+      "partNumbers": [
+        "3022809"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2016,
+        "make": "Xtreme Power Sports",
+        "model": "RZR XP Turbo EPS"
+      },
+      {
+        "year": 2016,
+        "make": "Xtreme Power Sports",
+        "model": "RZR XP 4 Turbo EPS"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "engine",
+      "xtreme power sports",
+      "spark",
+      "plug"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-31911-KRN-731",
+    "sku": "31911-KRN-731",
+    "name": "Spark Plug",
+    "brand": "Honda",
+    "category": "engine",
+    "type": "oem",
+    "price": 23.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_2cdd5610c7b8483c8d4c7ce7c6258a6b~mv2.png"
+    ],
+    "description": "Genuine OEM part 31911-KRN-731 for Honda powersports vehicles. Covers fitment for Honda CRF250R. Precision engine component manufactured to factory tolerances. Direct replacement for the original part, no modifications required, keeps emissions and performance in spec.",
+    "shortDescription": "Factory engine component",
+    "specs": {
+      "partNumbers": [
+        "31911-KRN-731"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2005,
+        "make": "Honda",
+        "model": "Honda CRF250R"
+      },
+      {
+        "year": 2006,
+        "make": "Honda",
+        "model": "Honda CRF250R"
+      },
+      {
+        "year": 2007,
+        "make": "Honda",
+        "model": "Honda CRF250R"
+      },
+      {
+        "year": 2008,
+        "make": "Honda",
+        "model": "Honda CRF250R"
+      },
+      {
+        "year": 2009,
+        "make": "Honda",
+        "model": "Honda CRF250R"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "engine",
+      "honda",
+      "spark",
+      "plug"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-3211160",
+    "sku": "3211160",
+    "name": "Drive Belt",
+    "brand": "Polaris",
+    "category": "drivetrain",
+    "type": "oem",
+    "price": 149.99,
+    "images": [
+      "https://static.wixstatic.com/media/12b852_58c7fb5542e54d56877139c38fb244dc~mv2.jpg"
+    ],
+    "description": "Genuine OEM part 3211160 for Polaris powersports vehicles. Covers fitment for Sportsman Touring XP 1000, Sportsman 850, Scrambler 850, Sportsman XP 1000 S, Sportsman XP 1000 Premium, Sportsman XP 1000 Hunter Edition and more. Factory-spec CVT/drive belt engineered to match the original driveline geometry and compound. Delivers consistent engagement, reduced belt dust, and predictable performance across the full power range.",
+    "shortDescription": "Factory CVT/drive belt replacement",
+    "specs": {
+      "partNumbers": [
+        "3211160"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2015,
+        "make": "Polaris",
+        "model": "Sportsman Touring XP 1000"
+      },
+      {
+        "year": 2016,
+        "make": "Polaris",
+        "model": "Sportsman Touring XP 1000"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "Sportsman Touring XP 1000"
+      },
+      {
+        "year": 2015,
+        "make": "Polaris",
+        "model": "Sportsman 850"
+      },
+      {
+        "year": 2016,
+        "make": "Polaris",
+        "model": "Sportsman 850"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "Sportsman 850"
+      },
+      {
+        "year": 2015,
+        "make": "Polaris",
+        "model": "Scrambler 850"
+      },
+      {
+        "year": 2016,
+        "make": "Polaris",
+        "model": "Scrambler 850"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "Scrambler 850"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "Sportsman XP 1000 S"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "Sportsman XP 1000 Premium"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "Sportsman XP 1000 Hunter Edition"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "Sportsman Touring 850"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "Sportsman 850 Premium LE"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "Sportsman 850 Premium"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "Scrambler XP 1000 S"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "Sportsman 850 SP Premium"
+      },
+      {
+        "year": 2018,
+        "make": "Polaris",
+        "model": "Sportsman XP 1000 Hunter Edition"
+      },
+      {
+        "year": 2017,
+        "make": "Polaris",
+        "model": "Sportsman Touring XP 1000"
+      },
+      {
+        "year": 2018,
+        "make": "Polaris",
+        "model": "Sportsman Touring XP 1000"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "Sportsman Touring XP 1000"
+      },
+      {
+        "year": 2017,
+        "make": "Polaris",
+        "model": "Sportsman Touring 850 SP"
+      },
+      {
+        "year": 2018,
+        "make": "Polaris",
+        "model": "Sportsman Touring 850 SP"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "Sportsman Touring 850 SP"
+      },
+      {
+        "year": 2017,
+        "make": "Polaris",
+        "model": "Sportsman 850 SP"
+      },
+      {
+        "year": 2018,
+        "make": "Polaris",
+        "model": "Sportsman 850 SP"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "Sportsman 850 SP"
+      },
+      {
+        "year": 2017,
+        "make": "Polaris",
+        "model": "Sportsman 850"
+      },
+      {
+        "year": 2018,
+        "make": "Polaris",
+        "model": "Sportsman 850"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "Sportsman 850"
+      },
+      {
+        "year": 2017,
+        "make": "Polaris",
+        "model": "Scrambler 850"
+      },
+      {
+        "year": 2018,
+        "make": "Polaris",
+        "model": "Scrambler 850"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "Scrambler 850"
+      },
+      {
+        "year": 2017,
+        "make": "Polaris",
+        "model": "Sportsman XP 1000"
+      },
+      {
+        "year": 2018,
+        "make": "Polaris",
+        "model": "Sportsman XP 1000"
+      },
+      {
+        "year": 2017,
+        "make": "Polaris",
+        "model": "Scrambler XP 1000"
+      },
+      {
+        "year": 2018,
+        "make": "Polaris",
+        "model": "Scrambler XP 1000"
+      },
+      {
+        "year": 2017,
+        "make": "Polaris",
+        "model": "Sportsman XP 1000 LE"
+      },
+      {
+        "year": 2016,
+        "make": "Polaris",
+        "model": "Sportsman XP 1000 High Lifter"
+      },
+      {
+        "year": 2016,
+        "make": "Polaris",
+        "model": "Sportsman 850 High Lifter"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "drivetrain",
+      "polaris",
+      "drive",
+      "belt"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-2889070",
+    "sku": "2889070",
+    "name": "Power Harness Polaris Sportsman",
+    "brand": "Polaris",
+    "category": "electrical",
+    "type": "oem",
+    "price": 89.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_d7cb8ce0df634c0aa31c9bba5182e976~mv2.webp"
+    ],
+    "description": "Genuine OEM part 2889070 for Polaris powersports vehicles. Covers fitment for Scrambler XP 1000 S, Sportsman Touring 570, Sportsman 570 Premium - 40th Anniversary Edition, Sportsman 570 Premium, Sportsman 570 Trail, Sportsman 570 Ultimate and more. Factory electrical component with OEM-spec connectors and ratings. Direct fit onto the stock wiring, no cutting or splicing required.",
+    "shortDescription": "Factory electrical component",
+    "specs": {
+      "partNumbers": [
+        "2889070"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "Scrambler XP 1000 S"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "Scrambler XP 1000 S"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "Sportsman Touring 570"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "Sportsman 570 Premium - 40th Anniversary Edition"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "Sportsman 570 Premium"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "Sportsman 570 Premium"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman 570 Premium"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "Sportsman 570 Trail"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "Sportsman 570 Trail"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "Sportsman 570 Trail"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman 570 Trail"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "Sportsman 570 Trail"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman 570 Ultimate"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "Sportsman 570 Ultimate"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS SP Ohlins [T3b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS SP [Tractor T3b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS SP [MD]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS SE Premium LE [T3b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS SE [T3b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS SE [L7e]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS Hunter SE [Tractor T3b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS Agri Pro [T3b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS [T3b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS [Pre EGI]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS [MD]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS [L7e]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman 570 [T3b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman 570 [MD]"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "Sportsman 570 Hunt Edition"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "Sportsman 570 Hunt Edition"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "Sportsman 570 Hunt Edition"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS SE [ZUG/LOF]"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS SE [Tractor T3b]"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS SE [EU]"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS LE Military Tan Edition [Tractor T3b]"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS LE Military [ZUG/LOF]"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS Hunter Edition [Tractor T3b]"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS Agri Pro [Tractor T3b]"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS [ZUG/LOF]"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "Sportsman 570 EPS [Tractor T3b]"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "electrical",
+      "polaris",
+      "power",
+      "harness",
+      "sportsman"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-U7121040",
+    "sku": "U7121040",
+    "name": "Gasgas Mc250f/ex250f/mc350f/ex350f Oil Change Kit",
+    "brand": "GasGas",
+    "category": "oem-replacement",
+    "type": "oem",
+    "price": 31.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_c5bc283236784167bcb997abe0d6ec18~mv2.jpg"
+    ],
+    "description": "Genuine OEM part U7121040 for GasGas powersports vehicles. Verify fitment against your vehicle before ordering. Factory-formulated fluid, filter, or maintenance item. Meets the OEM specification for the machines it is listed for, providing correct protection, change intervals, and fill behavior without aftermarket guesswork.",
+    "shortDescription": "Genuine OEM maintenance part",
+    "specs": {
+      "partNumbers": [
+        "U7121040"
+      ]
+    },
+    "fitment": [],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "oem-replacement",
+      "gasgas",
+      "mc250f/ex250f/mc350f/ex350f",
+      "change"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-PIONEER520FSK",
+    "sku": "PIONEER520FSK",
+    "name": "2021-2023 Honda Pioneer 520 Full Service Kit",
+    "brand": "Honda",
+    "category": "engine",
+    "type": "oem",
+    "price": 119.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_bf91fbe81cb54fec80958202e07b3ca2~mv2.jpg"
+    ],
+    "description": "Genuine OEM part PIONEER520FSK for Honda powersports vehicles. Verify fitment against your vehicle before ordering. Precision engine component manufactured to factory tolerances. Direct replacement for the original part, no modifications required, keeps emissions and performance in spec.",
+    "shortDescription": "Factory engine component",
+    "specs": {
+      "partNumbers": [
+        "PIONEER520FSK"
+      ]
+    },
+    "fitment": [],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "engine",
+      "honda",
+      "2021-2023",
+      "pioneer",
+      "full",
+      "service"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-08208-0080",
+    "sku": "08208-0080",
+    "name": "Honda Shaft Drive Oil 8oz",
+    "brand": "Honda",
+    "category": "oem-replacement",
+    "type": "oem",
+    "price": 4.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_9c4286066ff1469185772249f4677e0f~mv2.png"
+    ],
+    "description": "Genuine OEM part 08208-0080 for Honda powersports vehicles. Verify fitment against your vehicle before ordering. Factory-formulated fluid, filter, or maintenance item. Meets the OEM specification for the machines it is listed for, providing correct protection, change intervals, and fill behavior without aftermarket guesswork.",
+    "shortDescription": "Genuine OEM maintenance part",
+    "specs": {
+      "partNumbers": [
+        "08208-0080"
+      ]
+    },
+    "fitment": [],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "oem-replacement",
+      "honda",
+      "shaft",
+      "drive"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-08C35-SYN-1030M",
+    "sku": "08C35-SYN-1030M",
+    "name": "Honda Hp4s Full Synthetic Oil 10w30 (1 Quart)",
+    "brand": "Honda",
+    "category": "engine",
+    "type": "oem",
+    "price": 14.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_17b468a963df446d8fa03a746888cdb2~mv2.png"
+    ],
+    "description": "Genuine OEM part 08C35-SYN-1030M for Honda powersports vehicles. Verify fitment against your vehicle before ordering. Precision engine component manufactured to factory tolerances. Direct replacement for the original part, no modifications required, keeps emissions and performance in spec.",
+    "shortDescription": "Factory engine component",
+    "specs": {
+      "partNumbers": [
+        "08C35-SYN-1030M"
+      ]
+    },
+    "fitment": [],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "engine",
+      "honda",
+      "hp4s",
+      "full",
+      "synthetic",
+      "10w30",
+      "quart)"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-2890057",
+    "sku": "2890057",
+    "name": "Polaris Ranger 900/1000, Rzr 1000, General 1000 Oil Change Kit",
+    "brand": "Polaris",
+    "category": "oem-replacement",
+    "type": "oem",
+    "price": 64.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_d94294ab0a624509805a60af5b6ba948~mv2.webp"
+    ],
+    "description": "Genuine OEM part 2890057 for Polaris powersports vehicles. Verify fitment against your vehicle before ordering. Factory-formulated fluid, filter, or maintenance item. Meets the OEM specification for the machines it is listed for, providing correct protection, change intervals, and fill behavior without aftermarket guesswork.",
+    "shortDescription": "Genuine OEM maintenance part",
+    "specs": {
+      "partNumbers": [
+        "2890057"
+      ]
+    },
+    "fitment": [],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "oem-replacement",
+      "polaris",
+      "ranger",
+      "900/1000,",
+      "1000,",
+      "general",
+      "1000",
+      "change"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-PIO700FSK",
+    "sku": "PIO700FSK",
+    "name": "2015-2024 Honda Pionner 700/700-4 Full Service Kit",
+    "brand": "Honda",
+    "category": "engine",
+    "type": "oem",
+    "price": 127.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_81ed8fbfbbc04c73aadf66406bbfdb6d~mv2.jpg"
+    ],
+    "description": "Genuine OEM part PIO700FSK for Honda powersports vehicles. Verify fitment against your vehicle before ordering. Precision engine component manufactured to factory tolerances. Direct replacement for the original part, no modifications required, keeps emissions and performance in spec.",
+    "shortDescription": "Factory engine component",
+    "specs": {
+      "partNumbers": [
+        "PIO700FSK"
+      ]
+    },
+    "fitment": [],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "engine",
+      "honda",
+      "2015-2024",
+      "pionner",
+      "700/700-4",
+      "full",
+      "service"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-2884836",
+    "sku": "2884836",
+    "name": "Polaris PRO Series 4,500 Lb Winch",
+    "brand": "Polaris",
+    "category": "winch-recovery",
+    "type": "oem",
+    "price": 929.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_c8309502f3034728a64651ea8c43df29~mv2.webp"
+    ],
+    "description": "Genuine OEM part 2884836 for Polaris powersports vehicles. Covers fitment for RZR XP 1000 Sport [T1b], RZR XP 1000 Sport [MD], RZR XP 4 1000 Ultimate, RZR XP 4 1000 Sport, RZR XP 4 1000 Premium, RZR XP 1000 Ultimate and more. Factory winch and recovery hardware rated for ATV/UTV loads, with weather-sealed motor and synthetic or steel cable options. Includes mounting hardware sized to the intended chassis.",
+    "shortDescription": "OEM winch & recovery hardware",
+    "specs": {
+      "partNumbers": [
+        "2884836"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RZR XP 1000 Sport [T1b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RZR XP 1000 Sport [MD]"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR XP 4 1000 Ultimate"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RZR XP 4 1000 Ultimate"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR XP 4 1000 Sport"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RZR XP 4 1000 Sport"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR XP 4 1000 Premium"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RZR XP 4 1000 Premium"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR XP 1000 Ultimate"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RZR XP 1000 Ultimate"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR XP 1000 Sport"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RZR XP 1000 Sport"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR XP 1000 Premium"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RZR XP 1000 Premium"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": true,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "winch-recovery",
+      "polaris",
+      "series",
+      "4,500",
+      "winch"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-2885126",
+    "sku": "2885126",
+    "name": "Polaris PRO Series 4,500 Lb. Winch",
+    "brand": "Polaris",
+    "category": "winch-recovery",
+    "type": "oem",
+    "price": 974.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_52cc3ef6d4eb432ebbc2f27c3177c466~mv2.webp"
+    ],
+    "description": "Genuine OEM part 2885126 for Polaris powersports vehicles. Covers fitment for RZR Trail S 1000 Ultimate [T1b], RZR Trail S 1000 Ultimate [EU], RZR Trail S 1000 Sport [T1b], RZR Trail S 1000 Sport [L7e], RZR Trail S 1000 Sport [EU], RZR Trail S 900 Sport and more. Factory winch and recovery hardware rated for ATV/UTV loads, with weather-sealed motor and synthetic or steel cable options. Includes mounting hardware sized to the intended chassis.",
+    "shortDescription": "OEM winch & recovery hardware",
+    "specs": {
+      "partNumbers": [
+        "2885126"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RZR Trail S 1000 Ultimate [T1b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RZR Trail S 1000 Ultimate [EU]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RZR Trail S 1000 Sport [T1b]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RZR Trail S 1000 Sport [L7e]"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RZR Trail S 1000 Sport [EU]"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RZR Trail S 900 Sport"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR Trail S 900 Sport"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR Trail S 900 Sport"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RZR Trail S 900 Sport"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RZR Trail S 900 Sport"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RZR Trail S 1000 Ultimate"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR Trail S 1000 Ultimate"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR Trail S 1000 Ultimate"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RZR Trail S 1000 Ultimate"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RZR Trail S 1000 Ultimate"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR Trail S 1000 Premium EPS [Quad L7e]"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR Trail S 1000 Premium [ZUG/LOF]"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR Trail S 1000 Premium [Tractor T1b]"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR Trail S 1000 Premium [EU]"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR Trail S Ultimate"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR Trail S Sport"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR Trail S Premium"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RZR Trail Ultimate"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR Trail Ultimate"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR Trail Ultimate"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR Trail Ultimate"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RZR Trail Ultimate"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RZR Trail Ultimate"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RZR Trail Sport"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR Trail Sport"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR Trail Sport"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RZR Trail Sport"
+      },
+      {
+        "year": 2025,
+        "make": "Polaris",
+        "model": "RZR Trail Sport"
+      },
+      {
+        "year": 2026,
+        "make": "Polaris",
+        "model": "RZR Trail Sport"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RZR Trail Premium"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR Trail Premium"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RZR Trail Premium"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RZR Trail S 1000 Premium"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RZR Trail S 1000 Premium"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": true,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "winch-recovery",
+      "polaris",
+      "series",
+      "4,500",
+      "winch"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-S20-24OILKIT",
+    "sku": "S20-24OILKIT",
+    "name": "Polaris Slingshot 2020-2024 Oil Change Kit",
+    "brand": "Polaris",
+    "category": "oem-replacement",
+    "type": "oem",
+    "price": 109.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_a2d5c5d6af6746749909750907d1c02e~mv2.png"
+    ],
+    "description": "Genuine OEM part S20-24OILKIT for Polaris powersports vehicles. Verify fitment against your vehicle before ordering. Factory-formulated fluid, filter, or maintenance item. Meets the OEM specification for the machines it is listed for, providing correct protection, change intervals, and fill behavior without aftermarket guesswork.",
+    "shortDescription": "Genuine OEM maintenance part",
+    "specs": {
+      "partNumbers": [
+        "S20-24OILKIT"
+      ]
+    },
+    "fitment": [],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "oem-replacement",
+      "polaris",
+      "slingshot",
+      "2020-2024",
+      "change"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-2890058",
+    "sku": "2890058",
+    "name": "Polaris Rzr 1000 Turbo Oil Change Kit",
+    "brand": "Polaris",
+    "category": "oem-replacement",
+    "type": "oem",
+    "price": 74.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_049b1fb2374d4603a19717938df92a28~mv2.webp"
+    ],
+    "description": "Genuine OEM part 2890058 for Polaris powersports vehicles. Verify fitment against your vehicle before ordering. Factory-formulated fluid, filter, or maintenance item. Meets the OEM specification for the machines it is listed for, providing correct protection, change intervals, and fill behavior without aftermarket guesswork.",
+    "shortDescription": "Genuine OEM maintenance part",
+    "specs": {
+      "partNumbers": [
+        "2890058"
+      ]
+    },
+    "fitment": [],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "oem-replacement",
+      "polaris",
+      "1000",
+      "turbo",
+      "change"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-U7021040",
+    "sku": "U7021040",
+    "name": "Husqvarna Fc250/350, Fe/fes350/fx350 Oil Change Kit 2016-2024",
+    "brand": "Husqvarna",
+    "category": "oem-replacement",
+    "type": "oem",
+    "price": 31.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_b112f8bb272544e4b397fd138f0a8fcb~mv2.jpg"
+    ],
+    "description": "Genuine OEM part U7021040 for Husqvarna powersports vehicles. Verify fitment against your vehicle before ordering. Factory-formulated fluid, filter, or maintenance item. Meets the OEM specification for the machines it is listed for, providing correct protection, change intervals, and fill behavior without aftermarket guesswork.",
+    "shortDescription": "Genuine OEM maintenance part",
+    "specs": {
+      "partNumbers": [
+        "U7021040"
+      ]
+    },
+    "fitment": [],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "oem-replacement",
+      "husqvarna",
+      "fc250/350,",
+      "fe/fes350/fx350",
+      "change",
+      "2016-2024"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-78-9944",
+    "sku": "78-9944",
+    "name": "Maxima Sc1 High Gloss Coating 12oz",
+    "brand": "Maxima",
+    "category": "accessories",
+    "type": "aftermarket",
+    "price": 13.99,
+    "images": [
+      "https://static.wixstatic.com/media/12b852_4bb3e54be1b14e7a99d24719d71ecba4~mv2.jpg"
+    ],
+    "description": "Genuine OEM part 78-9944 for Maxima powersports vehicles. Verify fitment against your vehicle before ordering. Factory accessory or replacement part from the Xtreme Power Sports catalog, packaged and shipped ready to install.",
+    "shortDescription": "Xtreme Power Sports accessory",
+    "specs": {
+      "partNumbers": [
+        "78-9944"
+      ]
+    },
+    "fitment": [],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "accessories",
+      "maxima",
+      "high",
+      "gloss",
+      "coating",
+      "12oz"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-3211113",
+    "sku": "3211113",
+    "name": "Polaris ORV Drive Belt",
+    "brand": "Polaris",
+    "category": "drivetrain",
+    "type": "oem",
+    "price": 99.99,
+    "images": [
+      "https://static.wixstatic.com/media/12b852_83bcd572412047909b65de7dc8da4625~mv2.jpg"
+    ],
+    "description": "Genuine OEM part 3211113 for Polaris powersports vehicles. Covers fitment for Sportsman 570 Hunt Edition, Scrambler XP 1000 S, Sportsman Touring 570, Sportsman 570, Sportsman 450 H O Utility, Sportsman 450 H O EPS and more. Factory-spec CVT/drive belt engineered to match the original driveline geometry and compound. Delivers consistent engagement, reduced belt dust, and predictable performance across the full power range.",
+    "shortDescription": "Factory CVT/drive belt replacement",
+    "specs": {
+      "partNumbers": [
+        "3211113"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "Sportsman 570 Hunt Edition"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "Scrambler XP 1000 S"
+      },
+      {
+        "year": 2015,
+        "make": "Polaris",
+        "model": "Sportsman Touring 570"
+      },
+      {
+        "year": 2016,
+        "make": "Polaris",
+        "model": "Sportsman Touring 570"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "Sportsman Touring 570"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "Sportsman Touring 570"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "Sportsman Touring 570"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "Sportsman Touring 570"
+      },
+      {
+        "year": 2015,
+        "make": "Polaris",
+        "model": "Sportsman 570"
+      },
+      {
+        "year": 2016,
+        "make": "Polaris",
+        "model": "Sportsman 570"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "Sportsman 570"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "Sportsman 570"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "Sportsman 570"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "Sportsman 570"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "Sportsman 450 H O Utility"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "Sportsman 450 H O Utility"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "Sportsman 450 H O Utility"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "Sportsman 450 H O EPS"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "Sportsman 450 H O EPS"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "Sportsman 450 H O EPS"
+      },
+      {
+        "year": 2015,
+        "make": "Polaris",
+        "model": "Sportsman 450 H O Sportsman Touring 570 EPS"
+      },
+      {
+        "year": 2016,
+        "make": "Polaris",
+        "model": "Sportsman 450 H O Sportsman Touring 570 EPS"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "Sportsman 450 H O Sportsman Touring 570 EPS"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "Sportsman 450 H O Sportsman Touring 570 EPS"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "Sportsman 450 H O Sportsman Touring 570 EPS"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "Sportsman 450 H O Sportsman Touring 570 EPS"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "Sportsman Touring 570 Premium"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "Sportsman Touring 570 Premium"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "Sportsman Touring 570 Premium"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "Sportsman 6x6 570"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "Sportsman 6x6 570"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "INTL Sportsman 6x6 570 EPS SE"
+      },
+      {
+        "year": 2017,
+        "make": "Polaris",
+        "model": "Sportsman Touring 570 EPS"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "Sportsman Touring 570 EPS"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "Sportsman Touring 570 EPS"
+      },
+      {
+        "year": 2017,
+        "make": "Polaris",
+        "model": "Sportsman 450 H O EPS"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "Sportsman 450 H O EPS"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "Sportsman 450 H O EPS"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "Sportsman 6x6 570"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "Sportsman 6x6 570"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "drivetrain",
+      "polaris",
+      "drive",
+      "belt"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-3211169",
+    "sku": "3211169",
+    "name": "Drive Belt",
+    "brand": "Polaris",
+    "category": "drivetrain",
+    "type": "oem",
+    "price": 109.99,
+    "images": [
+      "https://static.wixstatic.com/media/12b852_cc12e8aa148845efb6b2e6e8cd10039e~mv2.jpg"
+    ],
+    "description": "Genuine OEM part 3211169 for Polaris powersports vehicles. Covers fitment for RANGER CREW 570 Full-Size, RANGER 500 4X2, RANGER CREW 570, RANGER CREW 570 Premium, RANGER 570 Premium, INTL RANGER 570 EPS Nordic Pro SE and more. Factory-spec CVT/drive belt engineered to match the original driveline geometry and compound. Delivers consistent engagement, reduced belt dust, and predictable performance across the full power range.",
+    "shortDescription": "Factory CVT/drive belt replacement",
+    "specs": {
+      "partNumbers": [
+        "3211169"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2015,
+        "make": "Polaris",
+        "model": "RANGER CREW 570 Full-Size"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RANGER CREW 570 Full-Size"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RANGER CREW 570 Full-Size"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RANGER CREW 570 Full-Size"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "RANGER 500 4X2"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RANGER 500 4X2"
+      },
+      {
+        "year": 2015,
+        "make": "Polaris",
+        "model": "RANGER CREW 570"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RANGER CREW 570"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RANGER CREW 570 Premium"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RANGER 570 Premium"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "INTL RANGER 570 EPS Nordic Pro SE"
+      },
+      {
+        "year": 2015,
+        "make": "Polaris",
+        "model": "RANGER 570 Full-Size"
+      },
+      {
+        "year": 2016,
+        "make": "Polaris",
+        "model": "RANGER 570 Full-Size"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "RANGER 570 Full-Size"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RANGER 570 Full-Size"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RANGER 570 Full-Size"
+      },
+      {
+        "year": 2023,
+        "make": "Polaris",
+        "model": "RANGER 570 Full-Size"
+      },
+      {
+        "year": 2024,
+        "make": "Polaris",
+        "model": "RANGER 570 Full-Size"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "RANGER 500"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RANGER 500"
+      },
+      {
+        "year": 2022,
+        "make": "Polaris",
+        "model": "RANGER 500"
+      },
+      {
+        "year": 2015,
+        "make": "Polaris",
+        "model": "RANGER 570"
+      },
+      {
+        "year": 2016,
+        "make": "Polaris",
+        "model": "RANGER 570"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "RANGER 570"
+      },
+      {
+        "year": 2021,
+        "make": "Polaris",
+        "model": "RANGER 570"
+      },
+      {
+        "year": 2016,
+        "make": "Polaris",
+        "model": "RANGER CREW 570-6"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "RANGER CREW 570-6"
+      },
+      {
+        "year": 2016,
+        "make": "Polaris",
+        "model": "RANGER CREW 570-4"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "RANGER CREW 570-4"
+      },
+      {
+        "year": 2014,
+        "make": "Polaris",
+        "model": "RANGER 570 EPS"
+      },
+      {
+        "year": 2015,
+        "make": "Polaris",
+        "model": "RANGER 570 EPS"
+      },
+      {
+        "year": 2016,
+        "make": "Polaris",
+        "model": "RANGER 570 EPS"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "RANGER 570 EPS"
+      },
+      {
+        "year": 2020,
+        "make": "Polaris",
+        "model": "RANGER CREW 570-4 Premium"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "RANGER 570 EPS"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "RANGER CREW 570-4 EPS"
+      },
+      {
+        "year": 2018,
+        "make": "Polaris",
+        "model": "RANGER 2X4"
+      },
+      {
+        "year": 2017,
+        "make": "Polaris",
+        "model": "RANGER 570 Full-Size"
+      },
+      {
+        "year": 2018,
+        "make": "Polaris",
+        "model": "RANGER 570 Full-Size"
+      },
+      {
+        "year": 2019,
+        "make": "Polaris",
+        "model": "RANGER 570 Full-Size"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "drivetrain",
+      "polaris",
+      "drive",
+      "belt"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-08C35-A851M01",
+    "sku": "08C35-A851M01",
+    "name": "HP Transmission Fluid- 1qt",
+    "brand": "Honda",
+    "category": "oem-replacement",
+    "type": "oem",
+    "price": 10.99,
+    "images": [
+      "https://static.wixstatic.com/media/528cc8_cb6858c4ebd04e5d8b535d1f9c0b437c~mv2.png"
+    ],
+    "description": "Genuine OEM part 08C35-A851M01 for Honda powersports vehicles. Verify fitment against your vehicle before ordering. Factory-formulated fluid, filter, or maintenance item. Meets the OEM specification for the machines it is listed for, providing correct protection, change intervals, and fill behavior without aftermarket guesswork.",
+    "shortDescription": "Genuine OEM maintenance part",
+    "specs": {
+      "partNumbers": [
+        "08C35-A851M01"
+      ]
+    },
+    "fitment": [],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "oem-replacement",
+      "honda",
+      "transmission",
+      "fluid-"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "scraped-3211175",
+    "sku": "3211175",
+    "name": "Polaris ORV Drive Belt",
+    "brand": "Polaris",
+    "category": "drivetrain",
+    "type": "oem",
+    "price": 129.99,
+    "images": [
+      "https://static.wixstatic.com/media/12b852_a0244830c24b47dbaca80bb6e98f0783~mv2.jpg"
+    ],
+    "description": "Genuine OEM part 3211175 for Polaris powersports vehicles. Covers fitment for RANGER DIESEL, RANGER CREW DIESEL. Factory-spec CVT/drive belt engineered to match the original driveline geometry and compound. Delivers consistent engagement, reduced belt dust, and predictable performance across the full power range.",
+    "shortDescription": "Factory CVT/drive belt replacement",
+    "specs": {
+      "partNumbers": [
+        "3211175"
+      ]
+    },
+    "fitment": [
+      {
+        "year": 2017,
+        "make": "Polaris",
+        "model": "RANGER DIESEL"
+      },
+      {
+        "year": 2018,
+        "make": "Polaris",
+        "model": "RANGER DIESEL"
+      },
+      {
+        "year": 2017,
+        "make": "Polaris",
+        "model": "RANGER CREW DIESEL"
+      },
+      {
+        "year": 2018,
+        "make": "Polaris",
+        "model": "RANGER CREW DIESEL"
+      },
+      {
+        "year": 2015,
+        "make": "Polaris",
+        "model": "RANGER DIESEL"
+      },
+      {
+        "year": 2016,
+        "make": "Polaris",
+        "model": "RANGER DIESEL"
+      },
+      {
+        "year": 2015,
+        "make": "Polaris",
+        "model": "RANGER CREW DIESEL"
+      },
+      {
+        "year": 2016,
+        "make": "Polaris",
+        "model": "RANGER CREW DIESEL"
+      }
+    ],
+    "availability": "in-stock",
+    "stockQty": 8,
+    "isFeatured": false,
+    "rating": 0,
+    "reviewCount": 0,
+    "tags": [
+      "drivetrain",
+      "polaris",
+      "drive",
+      "belt"
+    ],
+    "createdAt": "2026-08-01T00:00:00Z"
+  }
+]

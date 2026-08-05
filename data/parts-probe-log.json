@@ -1,0 +1,283 @@
+[
+  {
+    "type": "goto",
+    "url": "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/engine-cylinder-head-a24yak11n1n5-a00037/a3dbfe5d-e336-49eb-a360-230da805f3d4"
+  },
+  {
+    "type": "request",
+    "method": "GET",
+    "url": "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/engine-cylinder-head-a24yak11n1n5-a00037/a3dbfe5d-e336-49eb-a360-230da805f3d4",
+    "resourceType": "document"
+  },
+  {
+    "type": "request",
+    "method": "GET",
+    "url": "https://www.xtremepowersportstampa.com/DesktopModules/FicheViewer/app/style.css?cdv=1306",
+    "resourceType": "stylesheet"
+  },
+  {
+    "type": "request",
+    "method": "GET",
+    "url": "https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js",
+    "resourceType": "script"
+  },
+  {
+    "type": "request",
+    "method": "GET",
+    "url": "https://www.xtremepowersportstampa.com/DesktopModules/FicheViewer/app/scripts/ficheviewer.js?cdv=1306",
+    "resourceType": "script"
+  },
+  {
+    "type": "request",
+    "method": "GET",
+    "url": "https://fonts.googleapis.com/css?family=Oswald:400,700",
+    "resourceType": "stylesheet"
+  },
+  {
+    "type": "request",
+    "method": "GET",
+    "url": "https://fonts.googleapis.com/css?family=Teko",
+    "resourceType": "stylesheet"
+  },
+  {
+    "type": "request",
+    "method": "GET",
+    "url": "https://www.xtremepowersportstampa.com/portals/xtremepowersportstampa/skins/xtremepowersportstampa-letitride/images/partslogo.jpg",
+    "resourceType": "image"
+  },
+  {
+    "type": "request",
+    "method": "GET",
+    "url": "https://www.google.com/recaptcha/api.js?render=explicit?cdv=1306",
+    "resourceType": "script"
+  },
+  {
+    "type": "response",
+    "status": 200,
+    "url": "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/engine-cylinder-head-a24yak11n1n5-a00037/a3dbfe5d-e336-49eb-a360-230da805f3d4",
+    "contentType": "text/html; charset=utf-8",
+    "bodyPreview": "<!DOCTYPE html>\n<html  lang=\"en-US\" dir=\"ltr\">\n<head id=\"Head\"><script id=\"dx1-gpc-bootstrap\">(function(){try{var serverOptOut=false;var blocklist=[\"google-analytics.com\",\"googletagmanager.com\",\"googleadservices.com\",\"doubleclick.net\",\"audioeye.com\",\"polarisindustries.com/digitas\",\"shiftdigital.com\",\"shift-digital.com\",\"brp.com/analytics\",\"nadaguides.com\",\"facebook.net\",\"connect.facebook.net\",\"snap.licdn.com\",\"bing.com/bat\",\"tiktok.com\",\"hotjar.com\",\"fullstory.com\",\"intercom.io\",\"tawk.to\",\"olark.com\",\"drift.com\",\"livechatinc.com\"];var nav=window.navigator||{};var clientOptOut=(nav.globalPrivacyControl===true);if(clientOptOut){try{document.cookie='Sec-GPC=1; path=/; SameSite=Lax; Secure';}catch(e){}}var optedOut=serverOptOut||clientOptOut;window.__dx1Gpc={optedOut:optedOut,blocklist:blocklist,blocked:[]};if(!optedOut){return;}function shouldBlock(url){if(!url){return false;}url=String(url).toLowerCase();for(var i=0;i<blocklist.length;i++){if(blocklist[i]&&url.indexOf(blocklist[i])!==-1){return true;}}return false;}function neuter(el){try{el.type='javascript/blocked';el.removeAttribute('src');el.textContent='';if(el.parentNode){el.parentNode.removeChild(el);}}catch(e){}}var origCreate=document.createElement;document.createElement=function(tag){var el=origCreate.apply(document,arguments);if(typeof tag==='string'){var t=tag.toLowerCase();if(t==='script'||t==='iframe'){try{Object.defineProperty(el,'src',{configurable:true,set:function(v){if(shouldBlock(v)){window.__dx1Gpc.blocked.push(v);return;}el.setAttribute('src',v);},get:function(){return el.getAttribute('src');}});}catch(e){}}}return el;};function patchInsert(proto,name){var orig=proto[name];if(!orig){return;}proto[name]=function(node){try{if(node&&(node.tagName==='SCRIPT'||node.tagName==='IFRAME')){var src=node.getAttribute&&node.getAttribute('src');if(shouldBlock(src)){window.__dx1Gpc.blocked.push(src);return node;}}}catch(e){}return orig.apply(this,arguments);};}patchInsert(Node.prototype,'appendChild');patchInsert(Node.prototype,'insertBefore');var mo=new MutationObserver(function(muts){for(var i=0;i<muts.length;i++){var added=muts[i].addedNodes;for(var j=0;j<added.length;j++){var n=added[j];if(!n||n.nodeType!==1){continue;}if(n.tagName==='SCRIPT'||n.tagName==='IFRAME'){var src=n.getAttribute&&n.getAttribute('src');if(shouldBlock(src)){window.__dx1Gpc.blocked.push(src);neuter(n);}}}}});try{mo.observe(document.documentElement||document,{childList:true,subtree:true});}catch(e){}}catch(e){if(window.console&&console.warn){console.warn('GPC bootstrap failed',e);}}})();</script><meta content=\"text/html; charset=UTF-8\" http-equiv=\"Content-Type\" />\n<meta name=\"REVISIT-AFTER\" content=\"1 DAYS\" />\n<meta name=\"RATING\" content=\"GENERAL\" />\n<meta name=\"RESOURCE-TYPE\" content=\"DOCUMENT\" />\n<meta content=\"text/javascript\" http-equiv=\"Content-Script-Type\" />\n<meta content=\"text/css\" http-equiv=\"Content-Style-Type\" />\n\n<!-- Ticket: 348532 -->\n<script id=\"ol_widget_snippet\" src=\"https://widget.octane.co/\"></script><title>\r\n\tShop Genuine Parts at Xtreme Powersports Tampa\r\n</title><meta id=\"MetaDescription\" name=\"description\" content=\"Xtreme Powersports, Tampa, St Petersburg, Clearwater, Lakeland, Wesley Chapel, FL, dealer, new, used, pre-owned, ATV, motorcycle, utility vehicle, scooter, snowmobile, watercraft, Honda, Polaris, Husqvarna, parts, accessories, service, financing\" /><meta id=\"MetaKeywords\" name=\"keywords\" content=\"Xtreme Powersports, Tampa, Brandon,St Petersburg, Clearwater,Lakeland, Wesley Chapel, FL,Florida, dealer, new, used, pre-owned, ATV, motorcycle, utility vehicle, scooter, snowmobile, watercraft, dirt bike, Honda, Polaris, Husqvarna, Husky, parts, accessories, service, financing\" /><meta id=\"MetaRobots\" name=\"robots\" content=\"INDEX, FOLLOW\" /><link href=\"/portals/xtremepowersportstampa-System/dnn-css-variables.css?cdv=1306\" rel=\"stylesheet\" /><link href=\"/Resources/Shared/stylesheets/dnndefault/10.0.0/default.css?cdv=1306\" rel=\"stylesheet\" /><link href=\"/Portals/_default"
+  },
+  {
+    "type": "response",
+    "status": 200,
+    "url": "https://www.xtremepowersportstampa.com/DesktopModules/FicheViewer/app/style.css?cdv=1306",
+    "contentType": "text/css"
+  },
+  {
+    "type": "response",
+    "status": 200,
+    "url": "https://fonts.googleapis.com/css?family=Teko",
+    "contentType": "text/css; charset=utf-8"
+  },
+  {
+    "type": "response",
+    "status": 200,
+    "url": "https://fonts.googleapis.com/css?family=Oswald:400,700",
+    "contentType": "text/css; charset=utf-8"
+  },
+  {
+    "type": "response",
+    "status": 200,
+    "url": "https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js",
+    "contentType": "text/javascript; charset=UTF-8"
+  },
+  {
+    "type": "request",
+    "method": "GET",
+    "url": "https://ride-octane-api-prod-static.s3.amazonaws.com/static/widget/domain_widgets/xtremepowersportstampacom.js",
+    "resourceType": "script"
+  },
+  {
+    "type": "response",
+    "status": 200,
+    "url": "https://www.xtremepowersportstampa.com/portals/xtremepowersportstampa/skins/xtremepowersportstampa-letitride/images/partslogo.jpg",
+    "contentType": "image/jpeg"
+  },
+  {
+    "type": "response",
+    "status": 200,
+    "url": "https://www.xtremepowersportstampa.com/DesktopModules/FicheViewer/app/scripts/ficheviewer.js?cdv=1306",
+    "contentType": "application/x-javascript"
+  },
+  {
+    "type": "request",
+    "method": "GET",
+    "url": "https://cdpcdn.dx1app.com/fiche-section-images/b374b459-5d15-46cf-a526-07c47de4c836.gif",
+    "resourceType": "image"
+  },
+  {
+    "type": "request",
+    "method": "POST",
+    "url": "https://www.google.com/ccm/collect?rcb=9&frm=0&apvc=1&auid=1220301720.1785916715&dt=Shop%20Genuine%20Parts%20at%20Xtreme%20Powersports%20Tampa&tid=DC-8279968&en=page_view&dl=https%3A%2F%2Fwww.xtremepowersportstampa.com%2FParts%2FOnline-Parts-Fiche%2Fpolaris%2Fatvs%2F2024%2Fintl-outlaw-110-md-a24yak11n1-n5%2Fengine-cylinder-head-a24yak11n1n5-a00037%2Fa3dbfe5d-e336-49eb-a360-230da805f3d4&scrsrc=www.googletagmanager.com&rnd=1697409996.1785916715&navt=n&npa=0&gtm=45fe6831h1v9181466134za200zd9181466134xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118395335~118897920~118897930~119896803~120213116&tft=1785916714565&tfd=8571&tids=DC-8279968&fmt=8",
+    "resourceType": "fetch"
+  },
+  {
+    "type": "response",
+    "status": 200,
+    "url": "https://www.google.com/ccm/collect?rcb=9&frm=0&apvc=1&auid=1220301720.1785916715&dt=Shop%20Genuine%20Parts%20at%20Xtreme%20Powersports%20Tampa&tid=DC-8279968&en=page_view&dl=https%3A%2F%2Fwww.xtremepowersportstampa.com%2FParts%2FOnline-Parts-Fiche%2Fpolaris%2Fatvs%2F2024%2Fintl-outlaw-110-md-a24yak11n1-n5%2Fengine-cylinder-head-a24yak11n1n5-a00037%2Fa3dbfe5d-e336-49eb-a360-230da805f3d4&scrsrc=www.googletagmanager.com&rnd=1697409996.1785916715&navt=n&npa=0&gtm=45fe6831h1v9181466134za200zd9181466134xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118395335~118897920~118897930~119896803~120213116&tft=1785916714565&tfd=8571&tids=DC-8279968&fmt=8",
+    "contentType": ""
+  },
+  {
+    "type": "response",
+    "status": 200,
+    "url": "https://www.google.com/recaptcha/api.js?render=explicit?cdv=1306",
+    "contentType": "text/javascript; charset=utf-8"
+  },
+  {
+    "type": "request",
+    "method": "GET",
+    "url": "https://di.rlcdn.com/api/segment?pid=712482&pdata=GtmTagName%3DLiveRamp%20-%20Base%2CProductLineGroup%3DDealerSite%2CDealerDomain%3Dwww.xtremepowersportstampa.com%2CDeviceCategory%3Ddesktop%2Fother",
+    "resourceType": "image"
+  },
+  {
+    "type": "response",
+    "status": 200,
+    "url": "https://cdpcdn.dx1app.com/fiche-section-images/b374b459-5d15-46cf-a526-07c47de4c836.gif",
+    "contentType": "image/gif"
+  },
+  {
+    "type": "request",
+    "method": "POST",
+    "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-GQFWNR7C3V&gtm=45je6831v9128986947z8847130071za20gzb847130071zd847130071&_p=1785916711672&gcd=13l3l3l3l1l1&npa=0&dma=0&are=1&cid=616230312.1785916722&frm=0&ngs=1&pscdl=noapi&rcb=12&sr=1920x1080&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115938466~115938468~118897920~118897930~119527020~119896802&sid=1785916722&sct=1&seg=0&dl=https%3A%2F%2Fwww.xtremepowersportstampa.com%2FParts%2FOnline-Parts-Fiche%2Fpolaris%2Fatvs%2F2024%2Fintl-outlaw-110-md-a24yak11n1-n5%2Fengine-cylinder-head-a24yak11n1n5-a00037%2Fa3dbfe5d-e336-49eb-a360-230da805f3d4&dt=Shop%20Genuine%20Parts%20at%20Xtreme%20Powersports%20Tampa&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=16212",
+    "resourceType": "fetch"
+  },
+  {
+    "type": "response",
+    "status": 204,
+    "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-GQFWNR7C3V&gtm=45je6831v9128986947z8847130071za20gzb847130071zd847130071&_p=1785916711672&gcd=13l3l3l3l1l1&npa=0&dma=0&are=1&cid=616230312.1785916722&frm=0&ngs=1&pscdl=noapi&rcb=12&sr=1920x1080&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115938466~115938468~118897920~118897930~119527020~119896802&sid=1785916722&sct=1&seg=0&dl=https%3A%2F%2Fwww.xtremepowersportstampa.com%2FParts%2FOnline-Parts-Fiche%2Fpolaris%2Fatvs%2F2024%2Fintl-outlaw-110-md-a24yak11n1-n5%2Fengine-cylinder-head-a24yak11n1n5-a00037%2Fa3dbfe5d-e336-49eb-a360-230da805f3d4&dt=Shop%20Genuine%20Parts%20at%20Xtreme%20Powersports%20Tampa&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=16212",
+    "contentType": "text/plain"
+  },
+  {
+    "type": "response",
+    "status": 307,
+    "url": "https://di.rlcdn.com/api/segment?pid=712482&pdata=GtmTagName%3DLiveRamp%20-%20Base%2CProductLineGroup%3DDealerSite%2CDealerDomain%3Dwww.xtremepowersportstampa.com%2CDeviceCategory%3Ddesktop%2Fother",
+    "contentType": ""
+  },
+  {
+    "type": "request",
+    "method": "GET",
+    "url": "https://di.rlcdn.com/api/segment?pdata=GtmTagName%3DLiveRamp+-+Base%2CProductLineGroup%3DDealerSite%2CDealerDomain%3Dwww.xtremepowersportstampa.com%2CDeviceCategory%3Ddesktop%2Fother&pid=712482&redirect=1",
+    "resourceType": "image"
+  },
+  {
+    "type": "request",
+    "method": "POST",
+    "url": "https://www.google-analytics.com/j/collect?v=1&_v=j102&a=710318200&t=pageview&_s=1&dl=https%3A%2F%2Fwww.xtremepowersportstampa.com%2FParts%2FOnline-Parts-Fiche%2Fpolaris%2Fatvs%2F2024%2Fintl-outlaw-110-md-a24yak11n1-n5%2Fengine-cylinder-head-a24yak11n1n5-a00037%2Fa3dbfe5d-e336-49eb-a360-230da805f3d4&ul=en-us&dt=Shop%20Genuine%20Parts%20at%20Xtreme%20Powersports%20Tampa&sr=1920x1080&vp=1920x1080&_u=YCDACAABBAAAAC~&jid=262995340&gjid=699657214&cid=616230312.1785916722&tid=UA-112704208-20&_gid=1389348493.1785916725&_r=1&_slc=1&gtm=45He6831n81T4S79KJv78370022za200zd78370022&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118395335~118897920~118897930~119896803&z=1250902651",
+    "resourceType": "xhr"
+  },
+  {
+    "type": "request",
+    "method": "POST",
+    "url": "https://www.google-analytics.com/j/collect?v=1&_v=j102&a=710318200&t=pageview&_s=1&dl=https%3A%2F%2Fwww.xtremepowersportstampa.com%2FParts%2FOnline-Parts-Fiche%2Fpolaris%2Fatvs%2F2024%2Fintl-outlaw-110-md-a24yak11n1-n5%2Fengine-cylinder-head-a24yak11n1n5-a00037%2Fa3dbfe5d-e336-49eb-a360-230da805f3d4&ul=en-us&dt=Shop%20Genuine%20Parts%20at%20Xtreme%20Powersports%20Tampa&sr=1920x1080&vp=1920x1080&_u=YCDACAABBAAAAC~&jid=1251459532&gjid=792702578&cid=616230312.1785916722&tid=UA-126392927-1&_gid=1389348493.1785916725&_r=1&_slc=1&gtm=45He6831n81T4S79KJv78370022za200zd78370022&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118395335~118897920~118897930~119896803&z=1143273572",
+    "resourceType": "xhr"
+  },
+  {
+    "type": "response",
+    "status": 200,
+    "url": "https://di.rlcdn.com/api/segment?pdata=GtmTagName%3DLiveRamp+-+Base%2CProductLineGroup%3DDealerSite%2CDealerDomain%3Dwww.xtremepowersportstampa.com%2CDeviceCategory%3Ddesktop%2Fother&pid=712482&redirect=1",
+    "contentType": "image/gif"
+  },
+  {
+    "type": "request",
+    "method": "POST",
+    "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-RQBFL8XS95&gtm=45je6831v884023176z878370022za20gzb78370022zd78370022&_p=1785916711671&gcd=13l3l3l3l1l1&npa=0&dma=0&are=1&cid=616230312.1785916722&frm=0&ngs=1&pscdl=noapi&rcb=4&sr=1920x1080&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115616986~115938466~115938468~118897920~118897930~119896802&sid=1785916725&sct=1&seg=0&dl=https%3A%2F%2Fwww.xtremepowersportstampa.com%2FParts%2FOnline-Parts-Fiche%2Fpolaris%2Fatvs%2F2024%2Fintl-outlaw-110-md-a24yak11n1-n5%2Fengine-cylinder-head-a24yak11n1n5-a00037%2Fa3dbfe5d-e336-49eb-a360-230da805f3d4&dt=Shop%20Genuine%20Parts%20at%20Xtreme%20Powersports%20Tampa&en=page_view&_fv=1&_ss=1&tfd=19306",
+    "resourceType": "fetch"
+  },
+  {
+    "type": "response",
+    "status": 200,
+    "url": "https://www.google-analytics.com/j/collect?v=1&_v=j102&a=710318200&t=pageview&_s=1&dl=https%3A%2F%2Fwww.xtremepowersportstampa.com%2FParts%2FOnline-Parts-Fiche%2Fpolaris%2Fatvs%2F2024%2Fintl-outlaw-110-md-a24yak11n1-n5%2Fengine-cylinder-head-a24yak11n1n5-a00037%2Fa3dbfe5d-e336-49eb-a360-230da805f3d4&ul=en-us&dt=Shop%20Genuine%20Parts%20at%20Xtreme%20Powersports%20Tampa&sr=1920x1080&vp=1920x1080&_u=YCDACAABBAAAAC~&jid=1251459532&gjid=792702578&cid=616230312.1785916722&tid=UA-126392927-1&_gid=1389348493.1785916725&_r=1&_slc=1&gtm=45He6831n81T4S79KJv78370022za200zd78370022&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118395335~118897920~118897930~119896803&z=1143273572",
+    "contentType": "text/plain"
+  },
+  {
+    "type": "response",
+    "status": 200,
+    "url": "https://www.google-analytics.com/j/collect?v=1&_v=j102&a=710318200&t=pageview&_s=1&dl=https%3A%2F%2Fwww.xtremepowersportstampa.com%2FParts%2FOnline-Parts-Fiche%2Fpolaris%2Fatvs%2F2024%2Fintl-outlaw-110-md-a24yak11n1-n5%2Fengine-cylinder-head-a24yak11n1n5-a00037%2Fa3dbfe5d-e336-49eb-a360-230da805f3d4&ul=en-us&dt=Shop%20Genuine%20Parts%20at%20Xtreme%20Powersports%20Tampa&sr=1920x1080&vp=1920x1080&_u=YCDACAABBAAAAC~&jid=262995340&gjid=699657214&cid=616230312.1785916722&tid=UA-112704208-20&_gid=1389348493.1785916725&_r=1&_slc=1&gtm=45He6831n81T4S79KJv78370022za200zd78370022&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118395335~118897920~118897930~119896803&z=1250902651",
+    "contentType": "text/plain"
+  },
+  {
+    "type": "response",
+    "status": 204,
+    "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-RQBFL8XS95&gtm=45je6831v884023176z878370022za20gzb78370022zd78370022&_p=1785916711671&gcd=13l3l3l3l1l1&npa=0&dma=0&are=1&cid=616230312.1785916722&frm=0&ngs=1&pscdl=noapi&rcb=4&sr=1920x1080&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115616986~115938466~115938468~118897920~118897930~119896802&sid=1785916725&sct=1&seg=0&dl=https%3A%2F%2Fwww.xtremepowersportstampa.com%2FParts%2FOnline-Parts-Fiche%2Fpolaris%2Fatvs%2F2024%2Fintl-outlaw-110-md-a24yak11n1-n5%2Fengine-cylinder-head-a24yak11n1n5-a00037%2Fa3dbfe5d-e336-49eb-a360-230da805f3d4&dt=Shop%20Genuine%20Parts%20at%20Xtreme%20Powersports%20Tampa&en=page_view&_fv=1&_ss=1&tfd=19306",
+    "contentType": "text/plain"
+  },
+  {
+    "type": "request",
+    "method": "GET",
+    "url": "https://aa.trkn.us/e/a.gif?dmn=www.xtremepowersportstampa.com&pn=%2FParts%2FOnline-Parts-Fiche%2Fpolaris%2Fatvs%2F2024%2Fintl-outlaw-110-md-a24yak11n1-n5%2Fengine-cylinder-head-a24yak11n1n5-a00037%2Fa3dbfe5d-e336-49eb-a360-230da805f3d4&qs=na&rdn=www.xtremepowersportstampa.com&rpn=%2FParts%2FOnline-Parts-Fiche%2Fpolaris%2Fatvs%2F2024%2Fintl-outlaw-110-md-a24yak11n1-n5%2Fengine-cylinder-head-a24yak11n1n5-a00037%2Fa3dbfe5d-e336-49eb-a360-230da805f3d4&rqs=na&evid=cd8e6b7b-9572-468e-acac-ad582d12c362&suu=711d209efa3de3d265646fa069dd22e0&tt=cs.js&z_evid=CE49E973E26447EBFCE3A9904B99F533D0093C35014D2D35D655F3768C188649&urls=&rnd=1785916726268&cid=c013&version=1.2087.100&cc=CM&repeat=0&htmLcy=521",
+    "resourceType": "image"
+  },
+  {
+    "type": "request",
+    "method": "POST",
+    "url": "https://analytics.google.com/g/collect?v=2&tid=G-QVBPC4D14N&gtm=45je6831v869358184z878370022za20gzb78370022zd78370022&_p=1785916711671&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGAC&are=1&cid=616230312.1785916722&frm=0&pscdl=noapi&rcb=13&sr=1920x1080&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&gaf=2&_s=1&tag_exp=115938466~115938469~118897920~118897930~119896802&sid=1785916726&sct=1&seg=0&dl=https%3A%2F%2Fwww.xtremepowersportstampa.com%2FParts%2FOnline-Parts-Fiche%2Fpolaris%2Fatvs%2F2024%2Fintl-outlaw-110-md-a24yak11n1-n5%2Fengine-cylinder-head-a24yak11n1n5-a00037%2Fa3dbfe5d-e336-49eb-a360-230da805f3d4&dt=Shop%20Genuine%20Parts%20at%20Xtreme%20Powersports%20Tampa&en=page_view&_fv=1&_ss=1&tfd=20601",
+    "resourceType": "fetch"
+  },
+  {
+    "type": "request",
+    "method": "GET",
+    "url": "https://tagging.shiftdigitalapps.io/endpoint/polaris/1x1.gif?ht=pageview&cl=POLARIS&rid=2986800&prid=DX1&uid=ab521cd0-d5cc-4c33-aa6b-d8626e3bfef3&sid=9e22c05d-8619-401b-a68f-932155308d2d&pid=635fe64a-6193-47ab-845f-00c3f76205be&hid=3717da3a-4096-4660-838d-dbdd5eaca06f&sdid=heywap&sc=T3&id2=3it3k5drwdpk4&evars=&props=containerSource!2Production%2FPolaris%2Fsd.js!1containerUrl!2https%3A%2F%2Ftagging.shiftdigitalapps.io%2Fscripts%2FPOLARIS%2Fsd.js!1tagSource!2Production%2Fdefault%2Fsda.js!1language!2en!1pagebrand!2!1pagetype!2Other!1sessionid!2e2c14e61-699f-4e6b-a823-14cd3cc35072&pv=&aid=&cmp=&cmpn=&cmpt=&ch=&daa=&dac=&dak=&dal=&dapl=&dapo=&dap=&kw=&smt=&tgid=&tz=America%2FNew_York&tzo=240&cb=arie4e&d=24-bit&enc=UTF-8&fl=&if=false&je=false&l=en-us&rf=&rs=1920x1080&ts=1785916726645&t=Shop%20Genuine%20Parts%20at%20Xtreme%20Powersports%20Tampa&u=https%3A%2F%2Fwww.xtremepowersportstampa.com%2FParts%2FOnline-Parts-Fiche%2Fpolaris%2Fatvs%2F2024%2Fintl-outlaw-110-md-a24yak11n1-n5%2Fengine-cylinder-head-a24yak11n1n5-a00037%2Fa3dbfe5d-e336-49eb-a360-230da805f3d4&tu=https%3A%2F%2Fwww.xtremepowersportstampa.com%2FParts%2FOnline-Parts-Fiche%2Fpolaris%2Fatvs%2F2024%2Fintl-outlaw-110-md-a24yak11n1-n5%2Fengine-cylinder-head-a24yak11n1n5-a00037%2Fa3dbfe5d-e336-49eb-a360-230da805f3d4&v=4.0&b=de12d1e3bcaa-prod&vp=1920x1080&xd=false&ptl=19444&pti=19450&prs=619&pre=1849&pdl=9218&pc=GA!218806!1GTM!212529&ins=1",
+    "resourceType": "image"
+  },
+  {
+    "type": "response",
+    "status": 204,
+    "url": "https://aa.trkn.us/e/a.gif?dmn=www.xtremepowersportstampa.com&pn=%2FParts%2FOnline-Parts-Fiche%2Fpolaris%2Fatvs%2F2024%2Fintl-outlaw-110-md-a24yak11n1-n5%2Fengine-cylinder-head-a24yak11n1n5-a00037%2Fa3dbfe5d-e336-49eb-a360-230da805f3d4&qs=na&rdn=www.xtremepowersportstampa.com&rpn=%2FParts%2FOnline-Parts-Fiche%2Fpolaris%2Fatvs%2F2024%2Fintl-outlaw-110-md-a24yak11n1-n5%2Fengine-cylinder-head-a24yak11n1n5-a00037%2Fa3dbfe5d-e336-49eb-a360-230da805f3d4&rqs=na&evid=cd8e6b7b-9572-468e-acac-ad582d12c362&suu=711d209efa3de3d265646fa069dd22e0&tt=cs.js&z_evid=CE49E973E26447EBFCE3A9904B99F533D0093C35014D2D35D655F3768C188649&urls=&rnd=1785916726268&cid=c013&version=1.2087.100&cc=CM&repeat=0&htmLcy=521",
+    "contentType": ""
+  },
+  {
+    "type": "page-info",
+    "url": "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/engine-cylinder-head-a24yak11n1n5-a00037/a3dbfe5d-e336-49eb-a360-230da805f3d4",
+    "title": "Shop Genuine Parts at Xtreme Powersports Tampa"
+  },
+  {
+    "type": "links",
+    "count": 43,
+    "links": [
+      "https://www.xtremepowersportsparts.com/",
+      "https://www.xtremepowersportstampa.com/Parts/Parts-Department",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche",
+      "https://www.xtremepowersportstampa.com/Service/Service-Department",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/body-cab-and-seat-a24yak11n1n5-49atvcab07otlw90/0b98bd40-81cc-40d6-b05d-77aa3e408d62",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/body-decals-a24yak11n1n5-a00071/1b86915d-dc37-4536-a92a-162659cd53fc",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/body-fuel-tank-asm-a24yak11n1n5-a00068/d74e952f-5940-4291-86ad-6d51a8280f37",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/brakes-front-a24yak11n1n5-4999202399920239b11/d88a4f07-8a81-4b17-86f2-df16c192aece",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/brakes-rear-a24yak11n1n5-49atvbrakerr08out90/057b5122-6b49-4801-b00c-200473e25267",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/chassis-a-arm-and-footrest-a24yak11n1n5-a00049/2959bb90-697f-44eb-8a92-c24963d5746d",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/chassis-bumper-a24yak11n1n5-49atvbumper07otlw90/8bfcef41-3814-4106-8a0d-e2e1d55f419e",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/chassis-frame-a24yak11n1n5-102294/928ff9f8-95f4-4d83-bf83-6a2b8fddd820",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/drive-train-chain-a24yak11n1n5-49atvchain08out90/29ef6836-de91-436d-a7d8-4a694458f1d5",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/drive-train-primary-and-secondary-clutchs-a24yak11n1n5-a00006/efc00868-5c4f-4fe6-85fb-60979d0574c6",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/drive-train-transmission-a2yak11n6n7-a00072/695bb25e-03dc-4c42-beef-b24e63dd0644",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/drive-train-transmission-shift-lever-a24yak11n1n5-49atvshift07otlw90/2117261c-89ad-47b0-9f7f-5589a2170c06",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/electrical-headlight-and-taillight-a24yak11n1n5-49atvheadlight07otlw90/30027eda-cf33-4e73-b273-c961ab4ed7f9",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/electrical-switches-harness-and-indicators-a24yak11n1n5-102293/1f7af031-a76b-483b-8e0b-3dfc7adddb65",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/engine-air-intake-system-a24yak11n1n5-a00009/80968ac3-c461-49b1-ac0f-83eea17aad11",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/engine-cam-chain-a24yak11n1n5-49at6vcamchain07otlw90/7cf2852f-f38c-40e0-9e2d-ac898a9180ec",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/engine-clutch-cover-a24yak11n1n5-a00014/c32dac2c-fccf-4371-ac19-53912d8be14d",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/engine-crankcase-a24yak11n1n5-a00045/b470d0df-13c5-44d3-92a8-5b50b4fa90a6",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/engine-crankcase-cover-rh-a24yak11n1n5-49atvcrankcasecvrrh07otlw90/21ee6ec7-9634-4f0f-b75a-ebb6d1c87064",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/engine-crankshaft-and-piston-a24yak11n1n5-a00034/d07f653d-1717-4044-9b2e-e62164298436",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/engine-cylinder-a24yak11n1n5-a00015/826bcc4c-cdaf-4167-9672-88ed7b5bbe53",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/engine-cylinder-head-a24yak11n1n5-a00037/a3dbfe5d-e336-49eb-a360-230da805f3d4",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/engine-exhaust-a24yak11n1n5-a00053/64b34fb3-176d-4beb-92af-fe8f9f424c88",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/engine-fuel-injection-a24yak11n1n5-a00008/5a4d5af8-4bbe-40b3-8e7a-d718b1f39782",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/engine-generator-and-starting-motor-a24yak11n1n5-a00042/3ad581ab-8d13-49e7-9242-daf541703fe7",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/engine-oil-pump-a24yak11n1n5-49atvoilpump07otlw90/4f49f28d-13c2-4649-bce4-664dc5f67dcf",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/engine-starter-a24yak11n1n5-49atvstarter207otlw90/fa9260bc-8bd6-4106-9040-45428b6fdeb4",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/references-manual-and-setup-information-a24yak11n1n5-102302/f6f16298-9dc2-4809-aee3-15d3b0785a30",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/references-manual-and-setup-information-a24yak11n1n5-49atvtool09sp90/b5e1f4fe-d0ef-446f-bc05-efd55689d2f3",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/steering-handlebar-a24yak11n1n5-a00051/80ee30e4-8b3b-4675-9a90-6b9aae6bda7d",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/steering-steering-post-and-tie-rod-asm-a24yak11n1n5-49atvsteering13out90/bf911286-90d1-4d25-9726-20aa89383447",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/suspension-shocks-a24yak11n1n5-a00027/b9d05e5a-d9df-412c-a023-69811bf656b0",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/wheels-front-a24yak11n1n5-49atvwheelfrt07otlw90/f1cf7569-903f-4692-9181-fdc01b9e4aae",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/wheels-rear-a24yak11n1n5-49atvwheelrear07otlw90/1a7b9cdc-b42e-4e9e-b725-0ba63297e687",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/polaris/atvs/2024/intl-outlaw-110-md-a24yak11n1-n5/wheels-rear-axle-a24yak11n1n5-4999202399920239b14/c5adf7ca-179d-4d1d-ad44-e50051ed0d3a",
+      "https://www.xtremepowersportstampa.com/Parts/Online-Parts-Fiche/wish-list"
+    ]
+  }
+]
