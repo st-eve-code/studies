@@ -1,18 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
-import { mockVehicles } from "@/data/mock-vehicles";
 import type { Vehicle, VehicleFilters } from "@/types/vehicle";
 
-// Merge scraped vehicles if the file exists
+// Real listings scraped from the dealer site only (no mock/demo data).
 async function getAllVehicles(): Promise<Vehicle[]> {
-  const base = [...mockVehicles];
-  try {
-    const { default: scraped } = await import("@/data/scraped-vehicles.json", {
-      assert: { type: "json" },
-    });
-    return [...base, ...(scraped as Vehicle[])];
-  } catch {
-    return base;
-  }
+  const { default: scraped } = await import("@/data/scraped-vehicles.json", {
+    assert: { type: "json" },
+  });
+  return (scraped as Vehicle[]).filter((v) => v.images?.length);
 }
 
 export async function GET(req: NextRequest) {
@@ -28,6 +22,8 @@ export async function GET(req: NextRequest) {
   const search = searchParams.get("search");
   const sortBy = searchParams.get("sortBy") as VehicleFilters["sortBy"];
   const featured = searchParams.get("featured");
+  const source = searchParams.get("source");
+  const limit = searchParams.get("limit");
 
   let results = await getAllVehicles();
 
@@ -47,6 +43,8 @@ export async function GET(req: NextRequest) {
   if (priceMin) results = results.filter((v) => v.price >= Number(priceMin));
   if (priceMax) results = results.filter((v) => v.price <= Number(priceMax));
   if (featured === "true") results = results.filter((v) => v.isFeatured);
+  if (source === "scraped") results = results.filter((v) => !!v.sourceUrl);
+  if (source === "mock") results = results.filter((v) => !v.sourceUrl);
 
   if (search) {
     const q = search.toLowerCase();
@@ -70,6 +68,8 @@ export async function GET(req: NextRequest) {
         (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
       );
   }
+
+  if (limit) results = results.slice(0, Number(limit));
 
   return NextResponse.json({ data: results, total: results.length });
 }

@@ -20,6 +20,7 @@ import { cn, formatCurrency, formatNumber } from "@/lib/utils";
 import { ImageGallery } from "@/components/features/image-gallery";
 import { PaymentCalculator } from "@/components/features/payment-calculator";
 import { VehicleCard } from "@/components/features/vehicle-card";
+import { VehicleParts } from "@/components/features/vehicle-parts";
 import { StaggerReveal } from "@/components/ui/scroll-reveal";
 import { VehicleDetailSkeleton } from "@/components/skeleton/page-skeleton";
 import { fetchVehicleById, fetchVehicles } from "@/lib/mock-api";
@@ -292,6 +293,15 @@ export default function VehicleDetailPage() {
             <PaymentCalculator vehiclePrice={vehicle.price} />
           </div>
         </div>
+
+        {/* ── Parts for this vehicle ─────────────────────────────── */}
+        <VehicleParts
+          vehicleId={vehicle.id}
+          vehicleLabel={`${vehicle.year} ${vehicle.make} ${vehicle.model}`}
+          vehicleYear={vehicle.year}
+          vehicleMake={vehicle.make}
+          vehicleModel={vehicle.model}
+        />
 
         {/* ── Recommended vehicles ─────────────────────────────────── */}
         {related.length > 0 && (

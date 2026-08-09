@@ -5,9 +5,6 @@ const nextConfig: NextConfig = {
     // Next.js 16 hard limit: max 50 remotePatterns entries.
     // Using wildcard patterns where possible to cover multiple subdomains.
     remotePatterns: [
-      // ── Dev / placeholder ─────────────────────────────────────────────────
-      { protocol: "https", hostname: "picsum.photos" },
-
       // ── BRP group (Can-Am, Sea-Doo, Ski-Doo) ─────────────────────────────
       { protocol: "https", hostname: "**.brp.com" },
       { protocol: "https", hostname: "**.can-am.brp.com" },

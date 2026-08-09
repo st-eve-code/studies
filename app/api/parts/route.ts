@@ -1,17 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
-import { mockParts } from "@/data/mock-parts";
 import type { Part, PartFilters } from "@/types/part";
 
+// Real parts catalog scraped from the dealer store (no mock/demo data).
 async function getAllParts(): Promise<Part[]> {
-  const base = [...mockParts];
-  try {
-    const { default: scraped } = await import("@/data/catalog-parts.json", {
-      assert: { type: "json" },
-    });
-    return [...base, ...(scraped as Part[])];
-  } catch {
-    return base;
-  }
+  const { default: scraped } = await import("@/data/catalog-parts.json", {
+    assert: { type: "json" },
+  });
+  return (scraped as Part[]).filter((p) => p.images?.length);
 }
 
 export async function GET(req: NextRequest) {
@@ -25,6 +20,8 @@ export async function GET(req: NextRequest) {
   const search    = searchParams.get("search");
   const sortBy    = searchParams.get("sortBy") as PartFilters["sortBy"];
   const featured  = searchParams.get("featured");
+  const source    = searchParams.get("source");
+  const limit     = searchParams.get("limit");
   const fitYear   = searchParams.get("fitmentYear");
   const fitMake   = searchParams.get("fitmentMake");
   const fitModel  = searchParams.get("fitmentModel");
@@ -37,6 +34,8 @@ export async function GET(req: NextRequest) {
   if (priceMin)          results = results.filter((p) => p.price >= Number(priceMin));
   if (priceMax)          results = results.filter((p) => p.price <= Number(priceMax));
   if (featured === "true") results = results.filter((p) => p.isFeatured);
+  if (source === "scraped") results = results.filter((p) => p.id.startsWith("scraped-"));
+  if (source === "mock") results = results.filter((p) => !p.id.startsWith("scraped-"));
 
   if (fitYear && fitMake && fitModel) {
     results = results.filter(
@@ -73,6 +72,8 @@ export async function GET(req: NextRequest) {
         (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
       );
   }
+
+  if (limit) results = results.slice(0, Number(limit));
 
   return NextResponse.json({ data: results, total: results.length });
 }

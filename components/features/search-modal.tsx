@@ -3,9 +3,9 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { createPortal } from "react-dom";
 import Link from "next/link";
-import Image from "next/image";
 import { Search, X, Loader2, Car, Wrench, TrendingUp } from "lucide-react";
 import { cn, formatCurrency } from "@/lib/utils";
+import { ProductImage } from "@/components/ui/product-image";
 import { useDebounce } from "@/hooks/use-debounce";
 import { fetchSearchResults } from "@/lib/mock-api";
 import type { SearchResult } from "@/lib/mock-api";
@@ -155,7 +155,7 @@ export function SearchModal({ open, onClose }: SearchModalProps) {
                     className="flex items-center gap-3 p-2 rounded-lg hover:bg-muted transition-colors group"
                   >
                     <div className="relative size-12 rounded-lg overflow-hidden bg-muted shrink-0">
-                      <Image
+                      <ProductImage
                         src={vehicle.images[0]}
                         alt={vehicle.model}
                         fill
@@ -196,7 +196,7 @@ export function SearchModal({ open, onClose }: SearchModalProps) {
                     className="flex items-center gap-3 p-2 rounded-lg hover:bg-muted transition-colors"
                   >
                     <div className="relative size-12 rounded-lg overflow-hidden bg-muted shrink-0">
-                      <Image
+                      <ProductImage
                         src={part.images[0]}
                         alt={part.name}
                         fill

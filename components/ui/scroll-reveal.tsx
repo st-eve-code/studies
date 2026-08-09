@@ -77,7 +77,6 @@ export function ScrollReveal({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // @ts-expect-error — polymorphic ref is fine here
   return (
     <Tag ref={ref} className={cn("will-change-transform", className)}>
       {children}

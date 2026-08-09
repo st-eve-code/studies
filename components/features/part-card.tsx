@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { Heart, ShoppingCart, Star, CheckCircle2, AlertCircle } from "lucide-react";
+import { ProductImage } from "@/components/ui/product-image";
 import { cn, formatCurrency, getStarArray } from "@/lib/utils";
 import { useCart } from "@/hooks/use-cart";
 import { useWishlist } from "@/context/wishlist-context";
@@ -102,8 +102,8 @@ export function PartCard({ part, className }: PartCardProps) {
       <Link href={`/parts/${part.sku}`} className="block flex-1 flex flex-col">
         {/* Image */}
         <div className="relative overflow-hidden bg-muted aspect-square">
-          <Image
-            src={part.images[0] ?? "https://picsum.photos/seed/part-placeholder/600/600"}
+          <ProductImage
+            src={part.images[0]}
             alt={part.name}
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -145,7 +145,7 @@ export function PartCard({ part, className }: PartCardProps) {
           <p className="text-[11px] text-muted-foreground font-medium mb-1">{part.brand}</p>
           <h3 className="text-sm font-semibold text-foreground leading-snug mb-2 flex-1">{part.name}</h3>
 
-          <StarRating rating={part.rating} count={part.reviewCount} />
+          {part.reviewCount > 0 && <StarRating rating={part.rating} count={part.reviewCount} />}
 
           {/* Availability */}
           <div className={cn("flex items-center gap-1 text-xs mt-2 font-medium", availabilityConfig.color)}>

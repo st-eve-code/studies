@@ -53,6 +53,7 @@ export interface Vehicle {
   isNew: boolean;
   badge?: string; // e.g. "Hot Deal", "Low Miles", "New Arrival"
   dealerNotes?: string;
+  sourceUrl?: string; // present on listings scraped from the dealer's live site
   createdAt: string;
 }
 

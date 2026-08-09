@@ -58,8 +58,28 @@ export async function fetchVehicleById(id: string): Promise<Vehicle | null> {
   }
 }
 
+export interface VehiclePartsResponse {
+  parts: Part[];
+  source: "model" | "make" | "none";
+  ficheModelCount: number;
+}
+
+export async function fetchVehicleParts(id: string): Promise<VehiclePartsResponse | null> {
+  try {
+    const { data } = await apiFetch<{ data: VehiclePartsResponse }>(
+      `/api/vehicles/${encodeURIComponent(id)}/parts`
+    );
+    return data;
+  } catch {
+    return null;
+  }
+}
+
 export async function fetchFeaturedVehicles(): Promise<Vehicle[]> {
-  const { data } = await apiFetch<{ data: Vehicle[] }>("/api/vehicles?featured=true&sortBy=newest");
+  // Prefer real listings scraped from the dealer site over mock/fake data.
+  const { data } = await apiFetch<{ data: Vehicle[] }>(
+    "/api/vehicles?source=scraped&sortBy=newest&limit=6"
+  );
   return data;
 }
 
@@ -104,7 +124,10 @@ export async function fetchPartsByFitment(year: number, make: string, model: str
 }
 
 export async function fetchFeaturedParts(): Promise<Part[]> {
-  const { data } = await apiFetch<{ data: Part[] }>("/api/parts?featured=true&sortBy=rating");
+  // Prefer real listings scraped from the dealer site over mock/fake data.
+  const { data } = await apiFetch<{ data: Part[] }>(
+    "/api/parts?source=scraped&limit=8"
+  );
   return data;
 }
 

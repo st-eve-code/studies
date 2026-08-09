@@ -34,8 +34,8 @@ export default function AboutPage() {
 
       <div className="max-w-5xl mx-auto px-4 py-12 space-y-16">
         {/* Hero story */}
-        <section className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-          <div className="space-y-4">
+        <section className="grid grid-cols-1 gap-10">
+          <div className="space-y-4 max-w-3xl">
             <div className="flex items-center gap-2 mb-2">
               <div className="size-10 bg-orange-600 rounded-xl flex items-center justify-center">
                 <Zap className="size-6 text-white" />
@@ -51,9 +51,6 @@ export default function AboutPage() {
               Today we carry over 200 new and used vehicles from Can-Am, Polaris, Yamaha, Honda, Kawasaki, KTM, Sea-Doo, and more. 
               Our 18,000 sq ft showroom and 12-bay service center are staffed by enthusiasts who actually ride what they sell.
             </p>
-          </div>
-          <div className="rounded-2xl overflow-hidden bg-muted aspect-video">
-            <img src="https://picsum.photos/seed/about-showroom/800/500" alt="Xtreme Powersports showroom" className="w-full h-full object-cover" />
           </div>
         </section>
 
@@ -96,12 +93,10 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {TEAM.map(({ name, title, bio }) => (
               <div key={name} className="rounded-xl border border-border bg-card overflow-hidden">
-                <div className="aspect-square bg-muted">
-                  <img
-                    src={`https://picsum.photos/seed/${name.replace(" ", "")}/300/300`}
-                    alt={name}
-                    className="w-full h-full object-cover"
-                  />
+                <div className="aspect-square bg-orange-600/10 flex items-center justify-center">
+                  <span className="text-5xl font-black text-orange-600">
+                    {name.split(" ").map((n) => n[0]).join("").slice(0, 2)}
+                  </span>
                 </div>
                 <div className="p-4">
                   <p className="font-bold text-sm">{name}</p>

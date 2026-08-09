@@ -131,7 +131,7 @@ function PartsContent() {
           Category
         </h3>
         <div className="space-y-2">
-          {partCategories.map(({ id, label, icon }) => (
+          {partCategories.map(({ id, label }) => (
             <label key={id} className="flex items-center gap-2.5 cursor-pointer group">
               <input
                 type="checkbox"
@@ -140,7 +140,7 @@ function PartsContent() {
                 className="size-4 rounded accent-orange-600"
               />
               <span className="text-sm group-hover:text-foreground text-foreground/80 transition-colors">
-                {icon} {label}
+                {label}
               </span>
             </label>
           ))}
@@ -162,7 +162,7 @@ function PartsContent() {
                 priceMin: e.target.value ? Number(e.target.value) : undefined,
               }))
             }
-            className="flex-1 px-2 py-1.5 text-sm rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-orange-500"
+            className="flex-1 min-w-0 px-2 py-1.5 text-sm rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-orange-500"
           />
           <input
             type="number"
@@ -174,7 +174,7 @@ function PartsContent() {
                 priceMax: e.target.value ? Number(e.target.value) : undefined,
               }))
             }
-            className="flex-1 px-2 py-1.5 text-sm rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-orange-500"
+            className="flex-1 min-w-0 px-2 py-1.5 text-sm rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-orange-500"
           />
         </div>
       </div>

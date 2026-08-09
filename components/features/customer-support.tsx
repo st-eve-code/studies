@@ -2,51 +2,10 @@
 
 import Link from "next/link";
 import {
-  Phone,
-  MessageSquare,
-  Mail,
-  Clock,
-  Wrench,
-  DollarSign,
   ArrowRight,
-  Headphones,
+  DollarSign,
 } from "lucide-react";
-import { ScrollReveal, StaggerReveal } from "@/components/ui/scroll-reveal";
-
-const supportChannels = [
-  {
-    icon: Phone,
-    label: "Call Us",
-    value: "(614) 555-0199",
-    sub: "Mon–Sat 9AM–6PM",
-    href: "tel:+16145550199",
-    color: "bg-orange-600",
-  },
-  {
-    icon: MessageSquare,
-    label: "Live Chat",
-    value: "Chat Now",
-    sub: "Avg. response under 2 min",
-    href: "/company/contact",
-    color: "bg-blue-600",
-  },
-  {
-    icon: Mail,
-    label: "Email Us",
-    value: "info@xtremepowersports.com",
-    sub: "Response within 24 hours",
-    href: "mailto:info@xtremepowersports.com",
-    color: "bg-emerald-600",
-  },
-  {
-    icon: Wrench,
-    label: "Schedule Service",
-    value: "Book Online",
-    sub: "Fast turnaround guaranteed",
-    href: "/services/service-request",
-    color: "bg-purple-600",
-  },
-];
+import { ScrollReveal } from "@/components/ui/scroll-reveal";
 
 const quickLinks = [
   { icon: DollarSign, label: "Apply for Financing", href: "/services/financing", accent: "text-orange-500" },
@@ -63,49 +22,12 @@ export function CustomerSupport() {
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
         {/* Heading */}
         <ScrollReveal className="text-center mb-12">
-          <div className="inline-flex items-center justify-center size-14 rounded-2xl bg-orange-600/10 mb-4">
-            <Headphones className="size-7 text-orange-600" />
-          </div>
-          <p className="text-orange-600 text-sm font-bold uppercase tracking-widest mb-2">
-            We&rsquo;re Here For You
-          </p>
           <h2 className="text-3xl font-black mb-3">World-Class Customer Support</h2>
           <p className="text-muted-foreground max-w-xl mx-auto text-sm leading-relaxed">
             Whether you&rsquo;re buying your first ATV or need urgent parts for the weekend race,
             our expert team is ready to help every step of the way.
           </p>
         </ScrollReveal>
-
-        {/* Channel cards */}
-        <StaggerReveal
-          stagger={0.1}
-          from={{ y: 32 }}
-          duration={0.55}
-          ease="power2.out"
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-14"
-        >
-          {supportChannels.map(({ icon: Icon, label, value, sub, href, color }) => (
-            <a
-              key={label}
-              href={href}
-              className="group flex flex-col gap-4 p-6 rounded-2xl border border-border bg-card hover:shadow-lg hover:border-orange-500/40 transition-all duration-200"
-            >
-              <div className={`size-12 rounded-xl ${color} flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-200`}>
-                <Icon className="size-6 text-white" />
-              </div>
-              <div>
-                <p className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-1">
-                  {label}
-                </p>
-                <p className="font-black text-sm leading-snug break-all">{value}</p>
-                <p className="text-xs text-muted-foreground mt-1">{sub}</p>
-              </div>
-              <div className="mt-auto flex items-center gap-1 text-xs font-semibold text-orange-600 opacity-0 group-hover:opacity-100 transition-opacity">
-                Get in touch <ArrowRight className="size-3.5" />
-              </div>
-            </a>
-          ))}
-        </StaggerReveal>
 
         {/* Quick links + hours */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -117,7 +39,7 @@ export function CustomerSupport() {
                 Quick Links
               </h3>
               <ul className="space-y-2">
-                {quickLinks.map(({ icon: Icon, label, href, accent }) => (
+                {quickLinks.map(({ label, href, accent }) => (
                   <li key={href}>
                     <Link
                       href={href}

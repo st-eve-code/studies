@@ -3,21 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, Phone, Mail, MapPin, Globe } from "lucide-react";
-import { mockVehicles } from "@/data/mock-vehicles";
 import { formatCurrency, formatNumber } from "@/lib/utils";
 import { BrochurePrintControls } from "./print-controls";
 import type { Vehicle } from "@/types/vehicle";
 
 async function getVehicle(id: string): Promise<Vehicle | null> {
-  const base = [...mockVehicles];
-  try {
-    const { default: scraped } = await import("@/data/scraped-vehicles.json", {
-      assert: { type: "json" },
-    });
-    return [...base, ...(scraped as Vehicle[])].find((v) => v.id === id) ?? null;
-  } catch {
-    return base.find((v) => v.id === id) ?? null;
-  }
+  const { default: scraped } = await import("@/data/scraped-vehicles.json", {
+    assert: { type: "json" },
+  });
+  return (scraped as Vehicle[]).find((v) => v.id === id) ?? null;
 }
 
 const conditionLabel: Record<string, string> = {

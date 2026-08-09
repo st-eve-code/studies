@@ -34,10 +34,8 @@ export function useGSAPScroll(
       const result = animateFn(gsap, ScrollTrigger);
 
       cleanupRef.current = () => {
-        if (result && "revert" in result) {
+        if (result && typeof result === "object") {
           (result as gsap.Context).revert();
-        } else if (result && "kill" in result) {
-          (result as gsap.core.Timeline).kill();
         }
         ScrollTrigger.getAll().forEach((t) => t.kill());
       };

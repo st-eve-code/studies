@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useState } from "react";
 import {
   ShoppingCart,
@@ -17,6 +16,7 @@ import {
   X,
 } from "lucide-react";
 import { cn, formatCurrency } from "@/lib/utils";
+import { ProductImage } from "@/components/ui/product-image";
 import { useCart } from "@/hooks/use-cart";
 import type { ShippingMethod } from "@/types/cart";
 
@@ -98,8 +98,8 @@ export default function CartPage() {
                 {/* Image */}
                 <Link href={item.type === "vehicle" ? `/inventory/${item.productId}` : `/parts/${item.productId}`}>
                   <div className="relative size-20 sm:size-24 rounded-lg overflow-hidden bg-muted shrink-0">
-                    <Image
-                      src={item.image || "https://picsum.photos/seed/cart-item/200/200"}
+                    <ProductImage
+                      src={item.image}
                       alt={item.name}
                       fill
                       className="object-cover"

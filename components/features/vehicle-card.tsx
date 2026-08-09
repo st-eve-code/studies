@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { Heart, Tag, Gauge, Calendar } from "lucide-react";
+import { ProductImage } from "@/components/ui/product-image";
 import { cn, formatCurrency, getSavings, formatNumber } from "@/lib/utils";
 import { useWishlist } from "@/context/wishlist-context";
 import type { Vehicle } from "@/types/vehicle";
@@ -47,8 +47,8 @@ export function VehicleCard({ vehicle, className }: VehicleCardProps) {
       <Link href={`/inventory/${vehicle.id}`} className="block">
         {/* Image */}
         <div className="relative overflow-hidden bg-muted aspect-[4/3]">
-          <Image
-            src={vehicle.images[0] ?? "https://picsum.photos/seed/placeholder/800/600"}
+          <ProductImage
+            src={vehicle.images[0]}
             alt={`${vehicle.year} ${vehicle.make} ${vehicle.model}`}
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-300"

@@ -6,25 +6,21 @@ import Image from "next/image";
 import {
   CheckCircle2,
   ChevronRight,
-  CreditCard,
-  Building2,
-  Wallet,
-  Lock,
+  Phone,
+  Mail,
   ShieldCheck,
   ArrowLeft,
   ArrowRight,
   Package,
-  Truck,
 } from "lucide-react";
 import { cn, formatCurrency } from "@/lib/utils";
 import { useCart } from "@/hooks/use-cart";
 import type { CheckoutAddress, CheckoutState } from "@/types/cart";
 
 const STEPS = [
-  { id: 1, label: "Shipping" },
-  { id: 2, label: "Payment" },
-  { id: 3, label: "Review" },
-  { id: 4, label: "Confirmed" },
+  { id: 1, label: "Contact & Delivery" },
+  { id: 2, label: "Review" },
+  { id: 3, label: "Contact Us" },
 ];
 
 const US_STATES = [
@@ -111,26 +107,27 @@ function AddressForm({
 }
 
 export default function CheckoutPage() {
-  const { items, totals, clearCart } = useCart();
+  const { items, totals } = useCart();
   const [state, setState] = useState<CheckoutState>({
     step: 1,
     shippingAddress: {},
-    billingAddress: {},
-    sameAsShipping: true,
-    shippingMethod: "standard",
-    paymentMethod: "card",
     orderNotes: "",
   });
 
-  const next = () => setState((s) => ({ ...s, step: Math.min(4, s.step + 1) as any }));
-  const back = () => setState((s) => ({ ...s, step: Math.max(1, s.step - 1) as any }));
+  const next = () =>
+    setState((s) => ({ ...s, step: (Math.min(3, s.step + 1) as CheckoutState["step"]) }));
 
-  const handlePlaceOrder = () => {
-    setState((s) => ({ ...s, step: 4 }));
-    clearCart();
-  };
+  const back = () =>
+    setState((s) => ({ ...s, step: (Math.max(1, s.step - 1) as CheckoutState["step"]) }));
 
-  if (items.length === 0 && state.step !== 4) {
+  const toContact = () =>
+    setState((s) => ({
+      ...s,
+      step: 3,
+      orderRef: `XPS-${Date.now().toString(36).toUpperCase()}`,
+    }));
+
+  if (items.length === 0 && state.step !== 3) {
     return (
       <div className="min-h-[60vh] flex flex-col items-center justify-center gap-4 text-center px-4">
         <Package className="size-14 text-muted-foreground/30" />
@@ -140,31 +137,55 @@ export default function CheckoutPage() {
     );
   }
 
-  // Order confirmed
-  if (state.step === 4) {
-    const orderNum = `XPS-${Date.now().toString(36).toUpperCase()}`;
+  // Order request — payment completed by contacting the dealer
+  if (state.step === 3) {
     return (
       <div className="min-h-[70vh] flex flex-col items-center justify-center gap-6 px-4 text-center">
-        <div className="size-20 bg-green-100 dark:bg-green-950/30 rounded-full flex items-center justify-center">
-          <CheckCircle2 className="size-10 text-green-600" />
+        <div className="size-20 bg-orange-100 dark:bg-orange-950/30 rounded-full flex items-center justify-center">
+          <Phone className="size-10 text-orange-600" />
         </div>
         <div>
-          <h1 className="text-3xl font-black mb-2">Order Confirmed!</h1>
-          <p className="text-muted-foreground">Thank you for your order. A confirmation email has been sent.</p>
+          <h1 className="text-3xl font-black mb-2">Contact Us to Complete Your Order</h1>
+          <p className="text-muted-foreground max-w-xl">
+            We don&rsquo;t accept payments on our website. Call or email our parts &amp; sales team to
+            confirm pricing and shipping, and pay securely over the phone.
+          </p>
         </div>
         <div className="rounded-xl border border-border bg-card px-8 py-5 text-sm space-y-2">
           <div className="flex justify-between gap-8">
-            <span className="text-muted-foreground">Order Number</span>
-            <span className="font-bold">{orderNum}</span>
+            <span className="text-muted-foreground">Order Reference</span>
+            <span className="font-bold">{state.orderRef}</span>
           </div>
           <div className="flex justify-between gap-8">
-            <span className="text-muted-foreground">Est. Delivery</span>
-            <span className="font-bold flex items-center gap-1.5"><Truck className="size-4 text-orange-500" /> 5–7 Business Days</span>
+            <span className="text-muted-foreground">Items</span>
+            <span className="font-bold">{items.length}</span>
+          </div>
+          <div className="flex justify-between gap-8">
+            <span className="text-muted-foreground">Order Total</span>
+            <span className="font-bold">{formatCurrency(totals.total)}</span>
           </div>
         </div>
+        <div className="flex flex-col sm:flex-row gap-3 justify-center">
+          <a
+            href="tel:+16145550199"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-orange-600 text-white font-bold hover:bg-orange-700 transition-colors"
+          >
+            <Phone className="size-4" /> Call (614) 555-0199
+          </a>
+          <a
+            href="mailto:info@xtremepowersports.com"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-border font-bold hover:bg-muted transition-colors"
+          >
+            <Mail className="size-4" /> Email Us
+          </a>
+        </div>
+        <p className="text-xs text-muted-foreground max-w-md">
+          Have your order reference ready when you call. We accept credit/debit cards, dealership
+          financing, and wire transfer by phone.
+        </p>
         <div className="flex gap-3 flex-wrap justify-center">
           <Link href="/" className="px-6 py-3 rounded-xl bg-orange-600 text-white font-bold hover:bg-orange-700 transition-colors">Back to Home</Link>
-          <Link href="/parts" className="px-6 py-3 rounded-xl border border-border font-bold hover:bg-muted transition-colors">Continue Shopping</Link>
+          <Link href="/cart" className="px-6 py-3 rounded-xl border border-border font-bold hover:bg-muted transition-colors">Back to Cart</Link>
         </div>
       </div>
     );
@@ -190,33 +211,19 @@ export default function CheckoutPage() {
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8">
           {/* Main form */}
           <div className="bg-card border border-border rounded-xl p-6 space-y-8">
-            {/* Step 1 — Shipping */}
+            {/* Step 1 — Contact & Delivery */}
             {state.step === 1 && (
               <div className="space-y-6">
-                <h2 className="text-xl font-black">Shipping Information</h2>
+                <h2 className="text-xl font-black">Contact &amp; Delivery</h2>
+                <p className="text-sm text-muted-foreground">
+                  Tell us where to send your order. We&rsquo;ll confirm the details and take payment
+                  over the phone — no payment is collected on this website.
+                </p>
                 <AddressForm
                   title="Delivery Address"
                   data={state.shippingAddress}
                   onChange={(d) => setState((s) => ({ ...s, shippingAddress: d }))}
                 />
-                <div>
-                  <label className="flex items-center gap-2.5 cursor-pointer text-sm">
-                    <input
-                      type="checkbox"
-                      checked={state.sameAsShipping}
-                      onChange={(e) => setState((s) => ({ ...s, sameAsShipping: e.target.checked }))}
-                      className="size-4 rounded accent-orange-600"
-                    />
-                    <span className="font-medium">Billing address same as shipping</span>
-                  </label>
-                </div>
-                {!state.sameAsShipping && (
-                  <AddressForm
-                    title="Billing Address"
-                    data={state.billingAddress}
-                    onChange={(d) => setState((s) => ({ ...s, billingAddress: d }))}
-                  />
-                )}
                 <div>
                   <label className="block text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-1">Order Notes (optional)</label>
                   <textarea
@@ -230,72 +237,8 @@ export default function CheckoutPage() {
               </div>
             )}
 
-            {/* Step 2 — Payment */}
+            {/* Step 2 — Review */}
             {state.step === 2 && (
-              <div className="space-y-6">
-                <h2 className="text-xl font-black">Payment Method</h2>
-                <div className="space-y-3">
-                  {[
-                    { id: "card", icon: CreditCard, label: "Credit / Debit Card", sub: "Visa, Mastercard, Amex, Discover" },
-                    { id: "financing", icon: Building2, label: "Dealership Financing", sub: "Apply in-store or online — OAC" },
-                    { id: "paypal", icon: Wallet, label: "PayPal", sub: "Pay with your PayPal balance or cards" },
-                  ].map(({ id, icon: Icon, label, sub }) => (
-                    <label
-                      key={id}
-                      className={cn(
-                        "flex items-center gap-4 p-4 rounded-xl border cursor-pointer transition-colors",
-                        state.paymentMethod === id
-                          ? "border-orange-500 bg-orange-50 dark:bg-orange-950/20"
-                          : "border-border hover:border-orange-300"
-                      )}
-                    >
-                      <input type="radio" name="payment" value={id} checked={state.paymentMethod === id}
-                        onChange={() => setState((s) => ({ ...s, paymentMethod: id as any }))}
-                        className="accent-orange-600" />
-                      <Icon className="size-5 text-orange-500 shrink-0" />
-                      <div>
-                        <p className="font-semibold text-sm">{label}</p>
-                        <p className="text-xs text-muted-foreground">{sub}</p>
-                      </div>
-                    </label>
-                  ))}
-                </div>
-
-                {state.paymentMethod === "card" && (
-                  <div className="space-y-4 pt-2">
-                    <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                      <Lock className="size-3.5 text-green-600" />
-                      <span>Your payment info is encrypted and never stored on our servers.</span>
-                    </div>
-                    <div className="grid grid-cols-2 gap-3">
-                      <div className="col-span-2">
-                        <label className="block text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-1">Card Number</label>
-                        <input type="text" placeholder="•••• •••• •••• ••••" maxLength={19}
-                          className="w-full px-3 py-2.5 text-sm rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-orange-500" />
-                      </div>
-                      <div>
-                        <label className="block text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-1">Expiry</label>
-                        <input type="text" placeholder="MM / YY"
-                          className="w-full px-3 py-2.5 text-sm rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-orange-500" />
-                      </div>
-                      <div>
-                        <label className="block text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-1">CVV</label>
-                        <input type="text" placeholder="•••" maxLength={4}
-                          className="w-full px-3 py-2.5 text-sm rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-orange-500" />
-                      </div>
-                      <div className="col-span-2">
-                        <label className="block text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-1">Name on Card</label>
-                        <input type="text" placeholder="Full name"
-                          className="w-full px-3 py-2.5 text-sm rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-orange-500" />
-                      </div>
-                    </div>
-                  </div>
-                )}
-              </div>
-            )}
-
-            {/* Step 3 — Review */}
-            {state.step === 3 && (
               <div className="space-y-6">
                 <h2 className="text-xl font-black">Review Your Order</h2>
                 <div className="space-y-3">
@@ -319,9 +262,12 @@ export default function CheckoutPage() {
                   <div className="flex justify-between"><span className="text-muted-foreground">Tax</span><span>{formatCurrency(totals.tax)}</span></div>
                   <div className="flex justify-between font-black text-base border-t pt-3"><span>Total</span><span>{formatCurrency(totals.total)}</span></div>
                 </div>
-                <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                  <ShieldCheck className="size-4 text-green-600" />
-                  <span>By placing your order, you agree to our <Link href="/company/privacy" className="underline hover:text-foreground">Privacy Policy</Link> and Terms of Service.</span>
+                <div className="flex items-start gap-2 text-xs text-muted-foreground">
+                  <ShieldCheck className="size-4 text-green-600 shrink-0 mt-0.5" />
+                  <span>
+                    No payment is taken online. Your order is finalized by phone — see our{" "}
+                    <Link href="/company/privacy" className="underline hover:text-foreground">Privacy Policy</Link> and Terms of Service.
+                  </span>
                 </div>
               </div>
             )}
@@ -337,13 +283,13 @@ export default function CheckoutPage() {
                   <ArrowLeft className="size-4" /> Back to Cart
                 </Link>
               )}
-              {state.step < 3 ? (
+              {state.step < 2 ? (
                 <button onClick={next} className="flex items-center gap-2 px-6 py-2.5 rounded-xl bg-orange-600 text-white font-bold hover:bg-orange-700 transition-colors">
                   Continue <ArrowRight className="size-4" />
                 </button>
               ) : (
-                <button onClick={handlePlaceOrder} className="flex items-center gap-2 px-6 py-2.5 rounded-xl bg-green-600 text-white font-bold hover:bg-green-700 transition-colors">
-                  <Lock className="size-4" /> Place Order
+                <button onClick={toContact} className="flex items-center gap-2 px-6 py-2.5 rounded-xl bg-orange-600 text-white font-bold hover:bg-orange-700 transition-colors">
+                  <Phone className="size-4" /> Continue to Contact
                 </button>
               )}
             </div>

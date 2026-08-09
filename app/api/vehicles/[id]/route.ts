@@ -1,17 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
-import { mockVehicles } from "@/data/mock-vehicles";
 import type { Vehicle } from "@/types/vehicle";
 
+// Real listings scraped from the dealer site only (no mock/demo data).
 async function getAllVehicles(): Promise<Vehicle[]> {
-  const base = [...mockVehicles];
-  try {
-    const { default: scraped } = await import("@/data/scraped-vehicles.json", {
-      assert: { type: "json" },
-    });
-    return [...base, ...(scraped as Vehicle[])];
-  } catch {
-    return base;
-  }
+  const { default: scraped } = await import("@/data/scraped-vehicles.json", {
+    assert: { type: "json" },
+  });
+  return (scraped as Vehicle[]).filter((v) => v.images?.length);
 }
 
 export async function GET(

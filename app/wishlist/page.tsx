@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { Heart, Trash2, ShoppingCart, ChevronRight } from "lucide-react";
 import { cn, formatCurrency } from "@/lib/utils";
+import { ProductImage } from "@/components/ui/product-image";
 import { useWishlist } from "@/context/wishlist-context";
 import { useCart } from "@/hooks/use-cart";
 
@@ -50,8 +50,8 @@ export default function WishlistPage() {
             <div key={item.id} className="rounded-xl border border-border bg-card overflow-hidden group">
               <Link href={item.type === "vehicle" ? `/inventory/${item.productId}` : `/parts/${item.productId}`}>
                 <div className="relative aspect-[4/3] bg-muted overflow-hidden">
-                  <Image
-                    src={item.image || "https://picsum.photos/seed/wishlist/400/300"}
+                  <ProductImage
+                    src={item.image}
                     alt={item.name}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"

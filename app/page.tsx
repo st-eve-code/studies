@@ -1,18 +1,36 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect /* , useRef */ } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import {
-  ArrowRight,
+  /* ArrowRight, */
   ChevronRight,
   Phone,
   Shield,
   Truck,
   Wrench,
-  Zap,
+  /* Zap, */
 } from "lucide-react";
-import { cn, formatCurrency } from "@/lib/utils";
+import { cn } from "@/lib/utils";
+import extremecolumbusBg from "@/components/logo/slides/slide1.jpg";
+import apriliaBanner from "@/components/logo/slides/slide2.jpg";
+import motoGuzziBanner from "@/components/logo/slides/slide3.jpg";
+import hondaBanner from "@/components/logo/slides/slide4.jpg";
+import yamahaBanner from "@/components/logo/slides/slide5.jpg";
+import layerBanner from "@/components/logo/layer.webp";
+import canAmMark from "@/components/logo/marks/extremecolumbus-brand-can-am.png";
+import polarisMark from "@/components/logo/marks/extremecolumbus-brand-polaris.png";
+import yamahaMark from "@/components/logo/marks/extremecolumbus-brand-yamaha.png";
+import hondaMark from "@/components/logo/marks/extremecolumbus-brand-honda.png";
+import kawasakiMark from "@/components/logo/marks/extremecolumbus-brand-kawasaki.png";
+import seaDooMark from "@/components/logo/marks/extremecolumbus-brand-sea-doo.png";
+import suzukiMark from "@/components/logo/marks/extremecolumbus-brand-suzuki.png";
+import cfmotoMark from "@/components/logo/marks/extremecolumbus-brand-cfmoto.png";
+import indianMark from "@/components/logo/marks/extremecolumbus-brand-indian-motorcycle.png";
+import bmwMark from "@/components/logo/marks/extremecolumbus-brand-bmw-motorrad.png";
+import ssrMark from "@/components/logo/marks/extremecolumbus-brand-ssr.png";
+import slingshotMark from "@/components/logo/marks/slingshot-brand-slider.png";
 import { VehicleCard } from "@/components/features/vehicle-card";
 import { PartCard } from "@/components/features/part-card";
 import { YMMBar } from "@/components/features/ymm-bar";
@@ -20,8 +38,8 @@ import { ScrollReveal, StaggerReveal } from "@/components/ui/scroll-reveal";
 import { CustomerSupport } from "@/components/features/customer-support";
 import { CustomerReviews } from "@/components/features/customer-reviews";
 import { MapAndHours } from "@/components/features/map-and-hours";
-import { VirtualTour } from "@/components/features/virtual-tour";
-import { vehicleCategories, promoBanners } from "@/data/mock-categories";
+import { vehicleCategories } from "@/data/mock-categories";
+import { vehicleCategoryImages } from "@/data/vehicle-category-images";
 import { fetchFeaturedVehicles, fetchFeaturedParts } from "@/lib/mock-api";
 import type { Vehicle } from "@/types/vehicle";
 import type { Part } from "@/types/part";
@@ -35,8 +53,7 @@ const heroSlides = [
     sub: "Columbus Ohio's largest powersports dealer. ATVs, UTVs, Dirt Bikes & Watercraft.",
     ctaPrimary: { label: "Shop Inventory", href: "/inventory" },
     ctaSecondary: { label: "Get Financing", href: "/services/financing" },
-    bg: "https://picsum.photos/seed/hero1/1600/900",
-    accent: "from-black/80 via-black/50 to-transparent",
+    bg: extremecolumbusBg,
   },
   {
     id: 2,
@@ -45,8 +62,7 @@ const heroSlides = [
     sub: "OEM & aftermarket parts with guaranteed fitment. Same-day local pickup available.",
     ctaPrimary: { label: "Shop Parts", href: "/parts" },
     ctaSecondary: { label: "OEM Microfiche", href: "/parts/microfiche" },
-    bg: "https://picsum.photos/seed/hero2/1600/900",
-    accent: "from-black/80 via-black/40 to-transparent",
+    bg: apriliaBanner,
   },
   {
     id: 3,
@@ -55,8 +71,25 @@ const heroSlides = [
     sub: "Factory-trained technicians for all makes and models. Schedule online today.",
     ctaPrimary: { label: "Schedule Service", href: "/services/service-request" },
     ctaSecondary: { label: "Value Your Trade", href: "/services/trade-in" },
-    bg: "https://picsum.photos/seed/hero3/1600/900",
-    accent: "from-black/80 via-black/40 to-transparent",
+    bg: motoGuzziBanner,
+  },
+  {
+    id: 4,
+    tag: "New Arrivals Weekly",
+    headline: "Fresh Stock, Fresh Rides.",
+    sub: "Brand-new arrivals land every week. See them before they're gone.",
+    ctaPrimary: { label: "Shop Inventory", href: "/inventory" },
+    ctaSecondary: { label: "Get Financing", href: "/services/financing" },
+    bg: hondaBanner,
+  },
+  {
+    id: 5,
+    tag: "Dealer Direct",
+    headline: "Buy From the Source.",
+    sub: "Authorized dealer with the brands you trust, backed by local service.",
+    ctaPrimary: { label: "Shop Parts", href: "/parts" },
+    ctaSecondary: { label: "Schedule Service", href: "/services/service-request" },
+    bg: yamahaBanner,
   },
 ];
 
@@ -67,8 +100,26 @@ const trustBadges = [
   { icon: Phone, label: "Local Support", sub: "(614) 555-0199" },
 ];
 
+// ── Authorized dealer brand marks ────────────────────────────────────────────
+const dealerBrands = [
+  { name: "Can-Am", mark: canAmMark },
+  { name: "Polaris", mark: polarisMark },
+  { name: "Yamaha", mark: yamahaMark },
+  { name: "Honda", mark: hondaMark },
+  { name: "Kawasaki", mark: kawasakiMark },
+  { name: "Sea-Doo", mark: seaDooMark },
+  { name: "Suzuki", mark: suzukiMark },
+  { name: "CFMoto", mark: cfmotoMark },
+  { name: "Indian Motorcycle", mark: indianMark },
+  { name: "BMW Motorrad", mark: bmwMark },
+  { name: "SSR", mark: ssrMark },
+  { name: "Slingshot", mark: slingshotMark },
+];
+
 // ── Hero content animator ─────────────────────────────────────────────────────
-function HeroContent({
+// NOTE: text + CTA layer commented out per request (image-only slides). Restore
+// by uncommenting this function, `current` below, and the render block below it.
+/* function HeroContent({
   slide,
 }: {
   slide: (typeof heroSlides)[number];
@@ -139,7 +190,7 @@ function HeroContent({
       </div>
     </div>
   );
-}
+} */
 
 // ── Page ──────────────────────────────────────────────────────────────────────
 export default function HomePage() {
@@ -162,7 +213,7 @@ export default function HomePage() {
     });
   }, []);
 
-  const current = heroSlides[slide];
+  /* const current = heroSlides[slide]; */
 
   return (
     <div className="min-h-screen">
@@ -184,16 +235,15 @@ export default function HomePage() {
               className="object-cover"
               sizes="100vw"
             />
-            <div className={cn("absolute inset-0 bg-gradient-to-r", s.accent)} />
           </div>
         ))}
 
-        {/* Hero content — animates on slide change */}
-        <div className="relative z-10 h-full flex items-center">
+        {/* Hero content — animates on slide change (commented out: image-only slides) */}
+        {/* <div className="relative z-10 h-full flex items-center">
           <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 w-full">
             <HeroContent slide={current} />
           </div>
-        </div>
+        </div> */}
 
         {/* Slide dots */}
         <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-10">
@@ -278,11 +328,20 @@ export default function HomePage() {
               <Link
                 key={cat.id}
                 href={`/inventory?category=${cat.id}`}
-                className="group flex flex-col items-center gap-2 p-4 rounded-xl border border-border bg-card hover:border-orange-500 hover:shadow-md transition-all"
+                className="group relative aspect-[4/3] overflow-hidden rounded-xl border border-border bg-muted hover:shadow-md transition-all"
               >
-                <span className="text-3xl">{cat.icon}</span>
-                <span className="text-sm font-semibold text-center">{cat.label}</span>
-                <span className="text-xs text-muted-foreground">{cat.count} listings</span>
+                <Image
+                  src={vehicleCategoryImages[cat.id]}
+                  alt={cat.label}
+                  fill
+                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 p-3">
+                  <span className="block text-sm font-bold text-white">{cat.label}</span>
+                  <span className="block text-xs text-white/70">{cat.count} listings</span>
+                </div>
               </Link>
             ))}
           </StaggerReveal>
@@ -329,38 +388,17 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Promo Banners ─────────────────────────────────────────────────── */}
-      <section className="py-16">
+      {/* ── Brand layer ───────────────────────────────────────────────────── */}
+      <section className="py-10 max-sm:hidden">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-          <StaggerReveal
-            stagger={0.15}
-            from={{ y: 40, scale: 0.97 }}
-            duration={0.6}
-            ease="power2.out"
-            className="grid grid-cols-1 md:grid-cols-3 gap-5"
-          >
-            {promoBanners.map((banner) => (
-              <div
-                key={banner.id}
-                className={cn(
-                  "relative rounded-2xl overflow-hidden p-7 bg-gradient-to-br text-white",
-                  banner.bgColor
-                )}
-              >
-                <span className="inline-block text-[10px] font-bold uppercase tracking-widest bg-white/20 rounded-full px-2.5 py-0.5 mb-3">
-                  {banner.badge}
-                </span>
-                <h3 className="text-xl font-black mb-1">{banner.title}</h3>
-                <p className="text-sm text-white/80 mb-5">{banner.subtitle}</p>
-                <Link
-                  href={banner.ctaHref}
-                  className="inline-flex items-center gap-1.5 text-sm font-bold bg-white/20 hover:bg-white/30 px-4 py-2 rounded-lg transition-colors"
-                >
-                  {banner.ctaText} <ArrowRight className="size-3.5" />
-                </Link>
-              </div>
-            ))}
-          </StaggerReveal>
+          <Image
+            src={layerBanner}
+            alt="Xtreme Powersports"
+            width={2560}
+            height={1231}
+            sizes="100vw"
+            className="w-full h-auto rounded-none"
+          />
         </div>
       </section>
 
@@ -383,7 +421,7 @@ export default function HomePage() {
           </ScrollReveal>
 
           {loading ? (
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
+            <div className="grid grid-cols-2 max-md:grid-cols-1 lg:grid-cols-4 gap-5">
               {Array.from({ length: 4 }).map((_, i) => (
                 <div key={i} className="h-64 rounded-xl bg-muted animate-pulse" />
               ))}
@@ -443,19 +481,23 @@ export default function HomePage() {
             from={{ y: 20, opacity: 0 }}
             duration={0.4}
             ease="power2.out"
-            className="flex flex-wrap items-center justify-center gap-8"
+            className="flex flex-wrap items-center justify-center gap-x-10 gap-y-7"
           >
-            {["Can-Am", "Polaris", "Yamaha", "Honda", "Kawasaki", "KTM", "Sea-Doo", "Ski-Doo"].map(
-              (brand) => (
-                <Link
-                  key={brand}
-                  href={`/inventory?make=${encodeURIComponent(brand)}`}
-                  className="text-lg font-black text-muted-foreground hover:text-orange-600 transition-colors tracking-tight"
-                >
-                  {brand}
-                </Link>
-              )
-            )}
+            {dealerBrands.map(({ name, mark }) => (
+              <Link
+                key={name}
+                href={`/inventory?make=${encodeURIComponent(name)}`}
+                title={name}
+                aria-label={name}
+                className="opacity-70 hover:opacity-100 transition-opacity"
+              >
+                <Image
+                  src={mark}
+                  alt={name}
+                  className="h-8 w-auto object-contain brightness-0 dark:invert"
+                />
+              </Link>
+            ))}
           </StaggerReveal>
         </div>
       </section>
@@ -465,9 +507,6 @@ export default function HomePage() {
 
       {/* ── Customer Reviews ──────────────────────────────────────────────── */}
       <CustomerReviews />
-
-      {/* ── Virtual Tour ──────────────────────────────────────────────────── */}
-      <VirtualTour />
 
       {/* ── Map & Hours ───────────────────────────────────────────────────── */}
       <MapAndHours />

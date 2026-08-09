@@ -68,11 +68,8 @@ export interface CheckoutAddress {
 }
 
 export interface CheckoutState {
-  step: 1 | 2 | 3 | 4;
+  step: 1 | 2 | 3;
   shippingAddress: Partial<CheckoutAddress>;
-  billingAddress: Partial<CheckoutAddress>;
-  sameAsShipping: boolean;
-  shippingMethod: ShippingMethod;
-  paymentMethod: "card" | "financing" | "paypal";
   orderNotes: string;
+  orderRef?: string;
 }

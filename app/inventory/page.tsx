@@ -1,7 +1,8 @@
 "use client";
 
-import { Suspense, useState, useEffect, useTransition } from "react";
+import { Suspense, useState, useEffect, useTransition, useMemo } from "react";
 import { useSearchParams } from "next/navigation";
+import Image from "next/image";
 import { SlidersHorizontal, LayoutGrid, List, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { VehicleCard } from "@/components/features/vehicle-card";
@@ -22,6 +23,7 @@ const SORT_OPTIONS = [
 function InventoryContent() {
   const searchParams = useSearchParams();
   const [vehicles, setVehicles] = useState<Vehicle[]>([]);
+  const [allVehicles, setAllVehicles] = useState<Vehicle[]>([]);
   const [loading, setLoading] = useState(true);
   const [view, setView] = useState<"grid" | "list">("grid");
   const [isPending, startTransition] = useTransition();
@@ -60,6 +62,34 @@ function InventoryContent() {
     });
   }, [filters]);
 
+  // Unfiltered catalog — powers the Shop by Make grouping.
+  useEffect(() => {
+    fetchVehicles().then(setAllVehicles).catch(() => {});
+  }, []);
+
+  const makeGroups = useMemo(() => {
+    const map = new Map<string, { make: string; count: number; image: string }>();
+    for (const v of allVehicles) {
+      const g = map.get(v.make) ?? { make: v.make, count: 0, image: "" };
+      g.count += 1;
+      if (!g.image && v.images?.[0]) g.image = v.images[0];
+      map.set(v.make, g);
+    }
+    return [...map.values()].sort((a, b) => b.count - a.count);
+  }, [allVehicles]);
+
+  const toggleMake = (mk: string) => {
+    startTransition(() =>
+      setFilters((f) => {
+        const current = f.make ?? [];
+        const next = current.includes(mk)
+          ? current.filter((x) => x !== mk)
+          : [...current, mk];
+        return { ...f, make: next.length ? next : undefined };
+      })
+    );
+  };
+
   const handleFilterChange = (newFilters: VehicleFilters) => {
     startTransition(() => setFilters(newFilters));
   };
@@ -86,6 +116,66 @@ function InventoryContent() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-8">
+        {/* Shop by Make grouping */}
+        {makeGroups.length > 1 && (
+          <section className="mb-10">
+            <div className="flex items-end justify-between mb-4">
+              <div>
+                <p className="text-orange-600 text-xs font-bold uppercase tracking-widest mb-1">
+                  Shop by Make
+                </p>
+                <h2 className="text-xl font-black">Browse Vehicles by Brand</h2>
+              </div>
+              {filters.make && filters.make.length > 0 && (
+                <button
+                  onClick={() =>
+                    handleFilterChange({ ...filters, make: undefined })
+                  }
+                  className="text-xs font-medium text-orange-600 hover:underline"
+                >
+                  Clear make filter
+                </button>
+              )}
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+              {makeGroups.map((g) => {
+                const active = filters.make?.includes(g.make);
+                return (
+                  <button
+                    key={g.make}
+                    onClick={() => toggleMake(g.make)}
+                    className={cn(
+                      "group relative aspect-[3/2] overflow-hidden rounded-xl border bg-muted text-left transition-all",
+                      active
+                        ? "border-orange-500 ring-2 ring-orange-400/50"
+                        : "border-border hover:border-orange-400"
+                    )}
+                  >
+                    {g.image && (
+                      <Image
+                        src={g.image}
+                        alt={g.make}
+                        fill
+                        sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                    )}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />
+                    <div className="absolute inset-x-0 bottom-0 p-2.5">
+                      <span className="block text-sm font-bold text-white">
+                        {g.make}
+                      </span>
+                      <span className="block text-xs text-white/70">
+                        {g.count} vehicle{g.count === 1 ? "" : "s"}
+                      </span>
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
+          </section>
+        )}
+
         <div className="flex gap-8">
           {/* Desktop sidebar */}
           <VehicleFilter

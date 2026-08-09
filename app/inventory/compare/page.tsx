@@ -2,9 +2,9 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { X, Plus, CheckCircle2, XCircle } from "lucide-react";
 import { cn, formatCurrency } from "@/lib/utils";
+import { ProductImage } from "@/components/ui/product-image";
 import { fetchVehicles } from "@/lib/mock-api";
 import type { Vehicle } from "@/types/vehicle";
 
@@ -75,7 +75,7 @@ export default function ComparePage() {
                   {vehicle ? (
                     <div className="rounded-xl border border-border bg-card overflow-hidden">
                       <div className="relative aspect-video">
-                        <Image
+                        <ProductImage
                           src={vehicle.images[0]}
                           alt={vehicle.model}
                           fill
@@ -133,7 +133,7 @@ export default function ComparePage() {
                                 className="w-full flex items-center gap-3 px-3 py-2 text-left hover:bg-muted transition-colors text-sm"
                               >
                                 <div className="relative size-10 rounded overflow-hidden bg-muted shrink-0">
-                                  <Image src={v.images[0]} alt={v.model} fill className="object-cover" sizes="40px" />
+                                  <ProductImage src={v.images[0]} alt={v.model} fill className="object-cover" sizes="40px" />
                                 </div>
                                 <div>
                                   <p className="font-medium">{v.year} {v.make} {v.model}</p>

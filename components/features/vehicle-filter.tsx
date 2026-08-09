@@ -144,7 +144,7 @@ export function VehicleFilter({ filters, onChange, totalCount, className }: Vehi
       <FilterSection title="Price Range">
         <div className="space-y-3">
           <div className="flex gap-2">
-            <div className="flex-1">
+            <div className="flex-1 min-w-0">
               <label className="text-[10px] text-muted-foreground uppercase font-semibold">Min</label>
               <input
                 type="number"
@@ -158,7 +158,7 @@ export function VehicleFilter({ filters, onChange, totalCount, className }: Vehi
                 className="w-full mt-1 px-2 py-1.5 text-sm rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-orange-500"
               />
             </div>
-            <div className="flex-1">
+            <div className="flex-1 min-w-0">
               <label className="text-[10px] text-muted-foreground uppercase font-semibold">Max</label>
               <input
                 type="number"

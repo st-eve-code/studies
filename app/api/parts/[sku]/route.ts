@@ -1,17 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
-import { mockParts } from "@/data/mock-parts";
 import type { Part } from "@/types/part";
 
+// Real parts catalog scraped from the dealer store (no mock/demo data).
 async function getAllParts(): Promise<Part[]> {
-  const base = [...mockParts];
-  try {
-    const { default: scraped } = await import("@/data/catalog-parts.json", {
-      assert: { type: "json" },
-    });
-    return [...base, ...(scraped as Part[])];
-  } catch {
-    return base;
-  }
+  const { default: scraped } = await import("@/data/catalog-parts.json", {
+    assert: { type: "json" },
+  });
+  return (scraped as Part[]).filter((p) => p.images?.length);
 }
 
 export async function GET(

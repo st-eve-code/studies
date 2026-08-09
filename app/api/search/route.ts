@@ -1,28 +1,19 @@
 import { NextRequest, NextResponse } from "next/server";
-import { mockVehicles } from "@/data/mock-vehicles";
-import { mockParts } from "@/data/mock-parts";
 import type { Vehicle } from "@/types/vehicle";
 import type { Part } from "@/types/part";
 
 async function getAll(): Promise<{ vehicles: Vehicle[]; parts: Part[] }> {
-  let vehicles = [...mockVehicles];
-  let parts = [...mockParts];
+  const { default: sv } = await import("@/data/scraped-vehicles.json", {
+    assert: { type: "json" },
+  });
+  const { default: sp } = await import("@/data/catalog-parts.json", {
+    assert: { type: "json" },
+  });
 
-  try {
-    const { default: sv } = await import("@/data/scraped-vehicles.json", {
-      assert: { type: "json" },
-    });
-    vehicles = [...vehicles, ...(sv as Vehicle[])];
-  } catch { /* scraped file not generated yet — use mock only */ }
-
-  try {
-    const { default: sp } = await import("@/data/catalog-parts.json", {
-      assert: { type: "json" },
-    });
-    parts = [...parts, ...(sp as Part[])];
-  } catch { /* catalog file not generated yet — use mock only */ }
-
-  return { vehicles, parts };
+  return {
+    vehicles: (sv as Vehicle[]).filter((v) => v.images?.length),
+    parts: sp as Part[],
+  };
 }
 
 export async function GET(req: NextRequest) {
