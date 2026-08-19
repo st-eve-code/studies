@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Phone, MapPin, Mail } from "lucide-react";
+import { siteConfig } from "@/lib/site-config";
+import logoImg from "@/components/logo/logo.jpeg";
 
 // ── Social platform SVG icons (inline — no external icon dep needed) ─────────
 function IconFacebook({ className }: { className?: string }) {
@@ -40,31 +42,26 @@ function IconX({ className }: { className?: string }) {
 }
 
 const footerLinks = {
-  Inventory: [
-    { label: "ATVs", href: "/inventory?category=atv" },
-    { label: "UTVs / Side-by-Sides", href: "/inventory?category=utv" },
-    { label: "Dirt Bikes", href: "/inventory?category=dirt-bike" },
-    { label: "Personal Watercraft", href: "/inventory?category=personal-watercraft" },
-    { label: "Snowmobiles", href: "/inventory?category=snowmobile" },
-    { label: "Used Vehicles", href: "/inventory?condition=used" },
-  ],
-  "Parts & Gear": [
+  "Shop Parts": [
+    { label: "Shop All Parts", href: "/parts" },
     { label: "OEM Parts", href: "/parts?type=oem" },
     { label: "Aftermarket", href: "/parts?type=aftermarket" },
     { label: "Performance", href: "/parts?type=performance" },
-    { label: "Riding Gear", href: "/parts?category=riding-gear" },
+    { label: "Riding Gear & Helmets", href: "/parts?category=riding-gear" },
     { label: "Tires & Wheels", href: "/parts?category=tires-wheels" },
-    { label: "OEM Microfiche", href: "/parts/microfiche" },
   ],
-  Services: [
-    { label: "Financing", href: "/services/financing" },
-    { label: "Service & Repair", href: "/services/service-request" },
-    { label: "Trade-In Valuation", href: "/services/trade-in" },
-    { label: "Promotions", href: "/company/promotions" },
+  Brands: [
+    { label: "Can-Am", href: "/brands/can-am" },
+    { label: "Polaris", href: "/brands/polaris" },
+    { label: "Yamaha", href: "/brands/yamaha" },
+    { label: "Honda", href: "/brands/honda" },
+    { label: "Kawasaki", href: "/brands/kawasaki" },
+    { label: "KTM", href: "/brands/ktm" },
   ],
   Company: [
     { label: "About Us", href: "/company/about" },
     { label: "Contact", href: "/company/contact" },
+    { label: "Promotions", href: "/company/promotions" },
     { label: "Privacy Policy", href: "/company/privacy" },
   ],
 };
@@ -79,29 +76,29 @@ export function Footer() {
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-2 mb-4">
               <Image
-                src="/logo.png"
-                alt="Xtreme Powersports Inc."
-                width={192}
-                height={56}
-                className="h-12 w-auto object-contain brightness-0 invert"
+                src={logoImg}
+                alt={siteConfig.name}
+                width={1320}
+                height={1000}
+                className="h-16 w-auto object-contain mix-blend-screen"
               />
             </Link>
             <p className="text-sm text-gray-400 leading-relaxed mb-5">
-              Columbus, Ohio&rsquo;s premier destination for ATVs, UTVs, dirt bikes, watercraft,
-              and all the parts & gear to keep you riding.
+              {siteConfig.region}&rsquo;s source for OEM &amp; aftermarket parts and gear for ATVs, UTVs,
+              dirt bikes, watercraft and snowmobiles — matched to your machine, shipped fast.
             </p>
             <div className="space-y-2 text-sm">
-              <a href="tel:+16145550199" className="flex items-center gap-2 hover:text-orange-400 transition-colors">
+              <a href={`tel:${siteConfig.phoneTel}`} className="flex items-center gap-2 hover:text-orange-400 transition-colors">
                 <Phone className="size-4 text-orange-500" />
-                (614) 555-0199
+                {siteConfig.phone}
               </a>
-              <a href="mailto:info@xtremepowersports.com" className="flex items-center gap-2 hover:text-orange-400 transition-colors">
+              <a href={`mailto:${siteConfig.email}`} className="flex items-center gap-2 hover:text-orange-400 transition-colors">
                 <Mail className="size-4 text-orange-500" />
-                info@xtremepowersports.com
+                {siteConfig.email}
               </a>
               <span className="flex items-start gap-2">
                 <MapPin className="size-4 text-orange-500 mt-0.5 shrink-0" />
-                1234 Powersports Blvd<br />Columbus, OH 43215
+                {siteConfig.address.street}<br />{siteConfig.address.city}, {siteConfig.address.state} {siteConfig.address.zip}
               </span>
             </div>
             {/* Social icons */}
@@ -110,11 +107,11 @@ export function Footer() {
             </p>
             <div className="flex flex-wrap gap-2">
               {[
-                { Icon: IconFacebook,  href: "https://www.facebook.com/xtremepowersports",   label: "Facebook",    bg: "hover:bg-[#1877F2]" },
-                { Icon: IconInstagram, href: "https://www.instagram.com/xtremepowersports",  label: "Instagram",   bg: "hover:bg-pink-600" },
-                { Icon: IconYouTube,   href: "https://www.youtube.com/@xtremepowersports",   label: "YouTube",     bg: "hover:bg-[#FF0000]" },
-                { Icon: IconTikTok,    href: "https://www.tiktok.com/@xtremepowersports",    label: "TikTok",      bg: "hover:bg-neutral-800" },
-                { Icon: IconX,         href: "https://x.com/xtremepwrsports",                label: "X / Twitter", bg: "hover:bg-black" },
+                { Icon: IconFacebook,  href: siteConfig.social.facebook,   label: "Facebook",    bg: "hover:bg-[#1877F2]" },
+                { Icon: IconInstagram, href: siteConfig.social.instagram,  label: "Instagram",   bg: "hover:bg-pink-600" },
+                { Icon: IconYouTube,   href: siteConfig.social.youtube,    label: "YouTube",     bg: "hover:bg-[#FF0000]" },
+                { Icon: IconTikTok,    href: siteConfig.social.tiktok,     label: "TikTok",      bg: "hover:bg-neutral-800" },
+                { Icon: IconX,         href: siteConfig.social.x,          label: "X / Twitter", bg: "hover:bg-black" },
               ].map(({ Icon, href, label, bg }) => (
                 <a
                   key={label}
@@ -157,21 +154,21 @@ export function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-gray-400">
             <div>
               <span className="text-white font-medium">Showroom Hours</span>
-              <p>Mon–Fri: 9:00 AM – 6:00 PM</p>
-              <p>Saturday: 9:00 AM – 5:00 PM</p>
-              <p>Sunday: 11:00 AM – 4:00 PM</p>
+              {siteConfig.hours.showroom.map(({ days, time }) => (
+                <p key={days}>{days}: {time}</p>
+              ))}
             </div>
             <div>
               <span className="text-white font-medium">Service Department</span>
-              <p>Mon–Fri: 8:00 AM – 5:30 PM</p>
-              <p>Saturday: 9:00 AM – 3:00 PM</p>
-              <p>Sunday: Closed</p>
+              {siteConfig.hours.service.map(({ days, time }) => (
+                <p key={days}>{days}: {time}</p>
+              ))}
             </div>
             <div>
               <span className="text-white font-medium">Parts Department</span>
-              <p>Mon–Sat: 8:00 AM – 6:00 PM</p>
-              <p>Sunday: 11:00 AM – 4:00 PM</p>
-              <p>Online orders: 24/7</p>
+              {siteConfig.hours.parts.map(({ days, time }) => (
+                <p key={days}>{days}: {time}</p>
+              ))}
             </div>
           </div>
         </div>
@@ -180,11 +177,11 @@ export function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-gray-500">
-          <p>© {new Date().getFullYear()} Xtreme Powersports Inc. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} {siteConfig.name} All rights reserved.</p>
           <div className="flex gap-4">
             <Link href="/company/privacy" className="hover:text-gray-300 transition-colors">Privacy Policy</Link>
             <Link href="/company/terms" className="hover:text-gray-300 transition-colors">Terms of Service & Copyright</Link>
-            <span>Dealer License #OH-2024-PSP</span>
+            <span>Dealer License #{siteConfig.dealerLicense}</span>
           </div>
         </div>
       </div>

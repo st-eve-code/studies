@@ -1,22 +1,22 @@
 "use client";
 
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 import Link from "next/link";
-import { Search, X, Loader2, Car, Wrench, TrendingUp } from "lucide-react";
-import { cn, formatCurrency } from "@/lib/utils";
+import { Search, X, Loader2, Wrench, TrendingUp } from "lucide-react";
+import { formatCurrency } from "@/lib/utils";
 import { ProductImage } from "@/components/ui/product-image";
 import { useDebounce } from "@/hooks/use-debounce";
 import { fetchSearchResults } from "@/lib/mock-api";
 import type { SearchResult } from "@/lib/mock-api";
 
 const POPULAR_SEARCHES = [
-  "Can-Am Maverick X3",
-  "Polaris RZR",
-  "Yamaha YZ450F",
-  "Exhaust system",
-  "Skid plate",
+  "Drive belt",
+  "Air filter",
+  "Brake pads",
   "LED light bar",
+  "Skid plate",
+  "Exhaust",
 ];
 
 interface SearchModalProps {
@@ -58,7 +58,7 @@ export function SearchModal({ open, onClose }: SearchModalProps) {
     const handler = (e: KeyboardEvent) => {
       if ((e.metaKey || e.ctrlKey) && e.key === "k") {
         e.preventDefault();
-        open ? onClose() : undefined;
+        if (open) onClose();
       }
       if (e.key === "Escape") onClose();
     };
@@ -66,7 +66,7 @@ export function SearchModal({ open, onClose }: SearchModalProps) {
     return () => window.removeEventListener("keydown", handler);
   }, [open, onClose]);
 
-  const hasResults = results && (results.vehicles.length > 0 || results.parts.length > 0);
+  const hasResults = results && results.parts.length > 0;
   const noResults = results && !hasResults && debouncedQuery.trim();
 
   if (!open) return null;
@@ -95,7 +95,7 @@ export function SearchModal({ open, onClose }: SearchModalProps) {
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search vehicles, parts, brands…"
+            placeholder="Search parts, brands…"
             className="flex-1 bg-transparent text-base outline-none placeholder:text-muted-foreground"
             autoComplete="off"
           />
@@ -140,52 +140,11 @@ export function SearchModal({ open, onClose }: SearchModalProps) {
             </div>
           )}
 
-          {/* Vehicles section */}
-          {hasResults && results.vehicles.length > 0 && (
-            <div className="p-3">
-              <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 px-1 flex items-center gap-1.5">
-                <Car className="size-3.5" /> Vehicles
-              </p>
-              <div className="space-y-1">
-                {results.vehicles.map((vehicle) => (
-                  <Link
-                    key={vehicle.id}
-                    href={`/inventory/${vehicle.id}`}
-                    onClick={onClose}
-                    className="flex items-center gap-3 p-2 rounded-lg hover:bg-muted transition-colors group"
-                  >
-                    <div className="relative size-12 rounded-lg overflow-hidden bg-muted shrink-0">
-                      <ProductImage
-                        src={vehicle.images[0]}
-                        alt={vehicle.model}
-                        fill
-                        className="object-cover"
-                        sizes="48px"
-                      />
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <p className="text-sm font-medium truncate">{vehicle.year} {vehicle.make} {vehicle.model}</p>
-                      <p className="text-xs text-muted-foreground capitalize">{vehicle.condition} · {vehicle.category.replace("-", " ")}</p>
-                    </div>
-                    <p className="text-sm font-bold text-orange-600 shrink-0">{formatCurrency(vehicle.price)}</p>
-                  </Link>
-                ))}
-              </div>
-              <Link
-                href={`/inventory?search=${encodeURIComponent(query)}`}
-                onClick={onClose}
-                className="block text-center text-xs text-orange-600 hover:underline mt-2 font-medium"
-              >
-                View all vehicle results →
-              </Link>
-            </div>
-          )}
-
           {/* Parts section */}
           {hasResults && results.parts.length > 0 && (
-            <div className="p-3 border-t border-border">
+            <div className="p-3">
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 px-1 flex items-center gap-1.5">
-                <Wrench className="size-3.5" /> Parts & Gear
+                <Wrench className="size-3.5" /> Parts &amp; Gear
               </p>
               <div className="space-y-1">
                 {results.parts.map((part) => (

@@ -68,8 +68,7 @@ export interface CheckoutAddress {
 }
 
 export interface CheckoutState {
-  step: 1 | 2 | 3;
-  shippingAddress: Partial<CheckoutAddress>;
+  step: 1 | 2;
   orderNotes: string;
   orderRef?: string;
 }

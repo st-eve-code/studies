@@ -1,7 +1,8 @@
 import type { MetadataRoute } from "next";
 import type { Vehicle } from "@/types/vehicle";
+import { siteConfig } from "@/lib/site-config";
 
-const BASE_URL = "https://www.xtremepowersports.com";
+const BASE_URL = siteConfig.url;
 
 const staticRoutes: Array<{
   path: string;
@@ -11,7 +12,9 @@ const staticRoutes: Array<{
   { path: "", changeFrequency: "weekly", priority: 1 },
   { path: "/inventory", changeFrequency: "daily", priority: 0.9 },
   { path: "/parts", changeFrequency: "weekly", priority: 0.7 },
-  { path: "/services", changeFrequency: "monthly", priority: 0.6 },
+  { path: "/services/trade-in", changeFrequency: "monthly", priority: 0.6 },
+  { path: "/parts/microfiche", changeFrequency: "monthly", priority: 0.5 },
+  { path: "/inventory/compare", changeFrequency: "monthly", priority: 0.4 },
   { path: "/company/about", changeFrequency: "monthly", priority: 0.5 },
   { path: "/company/contact", changeFrequency: "monthly", priority: 0.5 },
   { path: "/company/privacy", changeFrequency: "yearly", priority: 0.3 },

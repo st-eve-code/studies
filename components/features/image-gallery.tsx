@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { createPortal } from "react-dom";
 import Image from "next/image";
-import { ChevronLeft, ChevronRight, X, ZoomIn, Expand } from "lucide-react";
+import { ChevronLeft, ChevronRight, X, Expand } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface ImageGalleryProps {

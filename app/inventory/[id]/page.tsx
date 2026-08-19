@@ -18,7 +18,6 @@ import {
 } from "lucide-react";
 import { cn, formatCurrency, formatNumber } from "@/lib/utils";
 import { ImageGallery } from "@/components/features/image-gallery";
-import { PaymentCalculator } from "@/components/features/payment-calculator";
 import { VehicleCard } from "@/components/features/vehicle-card";
 import { VehicleParts } from "@/components/features/vehicle-parts";
 import { StaggerReveal } from "@/components/ui/scroll-reveal";
@@ -251,13 +250,13 @@ export default function VehicleDetailPage() {
 
               {/* CTAs */}
               <div className="space-y-2">
-                <a
-                  href="/services/financing"
+                <Link
+                  href="/services/trade-in"
                   className="flex w-full items-center justify-center gap-2 py-2.5 rounded-xl bg-orange-600 text-white font-bold text-sm hover:bg-orange-700 transition-colors"
                 >
-                  Apply for Financing
+                  Value Your Trade-In
                   <ArrowRight className="size-4" />
-                </a>
+                </Link>
                 <a
                   href="tel:+16145550199"
                   className="flex w-full items-center justify-center gap-2 py-2.5 rounded-xl border border-border hover:bg-muted font-semibold text-sm transition-colors"
@@ -288,9 +287,6 @@ export default function VehicleDetailPage() {
                 <Share2 className="size-3.5" /> Share This Vehicle
               </button>
             </div>
-
-            {/* Payment calculator */}
-            <PaymentCalculator vehiclePrice={vehicle.price} />
           </div>
         </div>
 

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
+import { siteConfig } from "@/lib/site-config";
 
 export default function TermsPage() {
   return (
@@ -23,11 +24,11 @@ export default function TermsPage() {
           },
           {
             title: "2. Copyright Ownership",
-            body: "All content on this website — including vehicle listings, product descriptions, photographs, images, logos, text, graphics, pricing information, and software code — is the exclusive property of Xtreme Powersports Inc. and its licensors, and is protected by United States and international copyright laws."
+            body: `All content on this website — including vehicle listings, product descriptions, photographs, images, logos, text, graphics, pricing information, and software code — is the exclusive property of ${siteConfig.name} and its licensors, and is protected by United States and international copyright laws.`
           },
           {
             title: "3. No Unauthorized Copying",
-            body: "You may NOT copy, reproduce, republish, upload, post, transmit, scrape, download, frame, or otherwise duplicate any portion of this website — in whole or in part — for any purpose, commercial or otherwise, without the prior written permission of Xtreme Powersports Inc. This includes automated collection of listings, images, pricing, or specifications by bots, scrapers, or any data-extraction tool. We reserve the right to block any automated or manual access that violates this policy."
+            body: `You may NOT copy, reproduce, republish, upload, post, transmit, scrape, download, frame, or otherwise duplicate any portion of this website — in whole or in part — for any purpose, commercial or otherwise, without the prior written permission of ${siteConfig.name}. This includes automated collection of listings, images, pricing, or specifications by bots, scrapers, or any data-extraction tool. We reserve the right to block any automated or manual access that violates this policy.`
           },
           {
             title: "4. Limited Personal Use",
@@ -35,11 +36,11 @@ export default function TermsPage() {
           },
           {
             title: "5. Trademarks",
-            body: "Vehicle manufacturer names, model names, logos, and product designs displayed on this website are the property of their respective owners. Reference to them does not imply sponsorship or endorsement. All other trademarks, service marks, and trade names are the property of Xtreme Powersports Inc."
+            body: `Vehicle manufacturer names, model names, logos, and product designs displayed on this website are the property of their respective owners. Reference to them does not imply sponsorship or endorsement. All other trademarks, service marks, and trade names are the property of ${siteConfig.name}.`
           },
           {
             title: "6. Reporting Copyright Infringement",
-            body: "If you believe content on this website infringes your copyright, please contact our designated agent at copyright@xtremepowersports.com with the following information: identification of the copyrighted work, the infringing material's location, your contact information, and a statement of good-faith belief that the use is not authorized. We respond to valid claims promptly and remove infringing material when confirmed."
+            body: `If you believe content on this website infringes your copyright, please contact our designated agent at ${siteConfig.emailCopyright} with the following information: identification of the copyrighted work, the infringing material's location, your contact information, and a statement of good-faith belief that the use is not authorized. We respond to valid claims promptly and remove infringing material when confirmed.`
           },
           {
             title: "7. Limitation of Liability",
@@ -47,7 +48,7 @@ export default function TermsPage() {
           },
           {
             title: "8. Contact Us",
-            body: "For questions about this policy or to request permission to use our content, contact us at: Xtreme Powersports Inc., 1234 Powersports Blvd, Columbus, OH 43215. Email: copyright@xtremepowersports.com. Phone: (614) 555-0199."
+            body: `For questions about this policy or to request permission to use our content, contact us at: ${siteConfig.name}, ${siteConfig.address.line}. Email: ${siteConfig.emailCopyright}. Phone: ${siteConfig.phone}.`
           },
         ].map(({ title, body }) => (
           <section key={title} className="mb-8">

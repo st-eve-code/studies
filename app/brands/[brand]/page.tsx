@@ -1,16 +1,16 @@
 "use client";
 
 import { Suspense, useState, useEffect } from "react";
-import { useSearchParams } from "next/navigation";
-import { ChevronDown, Search, SlidersHorizontal, X } from "lucide-react";
+import { useParams, useSearchParams, notFound } from "next/navigation";
+import { ChevronDown, Search, SlidersHorizontal, X, ArrowRight } from "lucide-react";
 import { PartCard } from "@/components/features/part-card";
 import { PartGridSkeleton } from "@/components/skeleton/part-card-skeleton";
 import { fetchParts } from "@/lib/mock-api";
 import { partCategories } from "@/data/mock-categories";
-import { brands } from "@/data/brands";
-import { cn } from "@/lib/utils";
+import { brands, brandBySlug } from "@/data/brands";
 import Link from "next/link";
 import Image from "next/image";
+import { cn } from "@/lib/utils";
 import type { Part, PartFilters, PartCategory, PartType } from "@/types/part";
 
 const SORT_OPTIONS = [
@@ -27,8 +27,10 @@ const PART_TYPES: { id: PartType; label: string }[] = [
   { id: "performance", label: "Performance" },
 ];
 
-// ── Inner component — reads searchParams, must be inside Suspense ─────────────
-function PartsContent() {
+// ── Inner component — reads params + searchParams, must be inside Suspense ────
+function BrandContent() {
+  const params = useParams<{ brand: string }>();
+  const brand = brandBySlug(params.brand);
   const searchParams = useSearchParams();
 
   const [parts, setParts] = useState<Part[]>([]);
@@ -39,12 +41,12 @@ function PartsContent() {
     category: searchParams.get("category")
       ? [searchParams.get("category") as PartCategory]
       : undefined,
-    type: searchParams.get("type")
-      ? [searchParams.get("type") as PartType]
-      : undefined,
-    search: searchParams.get("search") ?? undefined,
-    sortBy: "newest",
-  }));
+      type: searchParams.get("type")
+        ? [searchParams.get("type") as PartType]
+        : undefined,
+      search: searchParams.get("search") ?? undefined,
+      sortBy: "newest",
+    }));
 
   // Re-sync if the URL changes (browser back/forward or programmatic navigation)
   useEffect(() => {
@@ -61,13 +63,18 @@ function PartsContent() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchParams.toString()]);
 
+  // Every fetch is constrained to this brand — the brand page shows only brand parts.
   useEffect(() => {
+    if (!brand) return;
     setLoading(true);
-    fetchParts(filters).then((data) => {
+    fetchParts({ ...filters, brand: [brand.label] }).then((data) => {
       setParts(data);
       setLoading(false);
     });
-  }, [filters]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [filters, brand?.label]);
+
+  if (!brand) return notFound();
 
   const toggleCategory = (id: PartCategory) => {
     setFilters((f) => {
@@ -92,6 +99,16 @@ function PartsContent() {
       } as PartFilters;
     });
   };
+
+  const clearFilters = () =>
+    setFilters({ sortBy: filters.sortBy, search: undefined });
+
+  const hasActiveFilters =
+    (filters.category?.length ?? 0) > 0 ||
+    (filters.type?.length ?? 0) > 0 ||
+    (filters.search?.length ?? 0) > 0 ||
+    filters.priceMin != null ||
+    filters.priceMax != null;
 
   // Inline filter panel — defined inside component so it closes over state
   const FilterPanel = () => (
@@ -178,51 +195,60 @@ function PartsContent() {
     </div>
   );
 
-  // Active type label for heading
-  const activeTypeLabel = filters.type?.[0]
-    ? filters.type[0].charAt(0).toUpperCase() + filters.type[0].slice(1)
-    : null;
-  const activeCategoryLabel = filters.category?.[0]
-    ? filters.category[0].replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())
-    : null;
-  const headingLabel =
-    activeCategoryLabel ?? (activeTypeLabel ? `${activeTypeLabel} Parts` : "Parts & Accessories");
-
-  const hasActiveFilters =
-    (filters.category?.length ?? 0) > 0 ||
-    (filters.type?.length ?? 0) > 0 ||
-    (filters.search?.length ?? 0) > 0 ||
-    filters.priceMin != null ||
-    filters.priceMax != null;
-
-  const clearFilters = () =>
-    setFilters({ sortBy: filters.sortBy, search: undefined });
-
   return (
     <div className="min-h-screen">
-      {/* Breadcrumb */}
-      <div className="border-b border-border bg-muted/20">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-2.5 flex items-center gap-1.5 text-xs text-muted-foreground">
-          <Link href="/" className="hover:text-foreground transition-colors">Home</Link>
-          <ChevronDown className="size-3 -rotate-90" aria-hidden="true" />
-          <span className="text-foreground font-medium">Parts &amp; Gear</span>
-        </div>
-      </div>
+      {/* ── Brand hero — dark racing strip ─────────────────────────────── */}
+      <section className="relative overflow-hidden bg-zinc-950 text-white">
+        <div className="absolute inset-0 bg-gradient-to-r from-orange-600/15 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent" />
+        <div className="relative max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-14">
+          <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+            <div className="flex items-center gap-5">
+              {brand.mark ? (
+                <span className="shrink-0 size-16 rounded-2xl bg-white p-2 flex items-center justify-center">
+                  <Image
+                    src={brand.mark}
+                    alt={brand.label}
+                    width={176}
+                    height={96}
+                    className="h-9 w-auto object-contain"
+                  />
+                </span>
+              ) : (
+                <span className="shrink-0 size-16 rounded-2xl bg-white/10 flex items-center justify-center text-2xl font-black text-orange-500">
+                  {brand.label.slice(0, 3).toUpperCase()}
+                </span>
+              )}
+              <div>
+                <h1 className="text-4xl font-black tracking-tight sm:text-5xl">
+                  {brand.label} Parts
+                </h1>
+                <p className="text-white/60 text-sm mt-1.5">{brand.tagline}</p>
+              </div>
+            </div>
 
-      {/* Header */}
-      <div className="bg-muted/30 border-b border-border py-8">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-          <h1 className="text-3xl font-black mb-1 text-center sm:text-left">{headingLabel}</h1>
-          <p className="text-muted-foreground text-sm mb-6 text-center sm:text-left">
-            OEM &amp; aftermarket parts for every brand. Shop by brand to find parts for your machine fast.
-          </p>
-          {/* Brand quick-nav */}
-          <div className="flex flex-wrap gap-2 justify-center sm:justify-start">
+            <div className="shrink-0">
+              <Link
+                href="/parts"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-orange-600 text-white font-bold text-sm hover:bg-orange-500 transition-colors"
+              >
+                Shop All Parts <ArrowRight className="size-4" />
+              </Link>
+            </div>
+          </div>
+
+          {/* Other-brand quick nav */}
+          <div className="mt-8 flex flex-wrap gap-2">
             {brands.map((b) => (
               <Link
                 key={b.id}
                 href={`/brands/${b.id}`}
-                className="inline-flex items-center gap-2 px-3.5 py-2 rounded-full border border-border bg-background hover:border-orange-500 hover:text-orange-600 transition-all text-sm font-medium"
+                className={cn(
+                  "inline-flex items-center gap-2 px-3 py-1.5 rounded-full border text-sm font-medium transition-all",
+                  b.id === brand.id
+                    ? "border-orange-500 bg-orange-600 text-white"
+                    : "border-white/20 text-white/70 hover:border-orange-500 hover:text-white"
+                )}
               >
                 {b.mark && (
                   <Image
@@ -231,7 +257,7 @@ function PartsContent() {
                     width={36}
                     height={20}
                     className={cn(
-                      "h-4 w-8 object-contain",
+                      "h-3.5 w-7 object-contain",
                       b.darkInvert && "dark:brightness-0 dark:invert"
                     )}
                   />
@@ -241,10 +267,10 @@ function PartsContent() {
             ))}
           </div>
         </div>
-      </div>
+      </section>
 
+      {/* ── Shop grid ───────────────────────────────────────────────────── */}
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-8">
-
         <div className="flex gap-8">
           {/* Desktop sidebar */}
           <aside className="hidden lg:block w-56 shrink-0">
@@ -273,7 +299,7 @@ function PartsContent() {
                   <Search className="absolute left-3 top-1/2 -translate-y-1/2 size-4 text-muted-foreground" />
                   <input
                     type="text"
-                    placeholder="Search parts…"
+                    placeholder={`Search ${brand.label} parts…`}
                     value={filters.search ?? ""}
                     onChange={(e) =>
                       setFilters((f) => ({ ...f, search: e.target.value || undefined }))
@@ -359,8 +385,8 @@ function PartsContent() {
             ) : parts.length === 0 ? (
               <div className="text-center py-20 text-muted-foreground">
                 <Search className="size-12 mx-auto mb-4 opacity-30" />
-                <p className="text-lg font-semibold">No parts found.</p>
-                <p className="text-sm mt-1">Try adjusting your filters or shopping by brand.</p>
+                <p className="text-lg font-semibold">No {brand.label} parts found.</p>
+                <p className="text-sm mt-1">Try adjusting your filters or shopping another brand.</p>
               </div>
             ) : (
               <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
@@ -404,10 +430,10 @@ function PartsContent() {
 }
 
 // ── Page export — wraps content in Suspense so useSearchParams works ──────────
-export default function PartsPage() {
+export default function BrandPage() {
   return (
     <Suspense fallback={<PartGridSkeleton count={8} />}>
-      <PartsContent />
+      <BrandContent />
     </Suspense>
   );
 }

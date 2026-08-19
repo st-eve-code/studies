@@ -124,9 +124,8 @@ export async function fetchPartsByFitment(year: number, make: string, model: str
 }
 
 export async function fetchFeaturedParts(): Promise<Part[]> {
-  // Prefer real listings scraped from the dealer site over mock/fake data.
   const { data } = await apiFetch<{ data: Part[] }>(
-    "/api/parts?source=scraped&limit=8"
+    "/api/parts?featured=true&sortBy=rating&limit=8"
   );
   return data;
 }
@@ -163,11 +162,10 @@ export async function fetchMicroficheModel(modelCode: string): Promise<Microfich
 // ── Unified search ────────────────────────────────────────────────────────────
 
 export interface SearchResult {
-  vehicles: Vehicle[];
   parts: Part[];
 }
 
 export async function fetchSearchResults(query: string): Promise<SearchResult> {
-  if (!query.trim()) return { vehicles: [], parts: [] };
+  if (!query.trim()) return { parts: [] };
   return apiFetch<SearchResult>(`/api/search?q=${encodeURIComponent(query)}`);
 }

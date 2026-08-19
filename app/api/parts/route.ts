@@ -28,6 +28,10 @@ export async function GET(req: NextRequest) {
 
   let results = await getAllParts();
 
+  // Defensive: never hand React a list with duplicate ids (two store products
+  // can share an OEM SKU). Keep the first occurrence.
+  results = results.filter((p, i, arr) => arr.findIndex((q) => q.id === p.id) === i);
+
   if (category?.length)  results = results.filter((p) => category.includes(p.category));
   if (brand.length)      results = results.filter((p) => brand.map((b) => b.toLowerCase()).includes(p.brand.toLowerCase()));
   if (type?.length)      results = results.filter((p) => type.includes(p.type));
@@ -37,17 +41,27 @@ export async function GET(req: NextRequest) {
   if (source === "scraped") results = results.filter((p) => p.id.startsWith("scraped-"));
   if (source === "mock") results = results.filter((p) => !p.id.startsWith("scraped-"));
 
-  if (fitYear && fitMake && fitModel) {
-    results = results.filter(
-      (p) =>
-        p.fitment.length === 0 ||
-        p.fitment.some(
-          (f) =>
-            f.year === Number(fitYear) &&
-            f.make.toLowerCase() === fitMake.toLowerCase() &&
-            f.model.toLowerCase() === fitModel.toLowerCase()
-        )
-    );
+  const norm = (s: string) => s.toLowerCase().replace(/[\s-]/g, "");
+
+  if (fitMake) {
+    const make = norm(fitMake);
+    if (fitYear && fitModel) {
+      results = results.filter(
+        (p) =>
+          p.fitment.length === 0 ||
+          p.fitment.some(
+            (f) =>
+              f.year === Number(fitYear) &&
+              norm(f.make) === make &&
+              norm(f.model) === norm(fitModel)
+          )
+      );
+    } else {
+      // Brand-first flow: match the brand across the whole fitment list.
+      results = results.filter(
+        (p) => p.fitment.length === 0 || p.fitment.some((f) => norm(f.make) === make)
+      );
+    }
   }
 
   if (search) {

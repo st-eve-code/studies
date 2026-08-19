@@ -26,7 +26,7 @@ function InventoryContent() {
   const [allVehicles, setAllVehicles] = useState<Vehicle[]>([]);
   const [loading, setLoading] = useState(true);
   const [view, setView] = useState<"grid" | "list">("grid");
-  const [isPending, startTransition] = useTransition();
+  const [, startTransition] = useTransition();
 
   // Initialise filters from URL query params so navbar links like
   // /inventory?category=atv pre-filter the grid on arrival.
@@ -187,26 +187,26 @@ function InventoryContent() {
           {/* Main content */}
           <div className="flex-1 min-w-0">
             {/* Toolbar */}
-            <div className="flex items-center justify-between gap-4 mb-6 flex-wrap">
-              <div className="flex items-center gap-3">
+            <div className="flex flex-col gap-3 mb-6 sm:flex-row sm:items-center sm:justify-between">
+              <div className="flex items-center gap-3 flex-wrap">
                 {/* Mobile filter button (rendered by VehicleFilter internally) */}
-                <div className="lg:hidden">
+                <div className="lg:hidden shrink-0">
                   <VehicleFilter
                     filters={filters}
                     onChange={handleFilterChange}
                     totalCount={vehicles.length}
                   />
                 </div>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-muted-foreground shrink-0">
                   {loading
                     ? "Loading…"
                     : `${vehicles.length} vehicle${vehicles.length !== 1 ? "s" : ""} found`}
                 </p>
               </div>
 
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 flex-wrap">
                 {/* Sort */}
-                <div className="relative">
+                <div className="relative shrink-0">
                   <select
                     value={filters.sortBy ?? "newest"}
                     onChange={(e) =>
@@ -224,7 +224,7 @@ function InventoryContent() {
                 </div>
 
                 {/* View toggle */}
-                <div className="flex border border-border rounded-lg overflow-hidden">
+                <div className="flex border border-border rounded-lg overflow-hidden shrink-0">
                   <button
                     onClick={() => setView("grid")}
                     className={cn(

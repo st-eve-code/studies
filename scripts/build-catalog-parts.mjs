@@ -288,8 +288,15 @@ function buildShortDescription(category) {
 
 async function main() {
   const raw = JSON.parse(await fs.readFile(IN_FILE, "utf8"));
+  const existing = JSON.parse(await fs.readFile(OUT_FILE, "utf8").catch(() => "[]"));
+  // Preserve Amazon-sourced parts added by build-amazon-catalog.mjs.
+  const amazonParts = existing.filter((p) => p.id.startsWith("amz-"));
   console.log(`\n🔩 Build Catalog Parts\n${"=".repeat(30)}`);
-  console.log(`✓ ${raw.length} raw products loaded`);
+  console.log(`✓ ${raw.length} raw products loaded (${amazonParts.length} amazon parts preserved)`);
+
+  // Two store products can share one OEM SKU (e.g. the same Honda oil-change
+  // kit listed per-model). ids derive from the SKU, so keep them unique.
+  const usedIds = new Set();
 
   const catalog = raw
     .map((p, i) => {
@@ -328,8 +335,14 @@ async function main() {
         ])
       ).slice(0, 8);
 
+      const baseId = `scraped-${sku || i}`;
+      let id = baseId;
+      let n = 2;
+      while (usedIds.has(id)) id = `${baseId}-${n++}`;
+      usedIds.add(id);
+
       return {
-        id: `scraped-${sku || i}`,
+        id,
         sku,
         name,
         brand,
@@ -353,7 +366,7 @@ async function main() {
     .filter((p) => p.sku);
 
   await fs.mkdir(DATA_DIR, { recursive: true });
-  await fs.writeFile(OUT_FILE, JSON.stringify(catalog, null, 2), "utf8");
+  await fs.writeFile(OUT_FILE, JSON.stringify([...catalog, ...amazonParts], null, 2), "utf8");
 
   const withFitment = catalog.filter((p) => p.fitment.length).length;
   const featured = catalog.filter((p) => p.isFeatured).length;

@@ -10,76 +10,83 @@ import {
   Menu,
   X,
   ChevronDown,
-  Zap,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { siteConfig } from "@/lib/site-config";
+import logoImg from "@/components/logo/logo.jpeg";
 import { useCart } from "@/hooks/use-cart";
 import { useWishlist } from "@/context/wishlist-context";
 import { ThemeToggle } from "@/components/web/theme-toggle";
+import { brands } from "@/data/brands";
 
 // ── Nav data ──────────────────────────────────────────────────────────────────
 
 const navLinks = [
   {
-    label: "New Inventory",
-    href: "/inventory?condition=new",
-    children: [
-      { label: "All New Vehicles", href: "/inventory?condition=new" },
-      { label: "ATVs", href: "/inventory?condition=new&category=atv" },
-      { label: "UTVs / Side-by-Sides", href: "/inventory?condition=new&category=utv" },
-      { label: "Dirt Bikes", href: "/inventory?condition=new&category=dirt-bike" },
-      { label: "Personal Watercraft", href: "/inventory?condition=new&category=personal-watercraft" },
-      { label: "Snowmobiles", href: "/inventory?condition=new&category=snowmobile" },
-      { label: "Street Bikes", href: "/inventory?condition=new&category=street-bike" },
-    ],
-  },
-  {
-    label: "Pre-Owned",
-    href: "/inventory?condition=used",
-    children: [
-      { label: "All Pre-Owned", href: "/inventory?condition=used" },
-      { label: "Certified Pre-Owned", href: "/inventory?condition=certified-pre-owned" },
-      { label: "Used ATVs & UTVs", href: "/inventory?condition=used&category=atv" },
-      { label: "Used Dirt Bikes", href: "/inventory?condition=used&category=dirt-bike" },
-      { label: "Compare Vehicles", href: "/inventory/compare" },
-    ],
+    label: "Shop by Brand",
+    href: "/parts",
+    brands: true,
   },
   {
     label: "Parts & Gear",
     href: "/parts",
     children: [
       { label: "Shop All Parts", href: "/parts" },
-      { label: "OEM Parts", href: "/parts?type=oem" },
-      { label: "Aftermarket", href: "/parts?type=aftermarket" },
-      { label: "Performance", href: "/parts?type=performance" },
-      { label: "Riding Gear & Helmets", href: "/parts?category=riding-gear" },
+      { label: "Brakes & Clutches", href: "/parts?category=brakes" },
+      { label: "Air & Intake", href: "/parts?category=air-filter" },
+      { label: "Drivetrain & Belts", href: "/parts?category=drivetrain" },
+      { label: "Lighting", href: "/parts?category=lighting" },
       { label: "Tires & Wheels", href: "/parts?category=tires-wheels" },
-      { label: "OEM Microfiche", href: "/parts/microfiche" },
+      { label: "Riding Gear & Helmets", href: "/parts?category=riding-gear" },
+      { label: "Performance", href: "/parts?type=performance" },
     ],
   },
   {
-    label: "Service",
-    href: "/services/service-request",
-    children: [
-      { label: "Schedule Service", href: "/services/service-request" },
-      { label: "Trade-In Valuation", href: "/services/trade-in" },
-      { label: "Financing", href: "/services/financing" },
-      { label: "Current Promotions", href: "/company/promotions" },
-    ],
+    label: "Promotions",
+    href: "/company/promotions",
   },
   {
-    label: "About Us",
-    href: "/company/about",
-    children: [
-      { label: "About Xtreme Powersports", href: "/company/about" },
-      { label: "Contact Us", href: "/company/contact" },
-      { label: "Promotions & Specials", href: "/company/promotions" },
-      { label: "Privacy Policy", href: "/company/privacy" },
-    ],
+    label: "Contact Us",
+    href: "/company/contact",
   },
 ];
 
 type NavLink = (typeof navLinks)[number];
+
+// ── Brand rows (shared by desktop dropdown + mobile menu) ─────────────────────
+
+function BrandRows({ onNavigate }: { onNavigate: () => void }) {
+  return (
+    <div className="grid grid-cols-2 gap-1">
+      {brands.map((b) => (
+        <Link
+          key={b.id}
+          href={`/brands/${b.id}`}
+          onClick={onNavigate}
+          className="flex items-center gap-2.5 rounded-lg px-3 py-2 text-sm text-foreground/80 hover:bg-muted hover:text-foreground transition-colors"
+        >
+          {b.mark ? (
+            <Image
+              src={b.mark}
+              alt={b.label}
+              width={44}
+              height={24}
+              className={cn(
+                "h-5 w-11 object-contain",
+                b.darkInvert && "dark:brightness-0 dark:invert"
+              )}
+            />
+          ) : (
+            <span className="w-11 text-right font-semibold text-xs text-foreground/50">
+              {b.label.slice(0, 3).toUpperCase()}
+            </span>
+          )}
+          <span className="font-medium">{b.label}</span>
+        </Link>
+      ))}
+    </div>
+  );
+}
 
 // ── Mobile accordion item ─────────────────────────────────────────────────────
 
@@ -92,7 +99,7 @@ function MobileNavItem({
 }) {
   const [open, setOpen] = useState(false);
 
-  if (!link.children) {
+  if (!link.children && !link.brands) {
     return (
       <Link
         href={link.href}
@@ -101,6 +108,21 @@ function MobileNavItem({
       >
         {link.label}
       </Link>
+    );
+  }
+
+  if (link.brands) {
+    return (
+      <div className="px-3 py-2.5">
+        <Link
+          href={link.href}
+          className="block text-sm font-semibold mb-2 hover:text-orange-600 transition-colors"
+          onClick={onClose}
+        >
+          Shop by Brand
+        </Link>
+        <BrandRows onNavigate={onClose} />
+      </div>
     );
   }
 
@@ -118,11 +140,11 @@ function MobileNavItem({
           )}
         />
       </button>
-      {open && (
+      {open && link.children && (
         <div className="ml-3 mt-0.5 mb-1 border-l-2 border-orange-500/30 pl-3 space-y-0.5">
           {link.children.map((child) => (
             <Link
-              key={child.href}
+              key={`${child.href}:${child.label}`}
               href={child.href}
               className="block px-2 py-2 text-sm text-foreground/70 hover:text-foreground rounded-md hover:bg-muted transition-colors"
               onClick={onClose}
@@ -184,8 +206,8 @@ export function Header({ onSearchOpen }: { onSearchOpen?: () => void }) {
     <header
       className={cn(
         "sticky top-0 z-50 w-full transition-shadow duration-200",
-        "bg-background/95 backdrop-blur-sm border-b border-border",
-        scrolled && "shadow-md",
+        "bg-zinc-950 text-white border-b border-white/10",
+        scrolled && "shadow-lg shadow-black/30",
         "print:hidden"
       )}
     >
@@ -195,11 +217,11 @@ export function Header({ onSearchOpen }: { onSearchOpen?: () => void }) {
           {/* ── Logo ───────────────────────────────────────────────── */}
           <Link href="/" className="flex items-center gap-2 shrink-0">
             <Image
-              src="/logo.png"
-              alt="Xtreme Powersports Inc."
-              width={176}
-              height={48}
-              className="h-12 w-auto object-contain dark:brightness-110"
+              src={logoImg}
+              alt={siteConfig.name}
+              width={1320}
+              height={1000}
+              className="h-16 w-auto object-contain mix-blend-screen"
               priority
             />
           </Link>
@@ -208,21 +230,21 @@ export function Header({ onSearchOpen }: { onSearchOpen?: () => void }) {
           <nav className="hidden lg:flex items-center gap-0.5">
             {navLinks.map((link) => (
               <div
-                key={link.href}
+                key={`${link.href}:${link.label}`}
                 className="relative"
-                onMouseEnter={() => link.children && openDropdown(link.label)}
-                onMouseLeave={() => link.children && scheduleClose()}
+                onMouseEnter={() => (link.children || link.brands) && openDropdown(link.label)}
+                onMouseLeave={() => (link.children || link.brands) && scheduleClose()}
               >
                 {/* Trigger */}
                 <Link
                   href={link.href}
                   className={cn(
                     "flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-md transition-colors",
-                    "text-foreground/80 hover:text-foreground hover:bg-muted"
+                    "text-white/75 hover:text-white hover:bg-white/10"
                   )}
                 >
                   {link.label}
-                  {link.children && (
+                  {(link.children || link.brands) && (
                     <ChevronDown
                       className={cn(
                         "size-3.5 opacity-60 transition-transform duration-150",
@@ -244,7 +266,7 @@ export function Header({ onSearchOpen }: { onSearchOpen?: () => void }) {
                     <div className="bg-popover border border-border rounded-xl shadow-xl overflow-hidden">
                       {link.children.map((child) => (
                         <Link
-                          key={child.href}
+                          key={`${child.href}:${child.label}`}
                           href={child.href}
                           onClick={() => setActiveDropdown(null)}
                           className="block px-4 py-2.5 text-sm text-foreground/80 hover:bg-muted hover:text-foreground transition-colors"
@@ -252,6 +274,28 @@ export function Header({ onSearchOpen }: { onSearchOpen?: () => void }) {
                           {child.label}
                         </Link>
                       ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Brand dropdown — wide panel with brand logos */}
+                {link.brands && activeDropdown === link.label && (
+                  <div
+                    className="absolute top-full left-0 pt-2 w-[26rem] z-50"
+                    onMouseEnter={cancelClose}
+                    onMouseLeave={scheduleClose}
+                  >
+                    <div className="bg-popover border border-border rounded-xl shadow-xl overflow-hidden p-3">
+                      <Link
+                        href="/parts"
+                        onClick={() => setActiveDropdown(null)}
+                        className="block px-3 py-1.5 text-sm font-semibold text-orange-600 hover:bg-muted rounded-lg transition-colors"
+                      >
+                        Shop all parts
+                      </Link>
+                      <div className="mt-1">
+                        <BrandRows onNavigate={() => setActiveDropdown(null)} />
+                      </div>
                     </div>
                   </div>
                 )}
@@ -265,7 +309,7 @@ export function Header({ onSearchOpen }: { onSearchOpen?: () => void }) {
             <button
               aria-label="Search"
               onClick={onSearchOpen}
-              className="p-2 rounded-md text-foreground/70 hover:text-foreground hover:bg-muted transition-colors"
+              className="p-2 rounded-md text-white/70 hover:text-white hover:bg-white/10 transition-colors"
             >
               <Search className="size-5" />
             </button>
@@ -274,7 +318,7 @@ export function Header({ onSearchOpen }: { onSearchOpen?: () => void }) {
             <Link
               href="/wishlist"
               aria-label="Wishlist"
-              className="relative p-2 rounded-md text-foreground/70 hover:text-foreground hover:bg-muted transition-colors"
+              className="relative p-2 rounded-md text-white/70 hover:text-white hover:bg-white/10 transition-colors"
             >
               <Heart className="size-5" />
               {wishlistCount > 0 && (
@@ -288,7 +332,7 @@ export function Header({ onSearchOpen }: { onSearchOpen?: () => void }) {
             <Link
               href="/cart"
               aria-label="Shopping cart"
-              className="relative p-2 rounded-md text-foreground/70 hover:text-foreground hover:bg-muted transition-colors"
+              className="relative p-2 rounded-md text-white/70 hover:text-white hover:bg-white/10 transition-colors"
             >
               <ShoppingCart className="size-5" />
               {itemCount > 0 && (
@@ -303,7 +347,7 @@ export function Header({ onSearchOpen }: { onSearchOpen?: () => void }) {
             {/* Mobile hamburger */}
             <button
               aria-label={mobileOpen ? "Close menu" : "Open menu"}
-              className="lg:hidden p-2 rounded-md hover:bg-muted transition-colors"
+              className="lg:hidden p-2 rounded-md text-white/70 hover:bg-white/10 transition-colors"
               onClick={() => setMobileOpen((o) => !o)}
             >
               {mobileOpen ? <X className="size-5" /> : <Menu className="size-5" />}
@@ -318,7 +362,7 @@ export function Header({ onSearchOpen }: { onSearchOpen?: () => void }) {
           <nav className="max-w-7xl mx-auto px-4 py-3 space-y-0.5">
             {navLinks.map((link) => (
               <MobileNavItem
-                key={link.href}
+                key={`${link.href}:${link.label}`}
                 link={link}
                 onClose={() => setMobileOpen(false)}
               />
@@ -327,15 +371,8 @@ export function Header({ onSearchOpen }: { onSearchOpen?: () => void }) {
             {/* Quick action row */}
             <div className="pt-4 pb-2 border-t border-border mt-3 flex gap-3">
               <Link
-                href="/services/financing"
-                className="flex-1 text-center py-2.5 text-sm font-semibold rounded-lg bg-orange-600 text-white hover:bg-orange-700 transition-colors"
-                onClick={() => setMobileOpen(false)}
-              >
-                Get Financing
-              </Link>
-              <Link
                 href="/cart"
-                className="flex-1 text-center py-2.5 text-sm font-semibold rounded-lg border border-orange-600 text-orange-600 hover:bg-orange-50 dark:hover:bg-orange-950/20 transition-colors"
+                className="flex-1 text-center py-2.5 text-sm font-semibold rounded-lg bg-orange-600 text-white hover:bg-orange-700 transition-colors"
                 onClick={() => setMobileOpen(false)}
               >
                 Cart ({itemCount})

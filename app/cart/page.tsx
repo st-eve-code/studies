@@ -14,8 +14,10 @@ import {
   ShieldCheck,
   RotateCcw,
   X,
+  MessageCircle,
 } from "lucide-react";
 import { cn, formatCurrency } from "@/lib/utils";
+import { siteConfig } from "@/lib/site-config";
 import { ProductImage } from "@/components/ui/product-image";
 import { useCart } from "@/hooks/use-cart";
 import type { ShippingMethod } from "@/types/cart";
@@ -275,13 +277,13 @@ export default function CartPage() {
 
               {/* Trust */}
               <div className="mt-4 flex items-center justify-center gap-4 text-xs text-muted-foreground">
-                <span className="flex items-center gap-1"><ShieldCheck className="size-3.5 text-green-600" /> Secure checkout</span>
-                <span className="flex items-center gap-1"><RotateCcw className="size-3.5" /> 30-day returns</span>
+                <span className="flex items-center gap-1"><MessageCircle className="size-3.5 text-green-600" /> No online payment</span>
+                <span className="flex items-center gap-1"><RotateCcw className="size-3.5" /> Order via WhatsApp</span>
               </div>
 
               <p className="mt-4 text-center text-xs text-muted-foreground">
                 Questions? Call{" "}
-                <a href="tel:+16145550199" className="text-orange-600 hover:underline">(614) 555-0199</a>
+                <a href={`tel:${siteConfig.phoneTel}`} className="text-orange-600 hover:underline">{siteConfig.phone}</a>
               </p>
             </div>
           </div>

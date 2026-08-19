@@ -3,10 +3,11 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ChevronRight, Phone, Mail, MapPin, Clock, CheckCircle2, Send } from "lucide-react";
+import { siteConfig } from "@/lib/site-config";
 
 const inputCls = "w-full px-3 py-2.5 text-sm rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-orange-500";
 
-const DEPARTMENTS = ["General Inquiry", "Parts & Accessories", "Service Department", "Sales", "Financing", "Trade-In", "Warranty", "Other"];
+const DEPARTMENTS = ["General Inquiry", "Parts & Accessories", "Service Department", "Sales", "Trade-In", "Warranty", "Other"];
 
 export default function ContactPage() {
   const [form, setForm] = useState({ name: "", email: "", phone: "", department: "", subject: "", message: "" });
@@ -39,7 +40,7 @@ export default function ContactPage() {
             <span className="text-foreground">Contact</span>
           </div>
           <h1 className="text-3xl font-black mb-2">Get In Touch</h1>
-          <p className="text-muted-foreground">We&rsquo;re here to help with any questions about vehicles, parts, service, or financing.</p>
+          <p className="text-muted-foreground">We&rsquo;re here to help with any questions about vehicles, parts, service, or trade-ins.</p>
         </div>
       </div>
 
@@ -88,10 +89,10 @@ export default function ContactPage() {
           {/* Contact info */}
           <div className="space-y-5">
             {[
-              { icon: Phone, label: "Phone", lines: ["(614) 555-0199", "Mon–Sat 9AM–6PM"] },
-              { icon: Mail, label: "Email", lines: ["info@xtremepowersports.com", "Response within 24 hours"] },
-              { icon: MapPin, label: "Address", lines: ["1234 Powersports Blvd", "Columbus, OH 43215"] },
-              { icon: Clock, label: "Store Hours", lines: ["Mon–Fri: 9AM–6PM", "Sat: 9AM–5PM", "Sun: 11AM–4PM"] },
+              { icon: Phone, label: "Phone", lines: [siteConfig.phone, siteConfig.hours.phoneLine] },
+              { icon: Mail, label: "Email", lines: [siteConfig.email, "Response within 24 hours"] },
+              { icon: MapPin, label: "Address", lines: [siteConfig.address.street, `${siteConfig.address.city}, ${siteConfig.address.state} ${siteConfig.address.zip}`] },
+              { icon: Clock, label: "Store Hours", lines: siteConfig.hours.main },
             ].map(({ icon: Icon, label, lines }) => (
               <div key={label} className="rounded-xl border border-border bg-card p-4 flex gap-4">
                 <div className="size-10 bg-orange-100 dark:bg-orange-950/30 rounded-full flex items-center justify-center shrink-0">
@@ -108,9 +109,9 @@ export default function ContactPage() {
             <div className="rounded-xl overflow-hidden border border-border bg-muted aspect-video flex items-center justify-center">
               <div className="text-center text-muted-foreground">
                 <MapPin className="size-8 mx-auto mb-2 opacity-40" />
-                <p className="text-sm font-medium">1234 Powersports Blvd</p>
-                <p className="text-xs">Columbus, OH 43215</p>
-                <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer"
+                <p className="text-sm font-medium">{siteConfig.address.street}</p>
+                <p className="text-xs">{siteConfig.address.city}, {siteConfig.address.state} {siteConfig.address.zip}</p>
+                <a href={siteConfig.mapsUrl} target="_blank" rel="noopener noreferrer"
                   className="mt-2 inline-block text-xs text-orange-600 hover:underline">
                   Open in Google Maps →
                 </a>

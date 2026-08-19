@@ -7,7 +7,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
 
   --color-sidebar-ring: var(--sidebar-ring);
@@ -157,6 +157,13 @@
   }
   html {
     @apply font-sans scroll-smooth;
+  }
+
+  /* Keep anything from pushing past the viewport edges (reveal animations,
+     oversized fixed-width inputs, etc.) — clip, not hidden, so sticky works. */
+  html,
+  body {
+    overflow-x: clip;
   }
 
   /* Improve default focus outline to use brand ring */

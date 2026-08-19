@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { ChevronDown, ChevronUp, X, SlidersHorizontal } from "lucide-react";
-import { cn, formatCurrency } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 import type { VehicleFilters, VehicleCategory, VehicleCondition } from "@/types/vehicle";
 
 interface VehicleFilterProps {
@@ -101,7 +101,7 @@ export function VehicleFilter({ filters, onChange, totalCount, className }: Vehi
               id={id}
               label={label}
               checked={filters.condition?.includes(id) ?? false}
-              onChange={(val, checked) =>
+              onChange={(val) =>
                 onChange({ ...filters, condition: toggleArray(filters.condition, val) })
               }
             />

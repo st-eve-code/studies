@@ -23,6 +23,7 @@ import { fetchPartBySku, fetchParts } from "@/lib/mock-api";
 import { useCart } from "@/hooks/use-cart";
 import { useWishlist } from "@/context/wishlist-context";
 import { useYMM } from "@/hooks/use-ymm";
+import { brandBySlug } from "@/data/brands";
 import type { Part } from "@/types/part";
 
 function StarRating({ rating, count }: { rating: number; count: number }) {
@@ -140,6 +141,19 @@ export default function PartDetailPage() {
           <ChevronRight className="size-3 shrink-0" />
           <Link href="/parts" className="hover:text-foreground shrink-0">Parts</Link>
           <ChevronRight className="size-3 shrink-0" />
+          {brandBySlug(part.brand.toLowerCase().replace(/[\s-]/g, "-")) ? (
+            <>
+              <Link
+                href={`/brands/${part.brand.toLowerCase().replace(/[\s-]/g, "-")}`}
+                className="hover:text-foreground shrink-0"
+              >
+                {part.brand}
+              </Link>
+              <ChevronRight className="size-3 shrink-0" />
+            </>
+          ) : (
+            <span className="text-foreground/70 shrink-0">{part.brand}</span>
+          )}
           <span className="text-foreground font-medium truncate min-w-0">{part.name}</span>
         </div>
       </div>
@@ -389,10 +403,10 @@ export default function PartDetailPage() {
           <section className="pt-10 border-t border-border">
             <div className="flex items-end justify-between mb-6">
               <div>
-                <p className="text-orange-600 text-xs font-bold uppercase tracking-widest mb-1">
-                  You May Also Need
-                </p>
                 <h2 className="text-2xl font-black">Recommended Parts</h2>
+                <p className="text-sm text-muted-foreground mt-1">
+                  Commonly purchased together with this item.
+                </p>
               </div>
               <Link
                 href={`/parts?category=${part.category}`}

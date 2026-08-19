@@ -1,202 +1,59 @@
 "use client";
 
-import { useState, useEffect /* , useRef */ } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import {
-  /* ArrowRight, */
-  ChevronRight,
-  Phone,
-  Shield,
-  Truck,
-  Wrench,
-  /* Zap, */
-} from "lucide-react";
+import { ChevronLeft, ChevronRight, ArrowRight, Truck, RotateCcw, ShieldCheck, Tag } from "lucide-react";
 import { cn } from "@/lib/utils";
 import extremecolumbusBg from "@/components/logo/slides/slide1.jpg";
 import apriliaBanner from "@/components/logo/slides/slide2.jpg";
 import motoGuzziBanner from "@/components/logo/slides/slide3.jpg";
 import hondaBanner from "@/components/logo/slides/slide4.jpg";
 import yamahaBanner from "@/components/logo/slides/slide5.jpg";
-import layerBanner from "@/components/logo/layer.webp";
-import canAmMark from "@/components/logo/marks/extremecolumbus-brand-can-am.png";
-import polarisMark from "@/components/logo/marks/extremecolumbus-brand-polaris.png";
-import yamahaMark from "@/components/logo/marks/extremecolumbus-brand-yamaha.png";
-import hondaMark from "@/components/logo/marks/extremecolumbus-brand-honda.png";
-import kawasakiMark from "@/components/logo/marks/extremecolumbus-brand-kawasaki.png";
-import seaDooMark from "@/components/logo/marks/extremecolumbus-brand-sea-doo.png";
-import suzukiMark from "@/components/logo/marks/extremecolumbus-brand-suzuki.png";
-import cfmotoMark from "@/components/logo/marks/extremecolumbus-brand-cfmoto.png";
-import indianMark from "@/components/logo/marks/extremecolumbus-brand-indian-motorcycle.png";
-import bmwMark from "@/components/logo/marks/extremecolumbus-brand-bmw-motorrad.png";
-import ssrMark from "@/components/logo/marks/extremecolumbus-brand-ssr.png";
-import slingshotMark from "@/components/logo/marks/slingshot-brand-slider.png";
-import { VehicleCard } from "@/components/features/vehicle-card";
+import { ProductImage } from "@/components/ui/product-image";
 import { PartCard } from "@/components/features/part-card";
-import { YMMBar } from "@/components/features/ymm-bar";
 import { ScrollReveal, StaggerReveal } from "@/components/ui/scroll-reveal";
-import { CustomerSupport } from "@/components/features/customer-support";
 import { CustomerReviews } from "@/components/features/customer-reviews";
 import { MapAndHours } from "@/components/features/map-and-hours";
-import { vehicleCategories } from "@/data/mock-categories";
-import { vehicleCategoryImages } from "@/data/vehicle-category-images";
-import { fetchFeaturedVehicles, fetchFeaturedParts } from "@/lib/mock-api";
-import type { Vehicle } from "@/types/vehicle";
+import { brands, brandMatches } from "@/data/brands";
+import { siteConfig } from "@/lib/site-config";
+import { fetchFeaturedParts } from "@/lib/mock-api";
 import type { Part } from "@/types/part";
 
-// ── Hero slides ───────────────────────────────────────────────────────────────
+// ── Hero slides (image-only per earlier request) ──────────────────────────────
 const heroSlides = [
-  {
-    id: 1,
-    tag: "2024 Models In Stock",
-    headline: "Ride Without Limits.",
-    sub: "Columbus Ohio's largest powersports dealer. ATVs, UTVs, Dirt Bikes & Watercraft.",
-    ctaPrimary: { label: "Shop Inventory", href: "/inventory" },
-    ctaSecondary: { label: "Get Financing", href: "/services/financing" },
-    bg: extremecolumbusBg,
-  },
-  {
-    id: 2,
-    tag: "Parts & Accessories",
-    headline: "Everything Your Ride Needs.",
-    sub: "OEM & aftermarket parts with guaranteed fitment. Same-day local pickup available.",
-    ctaPrimary: { label: "Shop Parts", href: "/parts" },
-    ctaSecondary: { label: "OEM Microfiche", href: "/parts/microfiche" },
-    bg: apriliaBanner,
-  },
-  {
-    id: 3,
-    tag: "Service Department",
-    headline: "Expert Service. Fast Turnaround.",
-    sub: "Factory-trained technicians for all makes and models. Schedule online today.",
-    ctaPrimary: { label: "Schedule Service", href: "/services/service-request" },
-    ctaSecondary: { label: "Value Your Trade", href: "/services/trade-in" },
-    bg: motoGuzziBanner,
-  },
-  {
-    id: 4,
-    tag: "New Arrivals Weekly",
-    headline: "Fresh Stock, Fresh Rides.",
-    sub: "Brand-new arrivals land every week. See them before they're gone.",
-    ctaPrimary: { label: "Shop Inventory", href: "/inventory" },
-    ctaSecondary: { label: "Get Financing", href: "/services/financing" },
-    bg: hondaBanner,
-  },
-  {
-    id: 5,
-    tag: "Dealer Direct",
-    headline: "Buy From the Source.",
-    sub: "Authorized dealer with the brands you trust, backed by local service.",
-    ctaPrimary: { label: "Shop Parts", href: "/parts" },
-    ctaSecondary: { label: "Schedule Service", href: "/services/service-request" },
-    bg: yamahaBanner,
-  },
+  { id: 1, alt: "Xtreme Powersports inventory", bg: extremecolumbusBg },
+  { id: 2, alt: "Parts & accessories", bg: apriliaBanner },
+  { id: 3, alt: "Service department", bg: motoGuzziBanner },
+  { id: 4, alt: "New arrivals", bg: hondaBanner },
+  { id: 5, alt: "Dealer direct", bg: yamahaBanner },
 ];
 
-const trustBadges = [
-  { icon: Shield, label: "Authorized Dealer", sub: "Can-Am · Polaris · Yamaha · Honda" },
-  { icon: Truck, label: "Free Shipping $150+", sub: "On all orders over $150" },
-  { icon: Wrench, label: "Expert Service", sub: "Factory-trained technicians" },
-  { icon: Phone, label: "Local Support", sub: "(614) 555-0199" },
+// Curated category tiles shown on the home page (image pulled from real stock)
+const CATEGORY_TILES: { id: string; label: string }[] = [
+  { id: "brakes", label: "Brakes & Clutches" },
+  { id: "air-filter", label: "Air Filtration" },
+  { id: "drivetrain", label: "Drivetrain & Belts" },
+  { id: "body-plastics", label: "Body & Plastics" },
+  { id: "electrical", label: "Electrical" },
+  { id: "lighting", label: "Lighting" },
+  { id: "tires-wheels", label: "Tires & Wheels" },
+  { id: "suspension", label: "Suspension" },
 ];
 
-// ── Authorized dealer brand marks ────────────────────────────────────────────
-const dealerBrands = [
-  { name: "Can-Am", mark: canAmMark },
-  { name: "Polaris", mark: polarisMark },
-  { name: "Yamaha", mark: yamahaMark },
-  { name: "Honda", mark: hondaMark },
-  { name: "Kawasaki", mark: kawasakiMark },
-  { name: "Sea-Doo", mark: seaDooMark },
-  { name: "Suzuki", mark: suzukiMark },
-  { name: "CFMoto", mark: cfmotoMark },
-  { name: "Indian Motorcycle", mark: indianMark },
-  { name: "BMW Motorrad", mark: bmwMark },
-  { name: "SSR", mark: ssrMark },
-  { name: "Slingshot", mark: slingshotMark },
+const trustFacts = [
+  { icon: Truck, label: "Free Shipping", sub: "Orders over $150" },
+  { icon: RotateCcw, label: "30-Day Returns", sub: "Easy, no-haggle" },
+  { icon: ShieldCheck, label: "Genuine Parts", sub: "Authorized dealer" },
+  { icon: Tag, label: "No-Haggle Pricing", sub: "Fair dealer direct" },
 ];
-
-// ── Hero content animator ─────────────────────────────────────────────────────
-// NOTE: text + CTA layer commented out per request (image-only slides). Restore
-// by uncommenting this function, `current` below, and the render block below it.
-/* function HeroContent({
-  slide,
-}: {
-  slide: (typeof heroSlides)[number];
-}) {
-  const tagRef = useRef<HTMLSpanElement>(null);
-  const headRef = useRef<HTMLHeadingElement>(null);
-  const subRef = useRef<HTMLParagraphElement>(null);
-  const ctaRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const els = [tagRef.current, headRef.current, subRef.current, ctaRef.current];
-    if (els.some((e) => !e)) return;
-
-    let ctx: import("gsap").gsap.Context;
-
-    import("gsap").then(({ gsap }) => {
-      ctx = gsap.context(() => {
-        gsap.fromTo(
-          els,
-          { opacity: 0, y: 30 },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 0.65,
-            ease: "power3.out",
-            stagger: 0.12,
-            clearProps: "transform",
-          }
-        );
-      });
-    });
-
-    return () => ctx?.revert();
-  }, [slide.id]);
-
-  return (
-    <div className="max-w-xl">
-      <span
-        ref={tagRef}
-        className="inline-flex items-center gap-1.5 text-orange-400 text-sm font-semibold mb-3 uppercase tracking-widest opacity-0"
-      >
-        <Zap className="size-3.5" />
-        {slide.tag}
-      </span>
-      <h1
-        ref={headRef}
-        className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-4 opacity-0"
-      >
-        {slide.headline}
-      </h1>
-      <p ref={subRef} className="text-white/80 text-lg mb-8 leading-relaxed opacity-0">
-        {slide.sub}
-      </p>
-      <div ref={ctaRef} className="flex flex-wrap gap-3 opacity-0">
-        <Link
-          href={slide.ctaPrimary.href}
-          className="px-6 py-3 rounded-xl bg-orange-600 text-white font-bold hover:bg-orange-700 transition-all flex items-center gap-2 active:scale-[0.98]"
-        >
-          {slide.ctaPrimary.label}
-          <ArrowRight className="size-4" />
-        </Link>
-        <Link
-          href={slide.ctaSecondary.href}
-          className="px-6 py-3 rounded-xl border-2 border-white/40 text-white font-bold hover:bg-white/10 transition-all active:scale-[0.98]"
-        >
-          {slide.ctaSecondary.label}
-        </Link>
-      </div>
-    </div>
-  );
-} */
 
 // ── Page ──────────────────────────────────────────────────────────────────────
 export default function HomePage() {
   const [slide, setSlide] = useState(0);
-  const [featuredVehicles, setFeaturedVehicles] = useState<Vehicle[]>([]);
   const [featuredParts, setFeaturedParts] = useState<Part[]>([]);
+  const [brandCounts, setBrandCounts] = useState<Record<string, number>>({});
+  const [catMeta, setCatMeta] = useState<Record<string, { count: number; image: string }>>({});
   const [loading, setLoading] = useState(true);
 
   // Auto-advance hero
@@ -205,212 +62,157 @@ export default function HomePage() {
     return () => clearInterval(t);
   }, []);
 
+  const go = (n: number) =>
+    setSlide(((n % heroSlides.length) + heroSlides.length) % heroSlides.length);
+
   useEffect(() => {
-    Promise.all([fetchFeaturedVehicles(), fetchFeaturedParts()]).then(([v, p]) => {
-      setFeaturedVehicles(v);
-      setFeaturedParts(p);
+    Promise.all([
+      fetchFeaturedParts(),
+      fetch("/api/parts?limit=2000").then((r) => r.json()),
+    ]).then(([parts, all]) => {
+      setFeaturedParts(parts);
+      const allParts = all.data as Part[];
+
+      const counts: Record<string, number> = {};
+      const cats: Record<string, { count: number; image: string }> = {};
+      for (const part of allParts) {
+        const c = cats[part.category];
+        if (c) {
+          c.count += 1;
+        } else {
+          cats[part.category] = { count: 1, image: part.images[0] ?? "" };
+        }
+        for (const brand of brands) {
+          if (part.fitment.some((f) => brandMatches(brand, f.make))) {
+            counts[brand.id] = (counts[brand.id] ?? 0) + 1;
+          }
+        }
+      }
+      setBrandCounts(counts);
+      setCatMeta(cats);
       setLoading(false);
     });
   }, []);
 
-  /* const current = heroSlides[slide]; */
-
   return (
     <div className="min-h-screen">
-      {/* ── Hero ──────────────────────────────────────────────────────────── */}
-      <section className="relative h-[85vh] min-h-[520px] overflow-hidden">
-        {heroSlides.map((s, i) => (
-          <div
-            key={s.id}
-            className={cn(
-              "absolute inset-0 transition-opacity duration-1000",
-              i === slide ? "opacity-100" : "opacity-0"
-            )}
-          >
-            <Image
-              src={s.bg}
-              alt={s.headline}
-              fill
-              priority={i === 0}
-              className="object-cover"
-              sizes="100vw"
-            />
-          </div>
-        ))}
-
-        {/* Hero content — animates on slide change (commented out: image-only slides) */}
-        {/* <div className="relative z-10 h-full flex items-center">
-          <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 w-full">
-            <HeroContent slide={current} />
-          </div>
-        </div> */}
-
-        {/* Slide dots */}
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-10">
-          {heroSlides.map((_, i) => (
-            <button
-              key={i}
-              onClick={() => setSlide(i)}
-              aria-label={`Go to slide ${i + 1}`}
-              className={cn(
-                "transition-all rounded-full",
-                i === slide ? "w-6 h-2 bg-orange-500" : "size-2 bg-white/50 hover:bg-white/80"
-              )}
-            />
+      {/* ── Hero — dark racing strip ─────────────────────────────────────── */}
+      <section className="relative overflow-hidden bg-zinc-950" role="region" aria-label="Featured">
+        <div className="relative w-full aspect-[1401/453] mt-[5px] sm:aspect-auto sm:h-[440px] sm:mt-0 lg:h-[540px]">
+          {heroSlides.map((s, i) => (
+            <div
+              key={s.id}
+              className="absolute inset-0 transition-opacity duration-700"
+              style={{ opacity: i === slide ? 1 : 0, zIndex: i === slide ? 2 : 1 }}
+              aria-hidden={i !== slide}
+            >
+              <Image
+                src={s.bg}
+                alt={s.alt}
+                fill
+                priority={i === 0}
+                className="object-contain object-top sm:object-cover sm:object-center"
+                sizes="100vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-zinc-950/40 via-transparent to-transparent sm:from-zinc-950/85 sm:via-zinc-950/30" />
+            </div>
           ))}
+
+          {/* Content */}
+          <div className="hidden sm:block max-w-7xl mx-auto px-4 md:px-6 lg:px-8 absolute inset-x-0 bottom-16 z-10">
+            <ScrollReveal className="w-full">
+              <div className="max-w-xl">
+                <p className="text-white/60 text-xs font-bold uppercase tracking-[0.25em] mb-3">
+                  Authorized Dealer · {siteConfig.region}
+                </p>
+                <h1 className="text-white font-black leading-tight tracking-tight text-3xl sm:text-5xl lg:text-6xl">
+                  Ready to ride.
+                  <br />
+                  <span className="text-orange-500">Stay out there.</span>
+                </h1>
+                <div className="flex flex-wrap items-center gap-3 mt-6">
+                  <Link
+                    href="/parts"
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-orange-600 text-white font-bold text-sm hover:bg-orange-500 active:scale-[0.98] transition-all"
+                  >
+                    Shop Parts &amp; Gear
+                    <ChevronRight className="size-4" />
+                  </Link>
+                  <Link
+                    href="#brands"
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-white/25 text-white font-bold text-sm hover:bg-white/10 transition-colors"
+                  >
+                    Shop by Brand
+                  </Link>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+
+          {/* Controls — dots + arrows */}
+          <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 absolute inset-x-0 bottom-4 flex items-center justify-between pointer-events-none z-10">
+            <div className="flex gap-2 pointer-events-auto">
+              {heroSlides.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => go(i)}
+                  aria-label={`Go to slide ${i + 1}`}
+                  className={cn(
+                    "h-2 rounded-full transition-all",
+                    i === slide ? "w-8 bg-orange-500" : "w-2 bg-white/40 hover:bg-white/70"
+                  )}
+                />
+              ))}
+            </div>
+            <div className="flex gap-2 pointer-events-auto">
+              <button
+                onClick={() => go(slide - 1)}
+                aria-label="Previous slide"
+                className="rounded-full bg-white/10 p-2 text-white backdrop-blur hover:bg-white/25 transition-colors"
+              >
+                <ChevronLeft className="size-[18px]" />
+              </button>
+              <button
+                onClick={() => go(slide + 1)}
+                aria-label="Next slide"
+                className="rounded-full bg-white/10 p-2 text-white backdrop-blur hover:bg-white/25 transition-colors"
+              >
+                <ChevronRight className="size-[18px]" />
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* ── YMM bar ───────────────────────────────────────────────────────── */}
-      <ScrollReveal from={{ y: 24 }} start="top 95%">
-        <section className="bg-background border-b border-border py-6">
-          <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-            <YMMBar
-              onApply={(y, mk, mo) => {
-                window.location.href = `/parts?year=${y}&make=${encodeURIComponent(mk)}&model=${encodeURIComponent(mo)}`;
-              }}
-            />
-          </div>
-        </section>
-      </ScrollReveal>
-
-      {/* ── Trust badges ─────────────────────────────────────────────────── */}
-      <section className="bg-muted/30 border-b border-border">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-          <StaggerReveal
-            stagger={0.1}
-            from={{ y: 20 }}
-            duration={0.5}
-            start="top 90%"
-            className="grid grid-cols-2 lg:grid-cols-4 divide-x divide-y lg:divide-y-0 divide-border"
-          >
-            {trustBadges.map(({ icon: Icon, label, sub }) => (
-              <div key={label} className="flex items-center gap-3 px-6 py-4">
-                <div className="size-10 rounded-lg bg-orange-600/10 flex items-center justify-center shrink-0">
-                  <Icon className="size-5 text-orange-600" />
-                </div>
+      {/* ── Trust strip ──────────────────────────────────────────────────── */}
+      <section className="bg-zinc-950 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            {trustFacts.map(({ icon: Icon, label, sub }) => (
+              <div key={label} className="flex items-center gap-3">
+                <span className="size-10 shrink-0 rounded-lg bg-orange-600/15 text-orange-500 flex items-center justify-center">
+                  <Icon className="size-5" aria-hidden="true" />
+                </span>
                 <div>
-                  <p className="text-sm font-bold">{label}</p>
-                  <p className="text-xs text-muted-foreground">{sub}</p>
+                  <p className="text-white text-sm font-bold leading-tight">{label}</p>
+                  <p className="text-white/50 text-xs mt-0.5">{sub}</p>
                 </div>
               </div>
             ))}
-          </StaggerReveal>
+          </div>
         </div>
       </section>
 
-      {/* ── Vehicle Categories ────────────────────────────────────────────── */}
-      <section className="py-16">
+      {/* ── Shop by Brand ────────────────────────────────────────────────── */}
+      <section id="brands" className="py-16 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-          <ScrollReveal className="flex items-end justify-between mb-8">
+          <ScrollReveal className="flex flex-col items-center justify-between gap-4 mb-8 sm:flex-row sm:items-end sm:gap-0">
             <div>
-              <p className="text-orange-600 text-sm font-semibold uppercase tracking-widest mb-1">
-                Shop By Type
+              <h2 className="text-3xl font-black sm:text-4xl">Shop by Brand</h2>
+              <p className="text-muted-foreground mt-1 max-w-xl text-sm">
+                Parts for ATVs, side-by-sides, dirt bikes, watercraft and snowmobiles — matched to
+                your machine.
               </p>
-              <h2 className="text-3xl font-black">Browse Inventory</h2>
-            </div>
-            <Link
-              href="/inventory"
-              className="hidden sm:flex items-center gap-1 text-sm font-medium text-orange-600 hover:underline"
-            >
-              View All <ChevronRight className="size-4" />
-            </Link>
-          </ScrollReveal>
-
-          <StaggerReveal
-            stagger={0.07}
-            from={{ y: 30, scale: 0.96 }}
-            duration={0.5}
-            ease="power2.out"
-            className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4"
-          >
-            {vehicleCategories.map((cat) => (
-              <Link
-                key={cat.id}
-                href={`/inventory?category=${cat.id}`}
-                className="group relative aspect-[4/3] overflow-hidden rounded-xl border border-border bg-muted hover:shadow-md transition-all"
-              >
-                <Image
-                  src={vehicleCategoryImages[cat.id]}
-                  alt={cat.label}
-                  fill
-                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />
-                <div className="absolute inset-x-0 bottom-0 p-3">
-                  <span className="block text-sm font-bold text-white">{cat.label}</span>
-                  <span className="block text-xs text-white/70">{cat.count} listings</span>
-                </div>
-              </Link>
-            ))}
-          </StaggerReveal>
-        </div>
-      </section>
-
-      {/* ── Featured Inventory ────────────────────────────────────────────── */}
-      <section className="py-16 bg-muted/20">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-          <ScrollReveal className="flex items-end justify-between mb-8">
-            <div>
-              <p className="text-orange-600 text-sm font-semibold uppercase tracking-widest mb-1">
-                Hand-Picked
-              </p>
-              <h2 className="text-3xl font-black">Featured Vehicles</h2>
-            </div>
-            <Link
-              href="/inventory"
-              className="hidden sm:flex items-center gap-1 text-sm font-medium text-orange-600 hover:underline"
-            >
-              Full Inventory <ChevronRight className="size-4" />
-            </Link>
-          </ScrollReveal>
-
-          {loading ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {Array.from({ length: 3 }).map((_, i) => (
-                <div key={i} className="h-80 rounded-xl bg-muted animate-pulse" />
-              ))}
-            </div>
-          ) : (
-            <StaggerReveal
-              stagger={0.12}
-              from={{ y: 50 }}
-              duration={0.65}
-              ease="power3.out"
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
-            >
-              {featuredVehicles.slice(0, 6).map((v) => (
-                <VehicleCard key={v.id} vehicle={v} />
-              ))}
-            </StaggerReveal>
-          )}
-        </div>
-      </section>
-
-      {/* ── Brand layer ───────────────────────────────────────────────────── */}
-      <section className="py-10 max-sm:hidden">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-          <Image
-            src={layerBanner}
-            alt="Xtreme Powersports"
-            width={2560}
-            height={1231}
-            sizes="100vw"
-            className="w-full h-auto rounded-none"
-          />
-        </div>
-      </section>
-
-      {/* ── Featured Parts ────────────────────────────────────────────────── */}
-      <section className="py-16 bg-muted/20">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-          <ScrollReveal className="flex items-end justify-between mb-8">
-            <div>
-              <p className="text-orange-600 text-sm font-semibold uppercase tracking-widest mb-1">
-                Top Sellers
-              </p>
-              <h2 className="text-3xl font-black">Popular Parts & Gear</h2>
             </div>
             <Link
               href="/parts"
@@ -420,10 +222,129 @@ export default function HomePage() {
             </Link>
           </ScrollReveal>
 
+          <StaggerReveal
+            stagger={0.06}
+            from={{ y: 30 }}
+            duration={0.5}
+            ease="power2.out"
+            className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4"
+          >
+            {brands.map((b) => {
+              const count = brandCounts[b.id] ?? 0;
+              return (
+                <Link
+                  key={b.id}
+                  href={`/brands/${b.id}`}
+                  className="group relative overflow-hidden rounded-xl border border-border bg-card p-5 flex flex-col items-start justify-between gap-6 hover:shadow-lg hover:border-orange-600/40 transition-all"
+                >
+                  {b.mark ? (
+                    <Image
+                      src={b.mark}
+                      alt={b.label}
+                      width={176}
+                      height={96}
+                      className={cn(
+                        "h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105",
+                        b.darkInvert && "dark:brightness-0 dark:invert"
+                      )}
+                    />
+                  ) : (
+                    <span className="text-3xl font-black text-foreground/20 group-hover:text-orange-600/40 transition-colors">
+                      {b.label.slice(0, 4)}
+                    </span>
+                  )}
+                  <div>
+                    <span className="block text-sm font-bold group-hover:text-orange-600 transition-colors">
+                      {b.label}
+                    </span>
+                    <span className="block text-xs text-muted-foreground mt-0.5">
+                      {count > 0 ? `${count.toLocaleString()} parts` : b.tagline}
+                    </span>
+                  </div>
+                  <ArrowRight className="absolute top-4 right-4 size-4 text-muted-foreground/0 group-hover:text-orange-600 transition-all group-hover:-rotate-45" />
+                </Link>
+              );
+            })}
+          </StaggerReveal>
+        </div>
+      </section>
+
+      {/* ── Shop by Category — real-part image tiles ─────────────────────── */}
+      <section className="py-16 bg-muted/30">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+          <ScrollReveal className="flex flex-col items-center justify-between gap-4 mb-8 sm:flex-row sm:items-end sm:gap-0">
+            <div>
+              <h2 className="text-3xl font-black sm:text-4xl">Shop by Category</h2>
+              <p className="text-muted-foreground mt-1 max-w-xl text-sm">
+                Every tile is real stock from our parts shelf — filters, belts, brakes, plastics and more.
+              </p>
+            </div>
+            <Link
+              href="/parts"
+              className="hidden sm:flex items-center gap-1 text-sm font-medium text-orange-600 hover:underline"
+            >
+              Shop All Parts <ChevronRight className="size-4" />
+            </Link>
+          </ScrollReveal>
+
+          <StaggerReveal
+            stagger={0.05}
+            from={{ y: 30, scale: 0.98 }}
+            duration={0.5}
+            ease="power2.out"
+            className="grid grid-cols-2 lg:grid-cols-4 gap-4"
+          >
+            {CATEGORY_TILES.map((c) => {
+              const meta = catMeta[c.id];
+              return (
+                <Link
+                  key={c.id}
+                  href={`/parts?category=${c.id}`}
+                  className="group relative aspect-[4/3] overflow-hidden rounded-xl border border-border bg-muted hover:shadow-md transition-all"
+                >
+                  <ProductImage
+                    src={meta?.image}
+                    alt={c.label}
+                    fill
+                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+                  <div className="absolute inset-x-0 bottom-0 p-3.5">
+                    <span className="block text-sm font-bold text-white">{c.label}</span>
+                    <span className="block text-xs text-white/70 mt-0.5">
+                      {meta ? `${meta.count.toLocaleString()} parts` : "Browse parts"}
+                    </span>
+                  </div>
+                </Link>
+              );
+            })}
+          </StaggerReveal>
+        </div>
+      </section>
+
+      {/* ── Featured Parts ───────────────────────────────────────────────── */}
+      <section className="py-16">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+          <ScrollReveal className="flex flex-col items-center justify-between gap-4 mb-8 sm:flex-row sm:items-end sm:gap-0">
+            <div>
+              <h2 className="text-3xl font-black sm:text-4xl">Featured Parts</h2>
+              <p className="text-muted-foreground mt-1 max-w-xl text-sm">
+                Hand-picked favorites from the shop floor, ready to ship today.
+              </p>
+            </div>
+            <Link
+              href="/parts"
+              className="hidden sm:flex items-center gap-1 text-sm font-medium text-orange-600 hover:underline"
+            >
+              View All <ChevronRight className="size-4" />
+            </Link>
+          </ScrollReveal>
+
           {loading ? (
-            <div className="grid grid-cols-2 max-md:grid-cols-1 lg:grid-cols-4 gap-5">
-              {Array.from({ length: 4 }).map((_, i) => (
-                <div key={i} className="h-64 rounded-xl bg-muted animate-pulse" />
+            <div className="mt-6 grid grid-cols-2 max-md:grid-cols-1 lg:grid-cols-4 gap-5">
+              {Array.from({ length: 8 }).map((_, i) => (
+                <div key={i} className="h-72 rounded-xl bg-muted animate-pulse" />
               ))}
             </div>
           ) : (
@@ -432,7 +353,7 @@ export default function HomePage() {
               from={{ y: 40 }}
               duration={0.55}
               ease="power2.out"
-              className="grid grid-cols-2 lg:grid-cols-4 gap-5"
+              className="mt-6 grid grid-cols-2 max-md:grid-cols-1 lg:grid-cols-4 gap-5"
             >
               {featuredParts.slice(0, 8).map((p) => (
                 <PartCard key={p.id} part={p} />
@@ -441,69 +362,6 @@ export default function HomePage() {
           )}
         </div>
       </section>
-
-      {/* ── CTA Band ──────────────────────────────────────────────────────── */}
-      <ScrollReveal from={{ y: 30 }} duration={0.6}>
-        <section className="bg-orange-600 py-14">
-          <div className="max-w-7xl mx-auto px-4 text-center text-white">
-            <h2 className="text-3xl font-black mb-3">Ready to Get on the Trail?</h2>
-            <p className="text-orange-100 mb-8 max-w-xl mx-auto">
-              Financing available for all credit types. Get pre-approved in minutes and drive home today.
-            </p>
-            <div className="flex flex-wrap gap-4 justify-center">
-              <Link
-                href="/services/financing"
-                className="px-8 py-3.5 rounded-xl bg-white text-orange-600 font-bold hover:bg-orange-50 transition-colors"
-              >
-                Apply for Financing
-              </Link>
-              <a
-                href="tel:+16145550199"
-                className="px-8 py-3.5 rounded-xl border-2 border-white/50 text-white font-bold hover:bg-white/10 transition-colors flex items-center gap-2"
-              >
-                <Phone className="size-4" /> (614) 555-0199
-              </a>
-            </div>
-          </div>
-        </section>
-      </ScrollReveal>
-
-      {/* ── Brands ────────────────────────────────────────────────────────── */}
-      <section className="py-12 border-t border-border">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-          <ScrollReveal from={{ y: 16 }} duration={0.5}>
-            <p className="text-center text-sm text-muted-foreground font-semibold uppercase tracking-widest mb-8">
-              Authorized Dealer For
-            </p>
-          </ScrollReveal>
-          <StaggerReveal
-            stagger={0.06}
-            from={{ y: 20, opacity: 0 }}
-            duration={0.4}
-            ease="power2.out"
-            className="flex flex-wrap items-center justify-center gap-x-10 gap-y-7"
-          >
-            {dealerBrands.map(({ name, mark }) => (
-              <Link
-                key={name}
-                href={`/inventory?make=${encodeURIComponent(name)}`}
-                title={name}
-                aria-label={name}
-                className="opacity-70 hover:opacity-100 transition-opacity"
-              >
-                <Image
-                  src={mark}
-                  alt={name}
-                  className="h-8 w-auto object-contain brightness-0 dark:invert"
-                />
-              </Link>
-            ))}
-          </StaggerReveal>
-        </div>
-      </section>
-
-      {/* ── Customer Support ──────────────────────────────────────────────── */}
-      <CustomerSupport />
 
       {/* ── Customer Reviews ──────────────────────────────────────────────── */}
       <CustomerReviews />

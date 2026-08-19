@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  allowedDevOrigins: ["unfineable-fredric-frowsily.ngrok-free.dev"],
   images: {
     // Next.js 16 hard limit: max 50 remotePatterns entries.
     // Using wildcard patterns where possible to cover multiple subdomains.
@@ -62,6 +63,9 @@ const nextConfig: NextConfig = {
 
       // ── Wix store media (Xtreme Power Sports Parts product images) ────────
       { protocol: "https", hostname: "static.wixstatic.com" },
+
+      // ── Amazon product images (Amazon-sourced parts catalog) ───────────────
+      { protocol: "https", hostname: "**.media-amazon.com" },
     ],
   },
 };

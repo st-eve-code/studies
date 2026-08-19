@@ -1,4 +1,4 @@
-import { Star, ExternalLink } from "lucide-react";
+import { Star } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ScrollReveal, StaggerReveal } from "@/components/ui/scroll-reveal";
 
@@ -19,7 +19,7 @@ const reviews = [
     rating: 5,
     vehicle: "2024 Polaris RZR Pro R",
     title: "Amazing from start to finish",
-    body: "We did a lot of research and visited three dealers before coming here. The difference was night and day. They actually took us out for a demo ride, explained the financing options clearly, and the paperwork took less than 30 minutes. Love our new RZR.",
+    body: "We did a lot of research and visited three dealers before coming here. The difference was night and day. They actually took us out for a demo ride, walked us through every option, and the paperwork took less than 30 minutes. Love our new RZR.",
   },
   {
     id: 3,
@@ -121,17 +121,6 @@ export function CustomerReviews() {
           ))}
         </StaggerReveal>
 
-        <ScrollReveal className="mt-8 text-center">
-          <a
-            href="https://www.google.com/maps"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-muted-foreground hover:text-orange-600 transition-colors"
-          >
-            <ExternalLink className="size-4" />
-            See all 1,200+ reviews on Google
-          </a>
-        </ScrollReveal>
       </div>
     </section>
   );

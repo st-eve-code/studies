@@ -1,43 +1,17 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import Link from "next/link";
 import {
   MessageCircle,
   X,
-  Phone,
-  Mail,
-  Calendar,
   ChevronRight,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { siteConfig } from "@/lib/site-config";
 
-const actions = [
-  {
-    icon: Phone,
-    label: "Call Us Now",
-    sub: "(614) 555-0199",
-    href: "tel:+16145550199",
-    color: "bg-green-600 hover:bg-green-700",
-    external: true,
-  },
-  {
-    icon: Mail,
-    label: "Send a Message",
-    sub: "Response within 24 hrs",
-    href: "/company/contact",
-    color: "bg-blue-600 hover:bg-blue-700",
-    external: false,
-  },
-  {
-    icon: Calendar,
-    label: "Schedule Service",
-    sub: "Book an appointment",
-    href: "/services/service-request",
-    color: "bg-purple-600 hover:bg-purple-700",
-    external: false,
-  },
-];
+const whatsappUrl = `https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(
+  `Hello ${siteConfig.name}! I have a question about an order.`
+)}`;
 
 export function SupportBubble() {
   const [open, setOpen] = useState(false);
@@ -88,63 +62,41 @@ export function SupportBubble() {
         )}>
           {/* Header */}
           <div className="bg-orange-600 px-5 py-4">
-            <p className="text-white font-black text-base">How can we help? 👋</p>
+            <p className="text-white font-black text-base">Hey there! 👋</p>
             <p className="text-orange-100 text-xs mt-0.5">
-              Our team is ready to assist you
+              What can we help you with today?
             </p>
             {/* Live status */}
             <div className="flex items-center gap-1.5 mt-2">
               <span className="size-2 rounded-full bg-green-400 animate-pulse" />
               <span className="text-orange-100 text-[11px] font-medium">
-                We&rsquo;re open · Typically replies in &lt; 5 min
+                We usually reply in under 5 minutes
               </span>
             </div>
           </div>
 
           {/* Action buttons */}
           <div className="p-3 space-y-2">
-            {actions.map(({ icon: Icon, label, sub, href, color, external }) =>
-              external ? (
-                <a
-                  key={label}
-                  href={href}
-                  className={cn(
-                    "flex items-center gap-3 w-full px-4 py-3 rounded-xl text-white transition-all active:scale-[0.98]",
-                    color
-                  )}
-                >
-                  <Icon className="size-5 shrink-0" />
-                  <div className="flex-1 text-left">
-                    <p className="text-sm font-bold leading-tight">{label}</p>
-                    <p className="text-xs opacity-80">{sub}</p>
-                  </div>
-                  <ChevronRight className="size-4 opacity-70" />
-                </a>
-              ) : (
-                <Link
-                  key={label}
-                  href={href}
-                  onClick={() => setOpen(false)}
-                  className={cn(
-                    "flex items-center gap-3 w-full px-4 py-3 rounded-xl text-white transition-all active:scale-[0.98]",
-                    color
-                  )}
-                >
-                  <Icon className="size-5 shrink-0" />
-                  <div className="flex-1 text-left">
-                    <p className="text-sm font-bold leading-tight">{label}</p>
-                    <p className="text-xs opacity-80">{sub}</p>
-                  </div>
-                  <ChevronRight className="size-4 opacity-70" />
-                </Link>
-              )
-            )}
+            <a
+              href={whatsappUrl}
+              className={cn(
+                "flex items-center gap-3 w-full px-4 py-3 rounded-xl text-white transition-all active:scale-[0.98]",
+                "bg-[#25D366] hover:bg-[#1ebe5b]"
+              )}
+            >
+              <MessageCircle className="size-5 shrink-0" />
+              <div className="flex-1 text-left">
+                <p className="text-sm font-bold leading-tight">WhatsApp Us</p>
+                <p className="text-xs opacity-80">Fastest reply — usually under 5 min</p>
+              </div>
+              <ChevronRight className="size-4 opacity-70" />
+            </a>
           </div>
 
           {/* Footer */}
           <div className="px-5 py-3 border-t border-border">
             <p className="text-xs text-muted-foreground text-center">
-              Xtreme Powersports Inc. · Columbus, OH
+              {siteConfig.name} · {siteConfig.region}
             </p>
           </div>
         </div>

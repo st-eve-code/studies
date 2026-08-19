@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
+import { siteConfig } from "@/lib/site-config";
 
 export default function PrivacyPage() {
   return (
@@ -19,15 +20,15 @@ export default function PrivacyPage() {
         {[
           {
             title: "1. Information We Collect",
-            body: "We collect information you provide directly to us, such as when you create an account, submit a financing application, schedule a service appointment, make a purchase, or contact us. This may include your name, email address, phone number, postal address, payment information, vehicle information, and any other information you choose to provide."
+            body: "We collect information you provide directly to us, such as when you create an account, schedule a service appointment, make a purchase, or contact us. This may include your name, email address, phone number, postal address, payment information, vehicle information, and any other information you choose to provide."
           },
           {
             title: "2. How We Use Your Information",
-            body: "We use the information we collect to process transactions, provide customer service, send transactional and promotional communications, analyze usage patterns to improve our services, comply with legal obligations, and share with financing partners when you apply for credit (with your explicit consent)."
+            body: "We use the information we collect to process transactions, provide customer service, send transactional and promotional communications, analyze usage patterns to improve our services, and comply with legal obligations."
           },
           {
             title: "3. Information Sharing",
-            body: "We do not sell your personal information to third parties. We may share your information with service providers who assist in our operations (payment processors, shipping carriers, email providers), lending partners when you apply for financing, and as required by law."
+            body: "We do not sell your personal information to third parties. We may share your information with service providers who assist in our operations (payment processors, shipping carriers, email providers), and as required by law."
           },
           {
             title: "4. Data Security",
@@ -39,7 +40,7 @@ export default function PrivacyPage() {
           },
           {
             title: "6. Your Rights",
-            body: "Depending on your location, you may have the right to access, correct, or delete your personal data. To exercise these rights, contact us at privacy@xtremepowersports.com. We will respond to all requests within 30 days."
+            body: "Depending on your location, you may have the right to access, correct, or delete your personal data. To exercise these rights, contact us at " + siteConfig.emailPrivacy + ". We will respond to all requests within 30 days."
           },
           {
             title: "7. Terms of Service",
@@ -47,7 +48,7 @@ export default function PrivacyPage() {
           },
           {
             title: "8. Contact Us",
-            body: "For privacy-related inquiries, contact us at: Xtreme Powersports Inc., 1234 Powersports Blvd, Columbus, OH 43215. Email: privacy@xtremepowersports.com. Phone: (614) 555-0199."
+            body: `For privacy-related inquiries, contact us at: ${siteConfig.name}, ${siteConfig.address.line}. Email: ${siteConfig.emailPrivacy}. Phone: ${siteConfig.phone}.`
           },
         ].map(({ title, body }) => (
           <section key={title} className="mb-8">

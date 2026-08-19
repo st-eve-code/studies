@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { X, Plus, CheckCircle2, XCircle } from "lucide-react";
-import { cn, formatCurrency } from "@/lib/utils";
+import { X, Plus } from "lucide-react";
+import { formatCurrency } from "@/lib/utils";
 import { ProductImage } from "@/components/ui/product-image";
 import { fetchVehicles } from "@/lib/mock-api";
 import type { Vehicle } from "@/types/vehicle";

@@ -6,6 +6,7 @@ import { ArrowLeft, Phone, Mail, MapPin, Globe } from "lucide-react";
 import { formatCurrency, formatNumber } from "@/lib/utils";
 import { BrochurePrintControls } from "./print-controls";
 import type { Vehicle } from "@/types/vehicle";
+import logoImg from "@/components/logo/logo.jpeg";
 
 async function getVehicle(id: string): Promise<Vehicle | null> {
   const { default: scraped } = await import("@/data/scraped-vehicles.json", {
@@ -86,10 +87,10 @@ export default async function BrochurePage({
             <div className="flex items-center justify-between gap-6 flex-wrap">
               <div className="flex items-center gap-5">
                 <Image
-                  src="/logo.png"
+                  src={logoImg}
                   alt="Xtreme Powersports Inc."
-                  width={220}
-                  height={64}
+                  width={1320}
+                  height={1000}
                   className="h-16 w-auto object-contain"
                   priority
                 />
@@ -270,8 +271,8 @@ export default async function BrochurePage({
             </div>
             <div className="mt-5 pt-4 border-t border-neutral-700 text-[11px] text-neutral-500 space-y-1">
               <p>
-                Prices do not include tax, title, registration, or dealer fees. Financing subject to
-                credit approval. Vehicle photos may vary from the actual unit in stock.
+                Prices do not include tax, title, registration, or dealer fees. All offers subject to
+                availability. Vehicle photos may vary from the actual unit in stock.
               </p>
               <p>
                 &copy; {new Date().getFullYear()} Xtreme Powersports Inc. All rights reserved. This

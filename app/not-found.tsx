@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SearchX, Home, ArrowLeft } from "lucide-react";
+import { SearchX, Home } from "lucide-react";
 
 export default function NotFound() {
   return (

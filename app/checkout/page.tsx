@@ -6,28 +6,21 @@ import Image from "next/image";
 import {
   CheckCircle2,
   ChevronRight,
-  Phone,
-  Mail,
   ShieldCheck,
   ArrowLeft,
   ArrowRight,
   Package,
+  MessageCircle,
 } from "lucide-react";
 import { cn, formatCurrency } from "@/lib/utils";
+import { OrderReceipt } from "@/components/features/order-receipt";
+import { buildOrderRef } from "@/lib/receipt";
 import { useCart } from "@/hooks/use-cart";
-import type { CheckoutAddress, CheckoutState } from "@/types/cart";
+import type { CheckoutState } from "@/types/cart";
 
 const STEPS = [
-  { id: 1, label: "Contact & Delivery" },
-  { id: 2, label: "Review" },
-  { id: 3, label: "Contact Us" },
-];
-
-const US_STATES = [
-  "AL","AK","AZ","AR","CA","CO","CT","DE","FL","GA","HI","ID","IL","IN","IA",
-  "KS","KY","LA","ME","MD","MA","MI","MN","MS","MO","MT","NE","NV","NH","NJ",
-  "NM","NY","NC","ND","OH","OK","OR","PA","RI","SC","SD","TN","TX","UT","VT",
-  "VA","WA","WV","WI","WY",
+  { id: 1, label: "Review" },
+  { id: 2, label: "Review & Send" },
 ];
 
 function StepIndicator({ current }: { current: number }) {
@@ -56,78 +49,22 @@ function StepIndicator({ current }: { current: number }) {
   );
 }
 
-function AddressForm({
-  title,
-  data,
-  onChange,
-}: {
-  title: string;
-  data: Partial<CheckoutAddress>;
-  onChange: (d: Partial<CheckoutAddress>) => void;
-}) {
-  const field = (key: keyof CheckoutAddress, label: string, type = "text", half = false) => (
-    <div className={half ? "col-span-1" : "col-span-2"}>
-      <label className="block text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-1">{label}</label>
-      <input
-        type={type}
-        value={(data[key] as string) ?? ""}
-        onChange={(e) => onChange({ ...data, [key]: e.target.value })}
-        className="w-full px-3 py-2.5 text-sm rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-orange-500 transition-colors"
-      />
-    </div>
-  );
-
-  return (
-    <div>
-      <h3 className="font-bold text-sm mb-4">{title}</h3>
-      <div className="grid grid-cols-2 gap-3">
-        {field("firstName", "First Name", "text", true)}
-        {field("lastName", "Last Name", "text", true)}
-        {field("email", "Email", "email")}
-        {field("phone", "Phone", "tel")}
-        {field("address1", "Street Address")}
-        {field("address2", "Apt / Suite (optional)")}
-        {field("city", "City", "text", true)}
-        <div className="col-span-1">
-          <label className="block text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-1">State</label>
-          <select
-            value={data.state ?? ""}
-            onChange={(e) => onChange({ ...data, state: e.target.value })}
-            className="w-full px-3 py-2.5 text-sm rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-orange-500"
-          >
-            <option value="">Select…</option>
-            {US_STATES.map((s) => <option key={s} value={s}>{s}</option>)}
-          </select>
-        </div>
-        {field("zip", "ZIP Code", "text", true)}
-        {field("country", "Country")}
-      </div>
-    </div>
-  );
-}
-
 export default function CheckoutPage() {
-  const { items, totals } = useCart();
+  const { items, totals, shippingMethod } = useCart();
   const [state, setState] = useState<CheckoutState>({
     step: 1,
-    shippingAddress: {},
     orderNotes: "",
   });
-
-  const next = () =>
-    setState((s) => ({ ...s, step: (Math.min(3, s.step + 1) as CheckoutState["step"]) }));
 
   const back = () =>
     setState((s) => ({ ...s, step: (Math.max(1, s.step - 1) as CheckoutState["step"]) }));
 
-  const toContact = () =>
-    setState((s) => ({
-      ...s,
-      step: 3,
-      orderRef: `XPS-${Date.now().toString(36).toUpperCase()}`,
-    }));
+  const showReceipt = () => {
+    const orderRef = buildOrderRef();
+    setState((s) => ({ ...s, step: 2, orderRef }));
+  };
 
-  if (items.length === 0 && state.step !== 3) {
+  if (items.length === 0 && state.step !== 2) {
     return (
       <div className="min-h-[60vh] flex flex-col items-center justify-center gap-4 text-center px-4">
         <Package className="size-14 text-muted-foreground/30" />
@@ -138,54 +75,40 @@ export default function CheckoutPage() {
   }
 
   // Order request — payment completed by contacting the dealer
-  if (state.step === 3) {
+  if (state.step === 2) {
     return (
-      <div className="min-h-[70vh] flex flex-col items-center justify-center gap-6 px-4 text-center">
-        <div className="size-20 bg-orange-100 dark:bg-orange-950/30 rounded-full flex items-center justify-center">
-          <Phone className="size-10 text-orange-600" />
-        </div>
-        <div>
-          <h1 className="text-3xl font-black mb-2">Contact Us to Complete Your Order</h1>
-          <p className="text-muted-foreground max-w-xl">
-            We don&rsquo;t accept payments on our website. Call or email our parts &amp; sales team to
-            confirm pricing and shipping, and pay securely over the phone.
+      <div className="min-h-[70vh] py-10 px-4">
+        <div className="max-w-3xl mx-auto text-center">
+          <div className="size-20 mx-auto bg-green-100 dark:bg-green-950/30 rounded-full flex items-center justify-center">
+            <MessageCircle className="size-10 text-[#25D366]" />
+          </div>
+          <h1 className="text-2xl sm:text-3xl font-black mt-4 mb-2">Your receipt is ready to send!</h1>
+          <p className="text-muted-foreground max-w-xl mx-auto mb-8">
+            Review your receipt below, then hit Complete Order via WhatsApp to send it to
+            us pre-filled — we&rsquo;ll confirm availability, final price, and next steps.
+            You can also copy the receipt to message us another way. Your receipt stays
+            saved here until you remove your items.
           </p>
         </div>
-        <div className="rounded-xl border border-border bg-card px-8 py-5 text-sm space-y-2">
-          <div className="flex justify-between gap-8">
-            <span className="text-muted-foreground">Order Reference</span>
-            <span className="font-bold">{state.orderRef}</span>
-          </div>
-          <div className="flex justify-between gap-8">
-            <span className="text-muted-foreground">Items</span>
-            <span className="font-bold">{items.length}</span>
-          </div>
-          <div className="flex justify-between gap-8">
-            <span className="text-muted-foreground">Order Total</span>
-            <span className="font-bold">{formatCurrency(totals.total)}</span>
-          </div>
-        </div>
-        <div className="flex flex-col sm:flex-row gap-3 justify-center">
-          <a
-            href="tel:+16145550199"
-            className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-orange-600 text-white font-bold hover:bg-orange-700 transition-colors"
+
+        <OrderReceipt
+          items={items}
+          totals={totals}
+          shippingMethod={shippingMethod}
+          orderRef={state.orderRef}
+          notes={state.orderNotes}
+        />
+
+        <div className="max-w-3xl mx-auto mt-8 flex gap-3 flex-wrap justify-center">
+          <button
+            onClick={back}
+            className="px-6 py-3 rounded-xl bg-orange-600 text-white font-bold hover:bg-orange-700 transition-colors"
           >
-            <Phone className="size-4" /> Call (614) 555-0199
-          </a>
-          <a
-            href="mailto:info@xtremepowersports.com"
-            className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-border font-bold hover:bg-muted transition-colors"
-          >
-            <Mail className="size-4" /> Email Us
-          </a>
-        </div>
-        <p className="text-xs text-muted-foreground max-w-md">
-          Have your order reference ready when you call. We accept credit/debit cards, dealership
-          financing, and wire transfer by phone.
-        </p>
-        <div className="flex gap-3 flex-wrap justify-center">
-          <Link href="/" className="px-6 py-3 rounded-xl bg-orange-600 text-white font-bold hover:bg-orange-700 transition-colors">Back to Home</Link>
-          <Link href="/cart" className="px-6 py-3 rounded-xl border border-border font-bold hover:bg-muted transition-colors">Back to Cart</Link>
+            <ArrowLeft className="inline size-4 mr-1.5 -mt-0.5" /> Back
+          </button>
+          <Link href="/cart" className="px-6 py-3 rounded-xl border border-border font-bold hover:bg-muted transition-colors">
+            Back to Cart
+          </Link>
         </div>
       </div>
     );
@@ -211,36 +134,17 @@ export default function CheckoutPage() {
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8">
           {/* Main form */}
           <div className="bg-card border border-border rounded-xl p-6 space-y-8">
-            {/* Step 1 — Contact & Delivery */}
+            {/* Step 1 — Review */}
             {state.step === 1 && (
               <div className="space-y-6">
-                <h2 className="text-xl font-black">Contact &amp; Delivery</h2>
-                <p className="text-sm text-muted-foreground">
-                  Tell us where to send your order. We&rsquo;ll confirm the details and take payment
-                  over the phone — no payment is collected on this website.
-                </p>
-                <AddressForm
-                  title="Delivery Address"
-                  data={state.shippingAddress}
-                  onChange={(d) => setState((s) => ({ ...s, shippingAddress: d }))}
-                />
                 <div>
-                  <label className="block text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-1">Order Notes (optional)</label>
-                  <textarea
-                    rows={3}
-                    value={state.orderNotes}
-                    onChange={(e) => setState((s) => ({ ...s, orderNotes: e.target.value }))}
-                    placeholder="Special instructions, call before delivery, etc."
-                    className="w-full px-3 py-2.5 text-sm rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-orange-500 resize-none"
-                  />
+                  <h2 className="text-xl font-black">Review Your Order</h2>
+                  <p className="text-sm text-muted-foreground mt-1">
+                    Take a look at your items below, add any notes, then send the receipt to us
+                    on WhatsApp — no payment is collected on this website.
+                  </p>
                 </div>
-              </div>
-            )}
 
-            {/* Step 2 — Review */}
-            {state.step === 2 && (
-              <div className="space-y-6">
-                <h2 className="text-xl font-black">Review Your Order</h2>
                 <div className="space-y-3">
                   {items.map((item) => (
                     <div key={item.id} className="flex gap-3 text-sm">
@@ -255,6 +159,7 @@ export default function CheckoutPage() {
                     </div>
                   ))}
                 </div>
+
                 <div className="pt-4 border-t border-border text-sm space-y-2">
                   <div className="flex justify-between"><span className="text-muted-foreground">Subtotal</span><span>{formatCurrency(totals.subtotal)}</span></div>
                   {totals.discount > 0 && <div className="flex justify-between text-green-600"><span>Discount</span><span>−{formatCurrency(totals.discount)}</span></div>}
@@ -262,10 +167,23 @@ export default function CheckoutPage() {
                   <div className="flex justify-between"><span className="text-muted-foreground">Tax</span><span>{formatCurrency(totals.tax)}</span></div>
                   <div className="flex justify-between font-black text-base border-t pt-3"><span>Total</span><span>{formatCurrency(totals.total)}</span></div>
                 </div>
+
+                <div>
+                  <label className="block text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-1">Order Notes (optional)</label>
+                  <textarea
+                    rows={3}
+                    value={state.orderNotes}
+                    onChange={(e) => setState((s) => ({ ...s, orderNotes: e.target.value }))}
+                    placeholder="Special instructions, call before delivery, etc."
+                    className="w-full px-3 py-2.5 text-sm rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-orange-500 resize-none"
+                  />
+                </div>
+
                 <div className="flex items-start gap-2 text-xs text-muted-foreground">
                   <ShieldCheck className="size-4 text-green-600 shrink-0 mt-0.5" />
                   <span>
-                    No payment is taken online. Your order is finalized by phone — see our{" "}
+                    No payment is taken online. Review the receipt, then send it to us on WhatsApp
+                    to confirm availability and final pricing. See our{" "}
                     <Link href="/company/privacy" className="underline hover:text-foreground">Privacy Policy</Link> and Terms of Service.
                   </span>
                 </div>
@@ -274,24 +192,12 @@ export default function CheckoutPage() {
 
             {/* Navigation */}
             <div className="flex items-center justify-between pt-4 border-t border-border">
-              {state.step > 1 ? (
-                <button onClick={back} className="flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-                  <ArrowLeft className="size-4" /> Back
-                </button>
-              ) : (
-                <Link href="/cart" className="flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-                  <ArrowLeft className="size-4" /> Back to Cart
-                </Link>
-              )}
-              {state.step < 2 ? (
-                <button onClick={next} className="flex items-center gap-2 px-6 py-2.5 rounded-xl bg-orange-600 text-white font-bold hover:bg-orange-700 transition-colors">
-                  Continue <ArrowRight className="size-4" />
-                </button>
-              ) : (
-                <button onClick={toContact} className="flex items-center gap-2 px-6 py-2.5 rounded-xl bg-orange-600 text-white font-bold hover:bg-orange-700 transition-colors">
-                  <Phone className="size-4" /> Continue to Contact
-                </button>
-              )}
+              <Link href="/cart" className="flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+                <ArrowLeft className="size-4" /> Back to Cart
+              </Link>
+              <button onClick={showReceipt} className="flex items-center gap-2 px-6 py-2.5 rounded-xl bg-orange-600 text-white font-bold hover:bg-orange-700 transition-colors">
+                Review Receipt <ArrowRight className="size-4" />
+              </button>
             </div>
           </div>
 

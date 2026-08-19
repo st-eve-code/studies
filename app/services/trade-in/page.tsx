@@ -44,7 +44,6 @@ function getEstimate(form: FormState): { low: number; high: number } | null {
 export default function TradeInPage() {
   const [form, setForm] = useState<FormState>(init);
   const [submitted, setSubmitted] = useState(false);
-  const [showEstimate, setShowEstimate] = useState(false);
 
   const set = (key: keyof FormState, val: string | boolean) =>
     setForm((f) => ({ ...f, [key]: val }));

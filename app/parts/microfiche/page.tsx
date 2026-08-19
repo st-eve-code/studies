@@ -67,7 +67,7 @@ function HotspotOverlay({
 }
 
 export default function MicrofichePage() {
-  const { addItem } = useCart();
+  const { addItem, removeItem, items } = useCart();
 
   // Model selector
   const [summaries, setSummaries] = useState<MicroficheModelSummary[]>([]);
@@ -81,7 +81,7 @@ export default function MicrofichePage() {
 
   const [activeSection, setActiveSection] = useState<MicroficheSection | null>(null);
   const [hoveredRef, setHoveredRef] = useState<string | null>(null);
-  const [addedParts, setAddedParts] = useState<Set<string>>(new Set());
+  const [selectedSku, setSelectedSku] = useState<string | null>(null);
   const [search, setSearch] = useState("");
 
   const displayModel = model?.modelCode === modelCode ? model : null;
@@ -123,19 +123,40 @@ export default function MicrofichePage() {
     setActiveSection(displayModel.sections[0] ?? null);
   }
 
-  const handleAddPart = (part: MicrofichePart) => {
-    addItem({
-      id: `cart-${part.sku}`,
-      productId: part.sku,
-      type: "part",
-      name: part.name,
-      sku: part.sku,
-      image: activeSection?.diagramUrl ?? "",
-      price: part.price,
-      quantity: part.qty,
-    });
-    setAddedParts((prev) => new Set([...prev, part.sku]));
-    setTimeout(() => setAddedParts((prev) => { const n = new Set(prev); n.delete(part.sku); return n; }), 2500);
+  // Keep the selected part in sync with the cart when switching sections
+  useEffect(() => {
+    if (!activeSection) {
+      setSelectedSku(null);
+      return;
+    }
+    const sectionSkus = new Set(activeSection.parts.map((p) => p.sku));
+    const selected = items.find((i) => i.id.startsWith("cart-mf-") && i.sku && sectionSkus.has(i.sku));
+    setSelectedSku(selected?.sku ?? null);
+  }, [activeSection?.id]);
+
+  const handleTogglePart = (part: MicrofichePart) => {
+    if (part.availability === "out-of-stock" || part.availability === "discontinued") return;
+    const cartId = `cart-mf-${part.sku}`;
+    if (selectedSku === part.sku) {
+      removeItem(cartId);
+      setSelectedSku(null);
+    } else {
+      // Single-select: remove any previously selected microfiche part, then add this one
+      for (const item of items) {
+        if (item.id.startsWith("cart-mf-")) removeItem(item.id);
+      }
+      addItem({
+        id: cartId,
+        productId: part.sku,
+        type: "part",
+        name: part.name,
+        sku: part.sku,
+        image: activeSection?.diagramUrl ?? "",
+        price: part.price,
+        quantity: part.qty,
+      });
+      setSelectedSku(part.sku);
+    }
   };
 
   const filteredParts = useMemo(() => {
@@ -301,12 +322,15 @@ export default function MicrofichePage() {
                         No parts match your search.
                       </p>
                     )}
-                    {filteredParts.map((part) => (
+                    {filteredParts.map((part) => {
+                      const selected = selectedSku === part.sku;
+                      return (
                       <div
                         key={`${part.refNumber}-${part.sku}`}
                         className={cn(
                           "flex items-center gap-3 px-4 py-3 text-sm transition-colors",
-                          hoveredRef === part.refNumber && "bg-orange-50 dark:bg-orange-950/20"
+                          hoveredRef === part.refNumber && "bg-orange-50 dark:bg-orange-950/20",
+                          selected && "bg-green-50 dark:bg-green-950/20"
                         )}
                         onMouseEnter={() => setHoveredRef(part.refNumber || null)}
                         onMouseLeave={() => setHoveredRef(null)}
@@ -331,23 +355,24 @@ export default function MicrofichePage() {
                           </p>
                         </div>
                         <button
-                          onClick={() => handleAddPart(part)}
+                          onClick={() => handleTogglePart(part)}
                           disabled={part.availability === "out-of-stock" || part.availability === "discontinued"}
                           className={cn(
                             "shrink-0 size-8 rounded-lg flex items-center justify-center transition-colors",
-                            addedParts.has(part.sku)
+                            selected
                               ? "bg-green-600 text-white"
                               : "bg-orange-600 text-white hover:bg-orange-700",
                             "disabled:opacity-40 disabled:cursor-not-allowed"
                           )}
-                          aria-label="Add to cart"
+                          aria-label={selected ? "Remove from cart" : "Add to cart"}
                         >
-                          {addedParts.has(part.sku)
+                          {selected
                             ? <CheckCircle2 className="size-4" />
                             : <ShoppingCart className="size-4" />}
                         </button>
                       </div>
-                    ))}
+                      );
+                    })}
                   </div>
                 </div>
               </div>
@@ -356,6 +381,9 @@ export default function MicrofichePage() {
               <div className="flex items-center gap-5 text-xs text-muted-foreground flex-wrap">
                 <span className="flex items-center gap-1.5">
                   <span className="size-3 rounded-sm bg-white/20 border border-white/60 inline-block" /> Hover to highlight ref #
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <span className="size-3 rounded-sm bg-green-600 inline-block" /> Selected part — only this part is added to cart
                 </span>
                 <span className="flex items-center gap-1.5">
                   <AlertCircle className="size-3.5" /> Prices shown are current dealer list — superseded parts noted inline

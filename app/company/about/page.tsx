@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { ChevronRight, Zap, Award, Users, MapPin, Phone, Clock } from "lucide-react";
+import { siteConfig } from "@/lib/site-config";
 
 const TEAM = [
   { name: "Mike Reynolds", title: "Owner / General Manager", bio: "30+ years in powersports. Former professional motocross racer turned dealer." },
   { name: "Sarah Kim", title: "Parts Manager", bio: "OEM parts specialist with 15 years of fitment expertise." },
   { name: "Jake Torres", title: "Lead Service Tech", bio: "Master-certified for Can-Am, Polaris, and Yamaha platforms." },
-  { name: "Denise Hall", title: "Finance Manager", bio: "Makes the numbers work for any credit situation." },
+  { name: "Denise Hall", title: "Sales Manager", bio: "Knows the lineup inside and out and gets you on the right ride." },
 ];
 
 const MILESTONES = [
@@ -27,7 +28,7 @@ export default function AboutPage() {
             <ChevronRight className="size-3" />
             <span className="text-foreground">About Us</span>
           </div>
-          <h1 className="text-3xl font-black mb-2">About Xtreme Powersports Inc.</h1>
+          <h1 className="text-3xl font-black mb-2">About {siteConfig.name}</h1>
           <p className="text-muted-foreground max-w-xl">Columbus Ohio's premier powersports destination since 1994.</p>
         </div>
       </div>
@@ -111,9 +112,9 @@ export default function AboutPage() {
         {/* Showroom info */}
         <section className="bg-muted/30 rounded-2xl p-8 grid grid-cols-1 sm:grid-cols-3 gap-6">
           {[
-            { icon: MapPin, label: "Find Us", lines: ["1234 Powersports Blvd", "Columbus, OH 43215"] },
-            { icon: Phone, label: "Contact", lines: ["(614) 555-0199", "info@xtremepowersports.com"] },
-            { icon: Clock, label: "Hours", lines: ["Mon–Fri: 9AM–6PM", "Sat: 9AM–5PM", "Sun: 11AM–4PM"] },
+            { icon: MapPin, label: "Find Us", lines: [siteConfig.address.street, `${siteConfig.address.city}, ${siteConfig.address.state} ${siteConfig.address.zip}`] },
+            { icon: Phone, label: "Contact", lines: [siteConfig.phone, siteConfig.email] },
+            { icon: Clock, label: "Hours", lines: siteConfig.hours.main },
           ].map(({ icon: Icon, label, lines }) => (
             <div key={label}>
               <div className="flex items-center gap-2 mb-2">
